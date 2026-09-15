@@ -14,6 +14,7 @@ interactive pages, content.html / slides.pdf / sheet-data*.json. The
 hand-maintained files are docs/assets/* and the README.
 """
 import json
+import re
 import shutil
 import subprocess
 import sys
@@ -65,6 +66,20 @@ def inject_css(html_path, css):
     html_path.write_text(text[:at] + "\n\t\t" + css + "\n" + text[at:], encoding="utf-8")
 
 
+def external_links_new_tab(html_path):
+    """Open external links in a new tab, so they don't hijack the iframe.
+
+    Only absolute http(s) links are touched; in-document anchors (e.g. a
+    document's own table of contents) must stay in the same frame.
+    """
+    text = html_path.read_text(encoding="utf-8", errors="replace")
+    patched, n = re.subn(r'<a href="(https?://[^"]*)"',
+                         r'<a href="\1" target="_blank" rel="noopener"',
+                         text)
+    html_path.write_text(patched, encoding="utf-8")
+    return n
+
+
 def build_content_html(src, docs_dir, css):
     """docx/xlsx -> content.html (+ any extracted images) in docs_dir."""
     for stale in list(docs_dir.glob("*_html_*")):
@@ -73,6 +88,9 @@ def build_content_html(src, docs_dir, css):
         html = soffice_convert(src, "html", tmp)
         if css:
             inject_css(html, css)
+        n = external_links_new_tab(html)
+        if n:
+            print(f"      {n} external link(s) set to open in a new tab")
         shutil.copy(html, docs_dir / "content.html")
         for asset in Path(tmp).glob("*_html_*"):
             shutil.copy(asset, docs_dir / asset.name)
@@ -159,8 +177,10 @@ def write_pages(manifest, entry, docs_dir):
         body = '  <iframe class="viewer-frame" src="slides.pdf" title="{t} slides"></iframe>'.format(t=title)
         main_class, scripts = ' class="wide"', ""
     else:
+        # Word/Excel conversions keep their source page geometry; landscape
+        # documents exceed 1400px, so give these the full viewport width.
         body = '  <iframe class="viewer-frame" src="content.html" title="{t}"></iframe>'.format(t=title)
-        main_class, scripts = "", ""
+        main_class, scripts = ' class="full"', ""
 
     (docs_dir / "index.html").write_text(SHELL.format(
         title=title, section=esc(entry.get("section", "")),
@@ -181,7 +201,7 @@ def write_pages(manifest, entry, docs_dir):
             meta=f'Live calculator ({esc(sheet["name"])}) · edit "X =" to rescale reagent volumes',
             download=download, filename=filename, ext=ext,
             tabs=tab_bar(entry, sheet["page"]), body=body,
-            main_class="", scripts=scripts,
+            main_class=' class="wide"', scripts=scripts,
         ), encoding="utf-8")
 
 
@@ -205,7 +225,7 @@ def run_entry(manifest, entry):
         build_content_html(src, docs_dir, manifest.get("fontCss"))
     elif etype == "xlsx-interactive":
         build_sheet_data(src, docs_dir, entry["sheets"])
-        build_content_html(src, docs_dir, None)
+        build_content_html(src, docs_dir, manifest.get("fontCss"))
     else:
         raise ValueError(f"unknown type: {etype}")
     write_pages(manifest, entry, docs_dir)
@@ -247,7 +267,8 @@ def write_index(manifest):
             continue
         rows = "\n".join(
             f'      <li>\n'
-            f'        <a class="title" href="{e["docsDir"][len("docs/"):]}/index.html">{esc(e["title"])}</a>\n'
+            f'        <a class="title" href="{e["docsDir"][len("docs/"):]}/index.html"'
+            f' target="_blank" rel="noopener">{esc(e["title"])}</a>\n'
             f'        <span class="kind">{kinds[e["type"]]}</span>\n'
             f'      </li>' for e in items)
         blocks.append(f'  <section class="group">\n    <h2>{section}</h2>\n'

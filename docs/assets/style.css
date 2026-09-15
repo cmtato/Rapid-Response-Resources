@@ -54,6 +54,12 @@ main.wide {
   max-width: 1400px;
 }
 
+/* Documents converted from Word/Excel keep their original page geometry,
+   and landscape pages need more than 1400px. Let them use the viewport. */
+main.full {
+  max-width: none;
+}
+
 .resource-header {
   display: flex;
   justify-content: space-between;
