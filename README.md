@@ -241,7 +241,7 @@ Not available
 
 The table above is for navigating the materials: every link opens in the browser. Each of those pages also has a "Download original" button if you want the editable file for just that resource.
 
-**To download everything at once:** use the green **Code** button at the top of this page, choose **Download ZIP** (about 130 MB), and open the `resources` folder inside. GitHub cannot download a single folder on its own, so the ZIP includes the browser versions as well.
+**To download everything at once:** use the green "Code" button at the top of this page, choose "Download ZIP" (about 130 MB), and open the `resources` folder inside. GitHub cannot download a single folder on its own, so the ZIP includes the browser versions as well.
 
 Browse everything at the [resources site](https://cmtato.github.io/Rapid-Response-Resources/).
 
