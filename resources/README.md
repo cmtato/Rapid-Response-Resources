@@ -17,7 +17,7 @@ If you just want to read or use the materials, the [resources site](https://cmta
 
 Filenames carry their place in the training sequence and the platform they apply to:
 
-- A leading number or `DL` code gives the module order: `8.` for the wet lab sequence, `DL1.` through `DL10.` for the dry lab (data analysis) sequence.
+- A leading number or `DL` (Dry Lab) code gives the module order: `1. through 8.` for the wet lab sequence, `DL1.` through `DL10.` for the dry lab (data analysis) sequence.
 - `-I` means Illumina, `-O` means Nanopore (ONT), and no platform marker means the file applies to both.
 
 For example, `DL5-O_QC and interpretation slides for ONT.pptx` is dry lab module 5, for Nanopore.
