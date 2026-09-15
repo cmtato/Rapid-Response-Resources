@@ -237,4 +237,4 @@ Browse everything at the [resources site](https://cmtato.github.io/Rapid-Respons
 
 ## License
 
-This material is licensed under [CC BY 4.0](LICENSE) — you are free to share and adapt it with attribution.
+This material is licensed under [CC BY 4.0](LICENSE): you are free to share and adapt it with attribution.
