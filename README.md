@@ -115,7 +115,7 @@ Not applicable
 <td>
 
 - [QC and interpretation slides for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides/dl5-i-qc-and-interpretation-slides-for-illumina/index.html)
-- [Activity (pg 5-10)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-illumina/index.html)
+- [Activity (QC Worksheet, pg 5-10)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-illumina/index.html)
 
 <br>
 
@@ -123,7 +123,7 @@ Not applicable
 <td>
 
 - [QC and interpretation slides for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/dl5-o-qc-and-interpretation-slides-for-ont/index.html)
-- [Activity (pg 5-9)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-ont/index.html)
+- [Activity (QC Worksheet, pg 5-9)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-ont/index.html)
 
 <br>
 
@@ -136,7 +136,7 @@ Not applicable
 <td>
 
 - [Sample Report Metrics for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides/dl6-i-sample-report-metrics-for-illumina/index.html)
-- [Activity (pg 12-13)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-illumina/index.html)
+- [Activity (Sample Report, pg 12-13)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-illumina/index.html)
 
 <br>
 
@@ -144,7 +144,7 @@ Not applicable
 <td>
 
 - [Sample Report Metrics for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/dl6-o-sample-report-metrics-for-ont/index.html)
-- [Activity (pg 10-16)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-ont/index.html)
+- [Activity (Sample Report, pg 10-16)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-ont/index.html)
 
 <br>
 
@@ -164,7 +164,7 @@ Not applicable
 <td>
 
 - [Background models for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/dl7-o-background-models-for-ont/index.html)
-- [Activity (pg 17-20)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-ont/index.html)
+- [Activity (Identification of Background Signal, pg 17-20)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-ont/index.html)
 
 <br>
 
@@ -177,7 +177,7 @@ Not applicable
 <td>
 
 - [CZ ID Heatmap for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides/dl8-i-cz-id-heatmap-for-illumina/index.html)
-- [Activity (pg 14-15)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-illumina/index.html)
+- [Activity (Heatmap Notes, pg 14-15)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-illumina/index.html)
 
 <br>
 
