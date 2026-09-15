@@ -184,7 +184,7 @@ Not applicable
 </td>
 <td>
 
-[ONT Heatmap](https://cmtato.github.io/Rapid-Response-Resources/slides/dl8-o-ont-heatmap/index.html)
+[Heatmap](https://cmtato.github.io/Rapid-Response-Resources/slides/dl8-o-heatmap/index.html)
 
 <br>
 
