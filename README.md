@@ -29,12 +29,12 @@ Resources for metagenomics sequencing, covering wet and dry lab methods for Illu
 
 <tr><td colspan="2"><em>Wet lab modules 1-7 go here.</em></td></tr>
 
-<tr><td colspan="2"><strong>Evaluating sequencing run QC</strong></td></tr>
+<tr><td colspan="2"><strong>8. Evaluating sequencing run QC</strong></td></tr>
 
 <tr>
 <td>
 
-- [8. Sequencing Run QC for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides/8-i-sequencing-run-qc-for-illumina/index.html)
+- [Sequencing Run QC for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides/8-i-sequencing-run-qc-for-illumina/index.html)
 - [Activity](https://cmtato.github.io/Rapid-Response-Resources/worksheets/8-i-sequencing-run-qc-for-illumina-activity/index.html)
 
 <br>
@@ -42,7 +42,7 @@ Resources for metagenomics sequencing, covering wet and dry lab methods for Illu
 </td>
 <td>
 
-- [8. Sequencing Run QC for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/8-o-sequencing-run-qc-for-ont/index.html)
+- [Sequencing Run QC for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/8-o-sequencing-run-qc-for-ont/index.html)
 - [Activity](https://cmtato.github.io/Rapid-Response-Resources/worksheets/8-o-sequencing-run-qc-for-ont-activity/index.html)
 
 <br>
@@ -50,28 +50,28 @@ Resources for metagenomics sequencing, covering wet and dry lab methods for Illu
 </td>
 </tr>
 
-<tr><td colspan="2"><strong>Getting familiar with NCBI database and how to BLAST</strong></td></tr>
+<tr><td colspan="2"><strong>DL1. Getting familiar with NCBI database and how to BLAST</strong></td></tr>
 
 <tr><td colspan="2">
 
-- [DL1. Bioinformatics Basics and BLAST](https://cmtato.github.io/Rapid-Response-Resources/slides/dl1-bioinformatics-basics-and-blast/index.html)
+- [Bioinformatics Basics and BLAST](https://cmtato.github.io/Rapid-Response-Resources/slides/dl1-bioinformatics-basics-and-blast/index.html)
 - [Activity](https://cmtato.github.io/Rapid-Response-Resources/worksheets/dl1-blast-activity/index.html)
 
 <br>
 
 </td></tr>
 
-<tr><td colspan="2"><strong>Introduction to CZ ID</strong></td></tr>
+<tr><td colspan="2"><strong>DL2. Introduction to CZ ID</strong></td></tr>
 
 <tr><td colspan="2">
 
-[DL2. Intro to CZ ID](https://cmtato.github.io/Rapid-Response-Resources/slides/dl2-intro-to-cz-id/index.html)
+[Intro to CZ ID](https://cmtato.github.io/Rapid-Response-Resources/slides/dl2-intro-to-cz-id/index.html)
 
 <br>
 
 </td></tr>
 
-<tr><td colspan="2"><strong>Preparing data for upload to CZ ID</strong></td></tr>
+<tr><td colspan="2"><strong>DL3. Preparing data for upload to CZ ID</strong></td></tr>
 
 <tr>
 <td>
@@ -83,38 +83,38 @@ Not applicable
 </td>
 <td>
 
-[DL3. Prepare ONT fastqs for upload to CZ ID](https://cmtato.github.io/Rapid-Response-Resources/slides/dl3-o-prepare-ont-fastqs-for-upload-to-cz-id/index.html)
+[Prepare ONT fastqs for upload to CZ ID](https://cmtato.github.io/Rapid-Response-Resources/slides/dl3-o-prepare-ont-fastqs-for-upload-to-cz-id/index.html)
 
 <br>
 
 </td>
 </tr>
 
-<tr><td colspan="2"><strong>CZ ID mNGS analysis pipeline overview</strong></td></tr>
+<tr><td colspan="2"><strong>DL4. CZ ID mNGS analysis pipeline overview</strong></td></tr>
 
 <tr>
 <td>
 
-[DL4. CZ ID mNGS Pipeline for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides/dl4-i-cz-id-mngs-pipeline-for-illumina/index.html)
+[CZ ID mNGS Pipeline for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides/dl4-i-cz-id-mngs-pipeline-for-illumina/index.html)
 
 <br>
 
 </td>
 <td>
 
-[DL4. CZ ID mNGS Pipeline for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/dl4-o-cz-id-mngs-pipeline-for-ont/index.html)
+[CZ ID mNGS Pipeline for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/dl4-o-cz-id-mngs-pipeline-for-ont/index.html)
 
 <br>
 
 </td>
 </tr>
 
-<tr><td colspan="2"><strong>QC checks of mNGS data in CZ ID</strong></td></tr>
+<tr><td colspan="2"><strong>DL5. QC checks of mNGS data in CZ ID</strong></td></tr>
 
 <tr>
 <td>
 
-- [DL5. QC and interpretation slides for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides/dl5-i-qc-and-interpretation-slides-for-illumina/index.html)
+- [QC and interpretation slides for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides/dl5-i-qc-and-interpretation-slides-for-illumina/index.html)
 - [Activity (pg 5-10)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-illumina/index.html)
 
 <br>
@@ -122,7 +122,7 @@ Not applicable
 </td>
 <td>
 
-- [DL5. QC and interpretation slides for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/dl5-o-qc-and-interpretation-slides-for-ont/index.html)
+- [QC and interpretation slides for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/dl5-o-qc-and-interpretation-slides-for-ont/index.html)
 - [Activity (pg 5-9)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-ont/index.html)
 
 <br>
@@ -130,12 +130,12 @@ Not applicable
 </td>
 </tr>
 
-<tr><td colspan="2"><strong>Analysis and interpretation of single samples in CZ ID</strong></td></tr>
+<tr><td colspan="2"><strong>DL6. Analysis and interpretation of single samples in CZ ID</strong></td></tr>
 
 <tr>
 <td>
 
-- [DL6. Sample Report Metrics for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides/dl6-i-sample-report-metrics-for-illumina/index.html)
+- [Sample Report Metrics for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides/dl6-i-sample-report-metrics-for-illumina/index.html)
 - [Activity (pg 12-13)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-illumina/index.html)
 
 <br>
@@ -143,7 +143,7 @@ Not applicable
 </td>
 <td>
 
-- [DL6. Sample Report Metrics for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/dl6-o-sample-report-metrics-for-ont/index.html)
+- [Sample Report Metrics for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/dl6-o-sample-report-metrics-for-ont/index.html)
 - [Activity (pg 10-16)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-ont/index.html)
 
 <br>
@@ -151,19 +151,19 @@ Not applicable
 </td>
 </tr>
 
-<tr><td colspan="2"><strong>How and why we use background models in mNGS</strong></td></tr>
+<tr><td colspan="2"><strong>DL7. How and why we use background models in mNGS</strong></td></tr>
 
 <tr>
 <td>
 
-[DL7. Background models](https://cmtato.github.io/Rapid-Response-Resources/slides/dl7-i-background-models/index.html)
+[Background models](https://cmtato.github.io/Rapid-Response-Resources/slides/dl7-i-background-models/index.html)
 
 <br>
 
 </td>
 <td>
 
-- [DL7. Background models for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/dl7-o-background-models-for-ont/index.html)
+- [Background models for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/dl7-o-background-models-for-ont/index.html)
 - [Activity (pg 17-20)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-ont/index.html)
 
 <br>
@@ -171,12 +171,12 @@ Not applicable
 </td>
 </tr>
 
-<tr><td colspan="2"><strong>Generating and interpreting heatmaps for mNGS</strong></td></tr>
+<tr><td colspan="2"><strong>DL8. Generating and interpreting heatmaps for mNGS</strong></td></tr>
 
 <tr>
 <td>
 
-- [DL8. CZ ID Heatmap for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides/dl8-i-cz-id-heatmap-for-illumina/index.html)
+- [CZ ID Heatmap for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides/dl8-i-cz-id-heatmap-for-illumina/index.html)
 - [Activity (pg 14-15)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-illumina/index.html)
 
 <br>
@@ -184,19 +184,19 @@ Not applicable
 </td>
 <td>
 
-[DL8. ONT Heatmap](https://cmtato.github.io/Rapid-Response-Resources/slides/dl8-o-ont-heatmap/index.html)
+[ONT Heatmap](https://cmtato.github.io/Rapid-Response-Resources/slides/dl8-o-ont-heatmap/index.html)
 
 <br>
 
 </td>
 </tr>
 
-<tr><td colspan="2"><strong>Understanding the antimicrobial resistance (AMR) pipeline in CZ ID</strong></td></tr>
+<tr><td colspan="2"><strong>DL9. Understanding the antimicrobial resistance (AMR) pipeline in CZ ID</strong></td></tr>
 
 <tr>
 <td>
 
-[DL9. CZ ID AMR Module](https://cmtato.github.io/Rapid-Response-Resources/slides/dl9-i-cz-id-amr-module/index.html)
+[CZ ID AMR Module](https://cmtato.github.io/Rapid-Response-Resources/slides/dl9-i-cz-id-amr-module/index.html)
 
 <br>
 
@@ -210,12 +210,12 @@ Not available
 </td>
 </tr>
 
-<tr><td colspan="2"><strong>Generating and interpreting viral consensus genomes in CZ ID (bacterial unavailable)</strong></td></tr>
+<tr><td colspan="2"><strong>DL10. Generating and interpreting viral consensus genomes in CZ ID (bacterial unavailable)</strong></td></tr>
 
 <tr>
 <td>
 
-[DL10. Building Viral Consensus Genomes](https://cmtato.github.io/Rapid-Response-Resources/slides/dl10-i-building-viral-consensus-genomes/index.html)
+[Building Viral Consensus Genomes](https://cmtato.github.io/Rapid-Response-Resources/slides/dl10-i-building-viral-consensus-genomes/index.html)
 
 <br>
 
