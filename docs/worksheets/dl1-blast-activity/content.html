@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 26.2.5.2 (MacOSX)"/>
+	<meta name="created" content="2026-09-04T22:11:00"/>
+	<meta name="changedby" content="Genay Pilarowski"/>
+	<meta name="changed" content="2026-09-04T23:07:00"/>
+	<meta name="AppVersion" content="16.0000"/>
+	<style type="text/css">
+		body, p, h1, h2, font, td, th, li { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !important; }
+
+		@page { size: 8.5in 11in; margin: 1in }
+		p { direction: ltr; widows: 2; orphans: 2; margin-bottom: 0.1in; text-align: left; line-height: 115%; background: transparent }
+		h2 { direction: ltr; widows: 2; page-break-inside: avoid; text-align: left; line-height: 115%; font-size: 16pt; margin-top: 0.25in; margin-bottom: 0.08in; orphans: 2; background: transparent; page-break-after: avoid }
+		a:link { color: #0000ff; text-decoration: underline }
+	</style>
+</head>
+<body lang="en-US" link="#0000ff" vlink="#800000" dir="ltr"><h2 style="margin-left: -0.19in; border-top: none; border-bottom: 1px solid #eaecef; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.07in; padding-left: 0in; padding-right: 0in; margin-bottom: 0.17in; page-break-inside: auto; line-height: 100%; background: #ffffff; page-break-after: auto"><a name="_heading=h.q5roq5dh670u"></a>
+<img src="DL1_BLAST%20-%20Activity_html_31c8802d.png" name="image1.png" align="bottom" width="37" height="37" border="0"/>
+<font color="#24292e"><font size="5" style="font-size: 18pt"><b>
+Activity: BLAST</b></font></font></h2>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<font color="#24292e"><font size="4" style="font-size: 14pt"><b>B</b></font></font><font color="#24292e"><font size="4" style="font-size: 14pt">asic
+</font></font><font color="#24292e"><font size="4" style="font-size: 14pt"><b>L</b></font></font><font color="#24292e"><font size="4" style="font-size: 14pt">ocal
+</font></font><font color="#24292e"><font size="4" style="font-size: 14pt"><b>A</b></font></font><font color="#24292e"><font size="4" style="font-size: 14pt">lignment
+</font></font><font color="#24292e"><font size="4" style="font-size: 14pt"><b>S</b></font></font><font color="#24292e"><font size="4" style="font-size: 14pt">earch
+</font></font><font color="#24292e"><font size="4" style="font-size: 14pt"><b>T</b></font></font><font color="#24292e"><font size="4" style="font-size: 14pt">ool
+(BLAST)</font></font></p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<font size="3" style="font-size: 12pt">BLAST refers to a suite of
+local alignment tools hosted by NCBI that find regions of similarity
+between sequences. Through BLAST, you can align unknown “query”
+sequences against a selected database of known sequences (referred to
+as “subject” sequences) and assess the statistical significance
+of alignments or matches. BLAST can also be used to annotate genome
+coding regions and to find sequences similar to your query when
+trying to assess how detected microbes fit within the known diversity
+(e.g., phylogenetic analysis).</font></p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<font size="3" style="font-size: 12pt">See CZ ID’s </font><a href="https://chanzuckerberg.zendesk.com/hc/en-us/articles/360050963352-A-Guide-to-BLAST"><font color="#1155cc"><font size="3" style="font-size: 12pt"><u>A
+Guide to BLAST</u></font></font></a><font size="3" style="font-size: 12pt">
+for details.</font></p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<br/>
+<br/>
+
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<font size="4" style="font-size: 14pt"><b>Part I: mNGS BLAST Exercise</b></font></p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<font size="3" style="font-size: 12pt"><b>Task</b></font><font size="3" style="font-size: 12pt">:
+Identify three unknown sequences by running BLAST against the
+nucleotide database (NT). Fill out the table below using the provided
+query sequences and following the </font><a href="#bookmark=id.kekpuy9kfb36"><font color="#1155cc"><font size="3" style="font-size: 12pt"><u>BLAST
+instructions</u></font></font></a><font size="3" style="font-size: 12pt">.</font><img src="DL1_BLAST%20-%20Activity_html_cb47da68.png" name="image8.png" align="left" hspace="12" vspace="12" width="48" height="49" border="0"/>
+</p>
+<p style="margin-left: -0.19in; line-height: 100%; margin-bottom: 0in; background: #ffffff">
+<font size="3" style="font-size: 12pt">Find query sequences here: </font>
+</p>
+<p style="line-height: 100%; margin-left: -0.19in; margin-bottom: 0in; background: #ffffff">
+<font size="3" style="font-size: 12pt"><b>Appendix</b></font><font size="3" style="font-size: 12pt">:
+</font><font color="#1155cc"><font size="3" style="font-size: 12pt"><u><span style="background: #c0c0c0">PartI_ BLAST_QuerySequences</span></u></font></font></p>
+<p style="margin-left: -0.19in; margin-bottom: 0in; line-height: 100%; background: #ffffff">
+<br/>
+
+</p>
+<table width="612" cellpadding="7" cellspacing="0">
+	<col width="87"/>
+	<col width="260"/>
+	<col width="221"/>
+	<tr valign="top">
+		<td width="87" height="14" style="border: 1.00pt solid #000000; padding: 0.07in"><p align="center" style="widows: 0; orphans: 0">
+			<font color="#24292e"><b>Unknown Sequence ID</b></font></p>
+		</td>
+		<td width="260" style="border: 1.00pt solid #000000; padding: 0.07in"><p align="center" style="widows: 0; orphans: 0">
+			<font color="#24292e"><b>Organism</b></font></p>
+		</td>
+		<td width="221" style="border: 1.00pt solid #000000; padding: 0.07in"><p align="center" style="widows: 0; orphans: 0">
+			<font color="#24292e"><b>Notes</b></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="87" style="border: 1.00pt solid #000000; padding: 0.07in"><p align="center" style="widows: 0; orphans: 0">
+			<font color="#24292e">Query_1</font></p>
+		</td>
+		<td width="260" style="border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="221" style="border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="87" style="border: 1.00pt solid #000000; padding: 0.07in"><p align="center" style="widows: 0; orphans: 0">
+			<font color="#24292e">Query_2</font></p>
+		</td>
+		<td width="260" style="border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="221" style="border: 1.00pt solid #000000; padding: 0.07in"><p align="center" style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="87" style="border: 1.00pt solid #000000; padding: 0.07in"><p align="center" style="widows: 0; orphans: 0">
+			<font color="#24292e">Query_3</font></p>
+		</td>
+		<td width="260" style="border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="221" style="border: 1.00pt solid #000000; padding: 0.07in"><p align="center" style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+</table>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<br/>
+<br/>
+
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<a href="#_Instructor_Sheet"><font color="#1155cc"><u>Instructor
+Sheet</u></font></a></p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<br/>
+<br/>
+
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<br/>
+<br/>
+
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<br/>
+<br/>
+
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<font size="4" style="font-size: 14pt"><b>Part II: Genome Annotation
+BLAST Exercise</b></font></p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<font size="3" style="font-size: 12pt"><b>Task: </b></font><font size="3" style="font-size: 12pt">Your
+team recently sequenced a virus from a cruise ship outbreak of
+gastrointestinal illness. Answer the following questions about the
+identified virus using the provided sequence and following
+instructions for annotating genomes using NCBI ORF Finder and BLAST.</font><img src="DL1_BLAST%20-%20Activity_html_cb47da68.png" name="Image2" align="left" hspace="12" vspace="12" width="48" height="49" border="0"/>
+</p>
+<p style="margin-left: -0.19in; line-height: 100%; margin-bottom: 0in; background: #ffffff">
+<font size="3" style="font-size: 12pt">Find query sequence here: </font>
+</p>
+<p style="line-height: 100%; margin-left: -0.19in; margin-bottom: 0in; background: #ffffff">
+<font size="3" style="font-size: 12pt"><b>Appendix</b></font><font size="3" style="font-size: 12pt">:
+</font><a href="#_PartII__BLAST_GenomeQuerySequences"><font color="#1155cc"><span style="background: #c0c0c0">PartII_ BLAST_GenomeQuerySequences</span></font></a></p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<img src="DL1_BLAST%20-%20Activity_html_4c9094bd.png" name="image3.png" align="left" hspace="12" vspace="12" width="37" height="37" border="0"/>
+<br/>
+<br/>
+
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<font size="3" style="font-size: 12pt">What was the viral species
+sequenced from the outbreak? (Hint: use the same strategy used in
+Part I)</font></p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<img src="DL1_BLAST%20-%20Activity_html_4c9094bd.png" name="Image3" align="left" hspace="12" vspace="12" width="37" height="37" border="0"/>
+<br/>
+<br/>
+
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<font size="3" style="font-size: 12pt">How many non-overlapping open
+reading frames (ORFs) &gt; 600 nt does the genome sequence have? (See
+</font><a href="#bookmark=id.z5zs5v4kdr8w"><font color="#1155cc"><font size="3" style="font-size: 12pt"><u>NCBI
+ORF Finder instructions</u></font></font></a><font size="3" style="font-size: 12pt">)</font></p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<br/>
+<br/>
+
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<img src="DL1_BLAST%20-%20Activity_html_4c9094bd.png" name="Image4" align="left" hspace="12" vspace="12" width="37" height="37" border="0"/>
+<br/>
+<br/>
+
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<font size="3" style="font-size: 12pt">Do these ORFs seem complete?
+(Hint: use BLAST function found in the </font><a href="#bookmark=id.osdhmy8pdzx4"><font color="#1155cc"><font size="3" style="font-size: 12pt"><u>ORF
+Finder Results</u></font></font></a><font size="3" style="font-size: 12pt">
+page to figure out the size of known protein sequences)</font></p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<br/>
+<br/>
+
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<br/>
+<br/>
+
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<font size="3" style="font-size: 12pt">Your team is interested in
+learning more about the viral group represented by the sequenced
+virus. Try the </font><a href="#bookmark=id.c8tgw2s3wehe"><font color="#1155cc"><font size="3" style="font-size: 12pt"><u>NCBI
+Virus</u></font></font></a><font size="3" style="font-size: 12pt">
+database to answer these questions:</font></p>
+<ul>
+	<li><p style="margin-bottom: 0.17in; background: #ffffff"><font size="3" style="font-size: 12pt">Which
+	geographic region has the most sequences? </font>
+	</p></li>
+</ul>
+<p style="margin-left: 0.5in; margin-bottom: 0.17in; background: #ffffff">
+<br/>
+<br/>
+
+</p>
+<ul>
+	<li><p style="margin-bottom: 0.17in; background: #ffffff"><font size="3" style="font-size: 12pt">Have
+	related viruses been identified in non-human animals? If so, can you
+	list five species?</font></p></li>
+</ul>
+<p style="margin-left: 0.5in; margin-bottom: 0.17in; background: #ffffff">
+<br/>
+<br/>
+
+</p>
+<ul>
+	<li><p style="margin-bottom: 0.17in; background: #ffffff"><font size="3" style="font-size: 12pt">Can
+	you think of another question?</font></p></li>
+</ul>
+<p style="margin-bottom: 0.17in; background: #ffffff"><br/>
+<br/>
+
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff"><a name="bookmark=id.kekpuy9kfb36"></a>
+<font size="4" style="font-size: 14pt"><b>Instructions for Running
+BLAST</b></font><font size="3" style="font-size: 12pt">:</font></p>
+<ol>
+	<li><p style="margin-bottom: 0.17in; background: #ffffff"><font color="#24292e"><font size="3" style="font-size: 12pt">Navigate
+	to NCBI’s BLAST online tool found </font></font><a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi"><font color="#1155cc"><font size="3" style="font-size: 12pt"><u>here</u></font></font></a><font color="#24292e"><font size="3" style="font-size: 12pt">
+	and select the </font></font><font color="#24292e"><font size="3" style="font-size: 12pt"><b>Nucleotide
+	BLAST </b></font></font><font color="#24292e"><font size="3" style="font-size: 12pt">option.</font></font></p></li>
+</ol>
+<p align="center" style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<img src="DL1_BLAST%20-%20Activity_html_fe406c2c.png" name="image16.png" align="bottom" width="574" height="287" border="0"/>
+</p>
+<ol start="2">
+	<li><p style="margin-bottom: 0.17in; background: #ffffff"><font color="#24292e"><font size="3" style="font-size: 12pt">Copy
+	the </font></font><a href="#_APPENDIX"><font color="#1155cc"><font size="3" style="font-size: 12pt"><u>query
+	sequences</u></font></font></a><font color="#24292e"><font size="3" style="font-size: 12pt">
+	(make sure to retain the FASTA format) and paste in the box with the
+	header </font></font><font color="#24292e"><font size="3" style="font-size: 12pt"><b>&quot;Enter
+	accession number(s), gi(s), or FASTA sequence(s)&quot;</b></font></font><font color="#24292e"><font size="3" style="font-size: 12pt">.</font></font></p></li>
+</ol>
+<p align="center" style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<img src="DL1_BLAST%20-%20Activity_html_125651ae.png" name="image2.png" align="bottom" width="597" height="229" border="0"/>
+</p>
+<ol start="3">
+	<li><p style="margin-bottom: 0.17in; background: #ffffff"><font color="#24292e"><font size="3" style="font-size: 12pt">Scroll
+	down and click the </font></font><font color="#24292e"><font size="3" style="font-size: 12pt"><b>BLAST</b></font></font><font color="#24292e"><font size="3" style="font-size: 12pt">
+	</font></font><font color="#24292e"><font size="3" style="font-size: 12pt"><b>button</b></font></font><font color="#24292e"><font size="3" style="font-size: 12pt">
+	on the bottom, left of the window. You will have to wait a few
+	moments for the web server to run BLAST on your query sequences. </font></font>
+	</p></li>
+</ol>
+<p align="center" style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<img src="DL1_BLAST%20-%20Activity_html_42ec7f6.png" name="image12.png" align="bottom" width="574" height="431" border="0"/>
+</p>
+<ol start="4">
+	<li><p style="margin-bottom: 0.17in; background: #ffffff"><font color="#24292e"><font size="3" style="font-size: 12pt">Explore
+	results once the </font></font><a href="#bookmark=id.alf9e2sq8d8x"><font color="#1155cc"><font size="3" style="font-size: 12pt"><u>BLAST
+	Results</u></font></font></a><font color="#24292e"><font size="3" style="font-size: 12pt">
+	page appears.</font></font></p></li>
+</ol>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<br/>
+<br/>
+
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<br/>
+<br/>
+
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<br/>
+<br/>
+
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<br/>
+<br/>
+
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<br/>
+<br/>
+
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<br/>
+<br/>
+
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<br/>
+<br/>
+
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<br/>
+<br/>
+
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<br/>
+<br/>
+
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<br/>
+<br/>
+
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff"><a name="bookmark=id.alf9e2sq8d8x"></a>
+<font color="#24292e"><font size="3" style="font-size: 12pt"><b>BLAST
+Results</b></font></font></p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<font color="#24292e"><font size="3" style="font-size: 12pt">The
+results page includes a search summary and tabs to explore results
+using a description table, graphic summary, and/or alignments that
+can help determine the quality or accuracy of a given match.</font></font><font color="#24292e"><font size="3" style="font-size: 12pt">
+The </font></font><font color="#24292e"><font size="3" style="font-size: 12pt"><u>results
+are displayed for one query sequence at a time</u></font></font><font color="#24292e"><font size="3" style="font-size: 12pt">.
+You can view the results for a different query sequence by selecting
+it from the </font></font><font color="#24292e"><font size="3" style="font-size: 12pt"><b>Query
+dropdown menu.</b></font></font></p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<img src="DL1_BLAST%20-%20Activity_html_148f49f4.png" name="image7.png" align="bottom" width="624" height="453" border="0"/>
+</p>
+<p align="center" style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<font color="#24292e"><font size="3" style="font-size: 12pt">Click
+</font></font><a href="https://chanzuckerberg.zendesk.com/hc/en-us/articles/360050963352-A-Guide-to-BLAST#interpreting-results"><font color="#1155cc"><font size="3" style="font-size: 12pt"><u>here</u></font></font></a><font color="#24292e"><font size="3" style="font-size: 12pt">
+for a CZ ID’s detailed description of BLAST result tabs.</font></font></p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<font color="#24292e"><font size="3" style="font-size: 12pt">By
+default, the results page will display the </font></font><font color="#24292e"><font size="3" style="font-size: 12pt"><b>Descriptions
+tab</b></font></font><font color="#24292e"><font size="3" style="font-size: 12pt">
+which includes a table listing all the sequences sharing similarity
+with the query and metrics to evaluate the matches. The table
+includes the following information:</font></font></p>
+<ol>
+	<li><p style="margin-bottom: 0in; background: #ffffff"><font color="#24292e"><font size="3" style="font-size: 12pt"><b>Description:
+	</b></font></font><font color="#24292e"><font size="3" style="font-size: 12pt">Species
+	name of the organism represented by the subject sequence (match in
+	the database).</font></font></p></li>
+	<li><p style="margin-bottom: 0in; background: #ffffff"><font color="#24292e"><font size="3" style="font-size: 12pt"><b>Scientific
+	Name:</b></font></font><font color="#24292e"><font size="3" style="font-size: 12pt">
+	Scientific name of the organism represented by the subject sequence
+	(match in the database). Clicking on the species name link will take
+	you to the alignment.</font></font></p></li>
+	<li><p style="margin-bottom: 0in; background: #ffffff"><font color="#24292e"><font size="3" style="font-size: 12pt"><b>Max
+	Score: </b></font></font><font color="#24292e"><font size="3" style="font-size: 12pt">Highest
+	bit score calculated from matches and mismatches found in local
+	alignments. </font></font><font color="#24292e"><font size="3" style="font-size: 12pt"><u>The
+	higher the max score, the better the alignment</u></font></font><font color="#24292e"><font size="3" style="font-size: 12pt">.</font></font></p></li>
+	<li><p style="margin-bottom: 0in; background: #ffffff"><font color="#24292e"><font size="3" style="font-size: 12pt"><b>Total
+	Score:</b></font></font><font color="#24292e"><font size="3" style="font-size: 12pt">
+	Sum of alignment scores for all of the sequence segments or local
+	alignments. </font></font><font color="#24292e"><font size="3" style="font-size: 12pt"><u>The
+	higher the score, the better the alignment</u></font></font><font color="#24292e"><font size="3" style="font-size: 12pt">.
+	When max and total scores are the same, there is one global
+	alignment between the query and its match in the database. This
+	means that the sequences can be aligned without long insertions or
+	deletions.</font></font></p></li>
+	<li><p style="margin-bottom: 0in; background: #ffffff"><font color="#24292e"><font size="3" style="font-size: 12pt"><b>Query
+	Cover:</b></font></font><font color="#24292e"><font size="3" style="font-size: 12pt">
+	Percent of the query sequence length that is included in alignments
+	against the subject sequence.</font></font></p></li>
+	<li><p style="margin-bottom: 0in; background: #ffffff"><font color="#24292e"><font size="3" style="font-size: 12pt"><b>E
+	value:</b></font></font><font color="#24292e"><font size="3" style="font-size: 12pt">
+	Indicates the number of hits or alignments that are expected to be
+	seen by random chance with the same score or better. </font></font><font color="#24292e"><font size="3" style="font-size: 12pt"><u>The
+	lower the E-value, the more significant the alignment (the closer to
+	0, the better)</u></font></font><font color="#24292e"><font size="3" style="font-size: 12pt">.
+	E-value is the default metric used to sort the Descriptions table
+	and normally gives the same sorting order as Max Score.</font></font></p></li>
+	<li><p style="margin-bottom: 0in; background: #ffffff"><font color="#24292e"><font size="3" style="font-size: 12pt"><b>Per.
+	Ident:</b></font></font><font color="#24292e"><font size="3" style="font-size: 12pt">
+	Percent of nucleotides or amino acids that are identical between the
+	aligned query and the subject sequence. A query sequence can share
+	low percent identity with a sequence and still be a significant
+	match. It is essential to take the E-value into account and look for
+	similarity between conserved regions (this will be more evident at
+	the amino acid level)</font></font></p></li>
+	<li><p style="margin-bottom: 0in; background: #ffffff"><font color="#24292e"><font size="3" style="font-size: 12pt"><b>Accession:
+	</b></font></font><font color="#24292e"><font size="3" style="font-size: 12pt">Unique
+	accession ID assigned to the reference sequence in the NCBI
+	database.</font></font></p></li>
+</ol>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<br/>
+<br/>
+
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<font color="#24292e"><font size="3" style="font-size: 12pt">Identify
+the top scoring organism(s) for the first query sequence. Then,
+navigate to the results for the next query sequence using the </font></font><font color="#24292e"><font size="3" style="font-size: 12pt"><b>Query</b></font></font><font color="#24292e"><font size="3" style="font-size: 12pt">
+</font></font><font color="#24292e"><font size="3" style="font-size: 12pt"><b>dropdown
+menu</b></font></font><font color="#24292e"><font size="3" style="font-size: 12pt">.
+</font></font>
+</p>
+<p style="margin-left: 0.31in; margin-bottom: 0.17in; text-indent: 0.19in; background: #ffffff">
+<font color="#24292e"><font size="3" style="font-size: 12pt"><b>Interpretation
+Note</b></font></font><font color="#24292e"><font size="3" style="font-size: 12pt">:
+</font></font>
+</p>
+<ul>
+	<li><p style="margin-bottom: 0.17in; background: #ffffff"><font color="#24292e"><font size="3" style="font-size: 12pt">It
+	is possible that a single sequence will map to multiple organisms.
+	If there’s not a single species resulting in clear top alignment
+	metrics, you can’t make a species call.</font></font></p></li>
+</ul>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<font color="#24292e"><font size="3" style="font-size: 12pt">Explore
+the BLAST results for each sequence. Write down the name of the
+organism identified by BLAST. If the metrics do not support a
+specific species, write &quot;unassigned&quot;.</font></font></p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<br/>
+<br/>
+
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<br/>
+<br/>
+
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff; page-break-before: always"><a name="bookmark=id.z5zs5v4kdr8w"></a>
+<font color="#24292e"><font size="4" style="font-size: 14pt"><b>NCBI
+ORF Finder</b></font></font></p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<font color="#24292e"><font size="3" style="font-size: 12pt">The NCBI
+Open Reading Frame (ORF) Finder searches for ORFs in sequences. An
+ORF is a stretch of DNA between start and stop codons. We identify
+ORFs to predict genes (or coding sequences) that are translated into
+protein. Based on known genomes, we can use ORF information to
+evaluate if we have the expected complete coding sequence of a given
+genome. Open reading frames shorter than expected, due to early stop
+codons, may point to sequencing errors.</font></font></p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<font color="#efefef">
+  <img src="DL1_BLAST%20-%20Activity_html_5df5fc99.png" name="image14.png" align="bottom" width="621" height="114" border="1"/>
+</font>
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<font color="#24292e"><font size="2" style="font-size: 10pt"><i>Open
+reading frames detected in a Rhinovirus A genome sequence using NCBI
+ORF Finder. Rhinovirus genomes are known to encode a single
+polyprotein. </i></font></font>
+</p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<font color="#24292e"><font size="3" style="font-size: 12pt"><b>Instructions</b></font></font></p>
+<p style="margin-left: -0.19in; margin-bottom: 0.17in; background: #ffffff">
+<font color="#24292e"><font size="3" style="font-size: 12pt">To
+detect ORFs in the sequenced genome:</font></font></p>
+<ol>
+	<li><p style="margin-bottom: 0in; background: #ffffff"><font color="#24292e"><font size="3" style="font-size: 12pt">Navigate
+	to </font></font><a href="https://www.ncbi.nlm.nih.gov/orffinder/"><font color="#1155cc"><font size="3" style="font-size: 12pt"><u>NCBI
+	ORF Finder</u></font></font></a></p></li>
+	<li><p style="margin-bottom: 0.17in; background: #ffffff"><font color="#24292e"><font size="3" style="font-size: 12pt">Paste
+	the sequence in the provided box.</font></font></p></li>
+</ol>
+<p style="margin-left: 0.5in; margin-bottom: 0.17in; background: #ffffff">
+<img src="DL1_BLAST%20-%20Activity_html_a7dfef69.png" name="image15.png" align="bottom" width="624" height="296" border="0"/>
+</p>
+<ol start="3">
+	<li><p style="margin-bottom: 0.17in; background: #ffffff"><font color="#24292e"><font size="3" style="font-size: 12pt">Scroll
+	down and and adjust the search parameters to focus on major
+	non-overlapping ORFs (&gt; 600 nt).</font></font></p></li>
+</ol>
+<p style="margin-left: 0.5in; margin-bottom: 0.17in; background: #ffffff">
+<img src="DL1_BLAST%20-%20Activity_html_8cb03dd0.png" name="image10.png" align="bottom" width="579" height="474" border="0"/>
+</p>
+<ol start="4">
+	<li><p style="margin-bottom: 0.17in; background: #ffffff"><font color="#24292e"><font size="3" style="font-size: 12pt">Click
+	the “Submit” button to start the search.</font></font></p></li>
+</ol>
+<p style="margin-bottom: 0.17in; background: #ffffff"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.17in; background: #ffffff"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.17in; background: #ffffff"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.17in; background: #ffffff"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.17in; background: #ffffff"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.17in; background: #ffffff"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.17in; background: #ffffff"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0in"><a name="bookmark=id.osdhmy8pdzx4"></a><br/>
+
+</p>
+<p style="margin-bottom: 0.17in; background: #ffffff; page-break-before: always">
+<font color="#24292e"><font size="3" style="font-size: 12pt"><b>ORF
+Finder Results</b></font></font></p>
+<p style="margin-bottom: 0.17in; background: #ffffff"><font color="#24292e"><font size="3" style="font-size: 12pt">The
+results page includes a schematic of identified ORFs, ORF sequence
+information, and buttons to BLAST predicted protein sequences.</font></font></p>
+<p style="margin-bottom: 0.17in; background: #ffffff"><img src="DL1_BLAST%20-%20Activity_html_3837a70a.png" name="image6.png" align="bottom" width="624" height="317" border="0"/>
+</p>
+<p style="margin-bottom: 0.17in; background: #ffffff"><font color="#24292e"><font size="3" style="font-size: 12pt">You
+can search protein sequence databases to find more information about
+detected ORFs. For the purposes of this exercise, </font></font><font color="#24292e"><font size="3" style="font-size: 12pt"><u>change
+the BLAST Database to “Reference proteins (refseq_proteins)”</u></font></font><font color="#24292e"><font size="3" style="font-size: 12pt">.
+When you click the BLAST button, you will be directed to the BLASTp
+webpage given that you are now searching translated sequences against
+the protein database. Click the BLAST button to begin the search.</font></font></p>
+<p style="margin-bottom: 0.17in; background: #ffffff"><img src="DL1_BLAST%20-%20Activity_html_f9d0008d.png" name="image4.png" align="bottom" width="556" height="270" border="0"/>
+</p>
+<p style="margin-bottom: 0.17in; background: #ffffff"><font color="#24292e"><font size="3" style="font-size: 12pt">Look
+at the </font></font><font color="#24292e"><font size="3" style="font-size: 12pt"><b>Description</b></font></font><font color="#24292e"><font size="3" style="font-size: 12pt">
+and </font></font><font color="#24292e"><font size="3" style="font-size: 12pt"><b>Alignment</b></font></font><font color="#24292e"><font size="3" style="font-size: 12pt">
+tabs of the BLAST results page to see how well the predicted ORF
+aligns with known protein sequences.</font></font></p>
+<p style="margin-bottom: 0.17in; background: #ffffff"><img src="DL1_BLAST%20-%20Activity_html_3ad0e702.png" name="image17.png" align="bottom" width="624" height="173" border="0"/>
+</p>
+<p style="margin-bottom: 0.17in; background: #ffffff"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.17in; background: #ffffff"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.17in; background: #ffffff"><a name="bookmark=id.c8tgw2s3wehe"></a>
+<font color="#24292e"><font size="4" style="font-size: 14pt"><b>NCBI
+Virus</b></font></font></p>
+<p style="margin-bottom: 0.17in; background: #ffffff"><a href="https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/"><font color="#1155cc"><font size="3" style="font-size: 12pt"><u>NCBI
+Virus</u></font></font></a><font color="#24292e"><font size="3" style="font-size: 12pt">
+is a database for the retrieval, display, and analysis of a curated
+collection of virus sequences and large sequence datasets. Notably,
+the database contains standardized metadata so users can easily find
+sequences of interest. </font></font>
+</p>
+<p style="margin-bottom: 0.17in; background: #ffffff"><img src="DL1_BLAST%20-%20Activity_html_c047fd7c.png" name="image13.png" align="bottom" width="624" height="297" border="0"/>
+</p>
+<p style="margin-bottom: 0.17in; background: #ffffff"><a href="https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/"><font color="#1155cc"><font size="2" style="font-size: 10pt"><i><u>NCBI
+virus</u></i></font></font></a><font color="#24292e"><font size="2" style="font-size: 10pt"><i>
+home page</i></font></font></p>
+<p style="margin-bottom: 0.17in; background: #ffffff"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.17in; background: #ffffff"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.17in; background: #ffffff"><font color="#24292e"><font size="3" style="font-size: 12pt">In
+NCBI Virus you can:</font></font></p>
+<ul>
+	<li><p style="margin-bottom: 0.17in; background: #ffffff"><font color="#24292e"><font size="3" style="font-size: 12pt">Find
+	sequences similar to your query by running BLAST against the curated
+	database </font></font>
+	</p></li>
+</ul>
+<p style="margin-left: 0.5in; margin-bottom: 0.17in; background: #ffffff">
+<img src="DL1_BLAST%20-%20Activity_html_67083700.png" name="image5.png" align="bottom" width="624" height="297" border="0"/>
+</p>
+<p style="margin-left: 0.5in; margin-bottom: 0.17in; background: #ffffff">
+<font color="#24292e"><font size="2" style="font-size: 10pt"><i>To
+find similar sequences to your query, paste the query in the provided
+box and click “Start search”.</i></font></font></p>
+<ul>
+	<li><p style="margin-bottom: 0.17in; background: #ffffff"><font color="#24292e"><font size="3" style="font-size: 12pt">Search
+	for viral species or groups of interest using virus name or taxID</font></font></p></li>
+</ul>
+<p style="margin-left: 0.5in; margin-bottom: 0.17in; background: #ffffff">
+<img src="DL1_BLAST%20-%20Activity_html_965af7eb.png" name="image11.png" align="bottom" width="624" height="276" border="0"/>
+</p>
+<p style="margin-left: 0.5in; margin-bottom: 0.17in; background: #ffffff">
+<font color="#24292e"><font size="2" style="font-size: 10pt"><i>Type
+the virus name or taxID for the group of interest in the provided
+box.</i></font></font></p>
+<p style="margin-left: 0.5in; margin-bottom: 0.17in; background: #ffffff">
+<br/>
+<br/>
+
+</p>
+<ul>
+	<li><p style="margin-bottom: 0.17in; background: #ffffff"><font color="#24292e"><font size="3" style="font-size: 12pt">Refine
+	results by filtering based on metadata of interest.</font></font></p></li>
+</ul>
+<p style="margin-left: 0.5in; margin-bottom: 0.17in; background: #ffffff">
+<img src="DL1_BLAST%20-%20Activity_html_a3f69b1c.png" name="image9.png" align="bottom" width="624" height="293" border="0"/>
+</p>
+<p style="margin-left: 0.5in; margin-bottom: 0.17in; background: #ffffff">
+<font color="#24292e"><font size="2" style="font-size: 10pt"><i>Use
+the filter menu on the left hand side of the Search Results page to
+refine results. (e.g., how many Rhinovirus A genomes from South
+America are available?)</i></font></font></p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<h2 style="margin-top: 0in; page-break-before: always"><a name="BLAST_PartI_QuerySequences"></a><a name="_APPENDIX"></a>
+APPENDIX</h2>
+<h2>PartI_ BLAST_QuerySequences</h2>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">&gt;Query_1</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">ATTTCCTTTTATGTTTTGGGTTTATCGAGTTTTTAGTGTTAGTAAATGAGTGTTTGTGTA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TTTGTTAAGTGTTGTGATGAAGTTTCCAGTATTATTTTTTTGTTTTTTGTATGAAGTGGA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">AGATCTAGAAATTGTTTACATTGATTGTTTTTTTACTATTTTTTGTTGTTGCTTTTTAGT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">ATGATTTTTTAGATTTAGTTGGGAGTATATTTGATGCCACATATCATTAACTTCTGTAGC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TACTTTAGTTGTGGCATGTTTTTGTAGTAATATTGAAGTGTGCTTTTTTATATATTGATA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TTATTTTGTTTGATCTAGTTTTAGTATAGTTTATTTTGCATTAGTGTCTAGTATAGGGGA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TTTAAAGGGTTATTTTTTTTGAGTTTTTTGTTTTTTGTTATTGGTTACACCTGTATCTTT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TCCTTTATTTTATAAGTTAAGTGTTAGTATTGGTATTTTATACTCGTCTATTTACTTGTT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GTTAGTATGAAGAATGTATAGATTTTCTGAACAACTCTTTTTGTATAAGTTAGCTAGGGA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">ATATTTTTATGTTAACGTTTTTAAAAATTGGGTGTAAAATTGGTAGAGTTGAGTTTTGTG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TGATGTAGTTTATTGAAAATACTTGTTTTACACACAAGTGAACTCTTGTTGGGAGCTTTA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CTATTTTGTTTTATAAACGAAATAGTTTAATTGAAAAATATTGGGTTTGCATCTCAAAGA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TGGATATATGTTCTTTTGTTAATTAAATGTGGTTTTAGTTTAATGAAAATAGTGATTTGT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CTAGTCATAGATAGTAGTTTAATAACTAGGCCACTTAGTAGTTTAGTTAAAATGATTATT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TTTGGGTTTATTAGTGGTTTTATGGGTTTGTTAATTTGTTTATTAATTATAGCTTTTTTT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">ATATTAGGGGAACGTAAGATTTTGGGTTATTCTCAATTTCGTAAGGGTCCTAATAAGGTT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GGTATTGTAGGATTGTTACAAAGGTTTTCTGATTTATTAAAGTTGATAATTAAGTTTAAG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">AATTGTGGATTTCAGAGTCGTAGTTGAGTTGGTTTGTTTGGGGTTATGTTGTTGGT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">&nbsp;</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">&gt;Query_2</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TCTGGTCGCAAGCGCTTCCCTTTCAACAATTTCACGTGCTTTTTAACTCTCTTTTCAAAG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TGCTTTTCATCTTTCGATCACTCTACTTGTGCGCTATCGGTCTCCGGCCAGTATTTAGCT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TTAGATGAAATTTACCACCCATTTAGAGCTGCATTCCCAAACAACTCGACTCGTCGAAGG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">AGCTTCACACGGGCGCGGACACCCCATCCCAGACGGGATTCTCACCCTCTCTGACGGCCC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GTTCCAGGGCACTTAGACGGGGGCCGCACCCAAAGCATCCTCTGCAAATTACAATGCGGA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CCCCGAAGGAGCCAGCTTTCAAATTTGAGCTCTTGCCGCTTCACTCGCCGTTACTGAGGC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">AATCCCGGTTGGTTTCTTTTCCTCCGCTTATTGATATGCTTAAGTTCAGCGGGTATCCC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">&nbsp;</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">&gt;Query_3</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CTCACAGCAAAGAAAAACTTTTTAAACCTTTATTAAAGCAAGTGCGAGTAATTACGCGCA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">ATCCATTGATCAGAAGGAACTTCATACACTGGCGTGTTTGGGTCTTGTAAGCTATTAGCA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">AGAGTAAATGGCATACGCCCGGAATCTGTTGTGGGAAATGGAGCAGGTTTCTCGGGGTTA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TGACGGCGAGATCGCTTGCGGCGCTTAACTAGAAACTGCATGCTATAGTGCAAGTGAAAA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">ATGGCATACTGGTTTAAATTAGATTGGGGAACTGTGTGGGCTCCCGGACTGGGAGGTCCG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GGCTGTGATCTAAGTTTAACAAATATCATCGGTGGCGGAGTCATAACTCCCCAACCACCT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">AAAAGAGGATACTGAGCAAAAAAATGGCATTCTGTATTAGGAATTTTAGTCCATATTTGA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CAATCATATGATAAAGGATTTGGGTTCCAAACAGCACCAGGAAACAAGGGAAACACAGGT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TCTTGATACAATTTTGGGCTGTACACTGTATCAGTACCACCAGATGTCACTCTAGTATGT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CCAGGAACAAAGAATGTATGGCCCACATGTGGAGCAGCCAAGTCACCATCTATCTGAACA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">ACTCTAGATGGATTACTAACTCTGCCATCACGGTCCTCTTCATGCTTATCGTAAGATTCT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TCATGTTTTCTTCTAGTGTATGCAACCCCTCCCAAATAATTATGTACAGAATAATCAGTT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TTGTTTGCTAACCATTCTTCTGTGCGAACAGACCATGGCTGATGAACTAATGGAGCTACA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CTGTATCTATCACTTGTAGCAGGATTTCCAATAGCAACAGGATCCCTAAAAGTTGTGTTT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CTAATTTGTGTGTCTGTTGGCATCATGAGAGCTGGTCCTGGAACATAATTCAGTGGAAGC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CTGCCAACATCCATGCCTTCAGGACGTTTCCAAATGGCAGTGCCATCACTGTCAACACCT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GTCATAATAGCTAATCTGCTGGAAGGAATTGGATTATGTCTTGCATACAAAGTTTGGTTT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GGAGTTGATAGCTTTCTCCAAGGTAGATCATCTGGAAATTCATAATGATGAGACCAGTGA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TCTCCTGTTCCTAAACACTCTGCATCATGGTGTTCTAGAAAAAATAGTTCTGTTTTATGA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TCACTGATGGCCACAATGCTGTTCTGTTGATCAATTTCTCTACCTCTTGTAATGTATCCA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TACTGAGGCAACACATAATTTTCCCCTGGTAAATGACCTGGTAAAGTATCTTGATTATGA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CCCAATACATATGGATAGTCATAGCTATCATCAGCAAATACAGTTATGCCACCACTCGCA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GAATCAGAGACAGTGGTGCCTGTCTGATTAGTTGCAACATCCTTGATTACAATAGCAGAG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">ATTGCAATAGTTAGGCTTTTAGGCTTGATTTCATCATATTCATCTAGTAATTGTTGAAAA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TCTCTGGGAGTAAAATGAGCTGATAAAGCATTAACATCAATGTAAGAATAAGGGGTTTTC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">ATTCCCATTACAGGCTGCGAAGAATCTACATGACTACCTTGCTTATACACAGGCACATAA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CCTCCTCTATCAGCTAACATAGAAGTTCTAGTATGAGAAGTAATAACTACAGAATCAGAG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">AAACTAGTCCCACCTATCCACTGAGCTTTAACTTTAACTCCACCTCCTCCTCCAGCTGGT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TCCACGGACATTGTATTGGTATCAGACTGCACAGGCAAGGTTGGTTCAGACTCCTCAGGG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GTACCAATCCGCGCCTTCTTGGCTGAGGGCTCTCCTGCGGAATAAGCCGGTTGTTGGTCC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GAAGAAGGAGGAGCGGGCGGTAGGACCTGAGAAAGTTGAACATCAGCAATATCACCAACA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GTTTCCTTAGCCTGCCATAAACCTCTAATAGCATTGCCAACTACTACATCTGCCAAGTGA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GTAATGTCCCCCCGGCGCTCTTTTTCTTCTAACTCTTTGTTCATTAATCTGTCAGCGCCG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TGACCATGTAAATAAGGAATGTCCCCGTGCTCAATCATCTCTGCGTACCGTTCATCATGA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TGTTTTGCTGCCTCATCCACTGGTCCCTGAGGGGGACCACTATCCAGAGGATTACCAGGA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CCAACATAATTATACCCGGGGAGAGTAAGCCCGCCTCCGGCAGGCCGCTCAAAGTCTGGT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TCAACAAGGGAATCAGCTCCTTCATCGCGGCTGTCACTAACAAGGTTGACTCCGACATCT</font></p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<h2><a name="_Ref239425499"></a><a name="_PartII__BLAST_GenomeQuerySequences"></a>
+PartII_ BLAST_GenomeQuerySequences</h2>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">&gt;Genome</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GTGAATGATGATGGCGTCTAACGACGTCACCCCCTGTGGGAATGAAATTCCCAAGACTGAAATCAACAAC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CAGTCTTCCGGTCGCATAGACCGACAGGCTGAAACAAGAACTACCACCGGCACCCAAGATGGTGCCCCCC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CAGCGCCAGCTGGGGGCTTCTTCACCCGCCTCAAGGATCGGGTGAAGCAACCTAAGGCCCCCCCACCCCA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">ACCCCCTGGCCATGAGACCCAGCGTCAGGAGGAACCGGTCGTCACTTACGAGGTGAGGACCGAGGCCGTC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CGGGGCGTCCCTGACGTCAAGGCGGCGGATTTGCCTCCAGGCTACGTGGTCCCCCCCCATCTGCCACCAA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TAAAACTGAGGGAGTCCCAAGATGCCCCAGAACCCCCGACGGGCGCCATCCTGGAGATGTGGGATGGCGC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GTACTATCATTACGGGGTTTATGTTGAGAAGGGGCTGGTGTTGGGCATACATAACCCTCCTGCTGCCCTC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TCAGAAGCAACGGTTGAGCTGATACCAATATCGCTCTTTTTCCGAGTGGTGCACGTTCCATCCAACCGCC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CGAGCATCCGCGCACTCAAGAGGTTGCAAGGGGAGAAGTACCCGTACAACGCACTCACCCACAACTGTTA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CACCTTTTGTTGTGAGTTGCTTGAGTTGGACGATGACTGGGAGGCGAGACGACTCGTTCAGCGGACGACC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GGGTTTTACGACCCCAATCAACGCTGGAACGATAAACCAGTGCCCTTGGTCGCGGACTCTCGCGTTGTAA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">AAATCGCGGATGCCTTGCTCGCCGCACTGGCGGGCGTGGCGGCCCAACCAATTCGCGACATCGTGAACAA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">ACTGAAGCCTCTCAATGTCCTTCACATCCTGTCATCTTGTGACTGGACCCTCTCTGGAGTTGTGGAGATG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GTCATCCTTCTGGCCGAACTCTTTGGCATATTCTGGACCCCCCCTGATGTCACCCCCTTGATAGTTTCGC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TTCTGGATGATTGGGAAATGCAGGGCCCGGAAGACCTCGCGGCAGAACTGGTCCCCATCGTCCTTGGTGG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GATTGGACTGGTGGTAGGTTTCACACAAGAGAAGGTCGGCCGTCTAGTGACCACCGCGGTCTCAACTCTC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">AAGTCATGCAAGGACCTTGGGCTCTATGGGTTGGAGATCGTGAAGTTAATCGCCAAGTGGTTTTTCCCCC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GTAACACCCCAGGGGAGTCAGACCAGCTCCATAACATCGAGAATGCAGTGCTCGATCTAGAGGCCATAGA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">AAGCAACAACTTGACATCGCTCTTGAAAGACAAGGCTCTGATGACAACTTTCATCCGCACCCTGGACGCA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GAGGAGGAGAAGGCCCGCAAGCTTTCATCAAAAGCAGCCTCACCCGATGTTGTCGGCTCAGTCAATGCCT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TGCTCTCCCGCATAGCAACCACCAGATCCCTGATCCACAAAGCTAAGGAGGAGCTGTCGACCCGGCCCAG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GCCGGTCGTCGTGATGGTATCCGGCCGCCCAGGCATTGGAAAGACCCATCTGGCTAGGACGTTAGCCCAG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">AAGGTCGCCCCACAAATAGGCGGAGACCAGAGGGTTGGACTTGTCCCGCGCGAGGTGGACCATTGGGACG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CCTACCGTGGTGAGAACGTCGTCCTTTGGGATGATTATGGGATGGCCAACATAATAAAGGATGCCCTCAA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GCTGCAGGAGCTGGCAGATACGTGCCCTGTGACCCTGAATTGTGATCGAATTGAGAATAAGGGTAAAATG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TTTGATTCTGATGTCATAATAGTCACCACCAATGCCCCCAACCCAGCCCCCATGGACTATGTCAACATGG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">AGGCAGTGTGTCGCCGCGTGGATTTCCTCATCTACGCCGACTCCCCGAGCGTTGAACAGGCTAAGCGCAA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TAATCCAGGGGACCCTAATGCCTGGAAGCCCCACTTTAAAGGGGACCACAGCCACCTCAATTTACAATTG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GCCCCCCAAGGTGGCTTTGACAAGAGTGGGAACACTCCCCACGGGAAAGGGCCGGTGCAAAAGATCTCGC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TGCCCAGCCTCATAGCGCGGGTTGCGGCGCTAGTGCATGAGAGGAGGGATGACTTCCAGTTGCAGGGGCC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CGTGAAGACTTATAACTTTGATTCCGGCCGCGTCTCAGCGTTCAGGCAGCTGGCCAAGGATAATGGTTAC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">AGCTTGGTGGAGACCATGAAGGTAGGCTCGGCCCTCAAGGACGTCACAGATATGGAAGGGCTGATGCGTG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GGCTTCAGGGCGTTCGCGTCTCTCCCTGCCAGATTGTTTACCGCGGCACCACCTATTCCTTGCACTCTGG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TAGTGATGGGGTCAAGATCAAGCCTATCGTGAGCCAGAGGACACAAGCAGAGTCTGCGGTCCACACCGCC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GTTCTCCGCCTGAAGCGCGCGCGTGTGCGCTATTACATCAGGGCCCTACAGGATATTATTTCCACCCTCC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TCCAGATGGCTGGCTCAGCTTTTGTGATTAACAGAGTGCTGAAAAGAGTCGGAGAATCTCTCACATGGGT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CAAAGGGGAACGCTCACGGTCGCCCCCCCCAGTCAGGACACCCGACTGCAAATGGGTCATTGAACCTGAG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GACTTCGATGACGAGGGGAAGAAGGGCAAGAACAAGAAGGGCCGTGGGCGCAAACACACCGCGTTCTCCA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GCAAGGGGTTGTCAGATGAGGAGTACGACGAATATAAGAAGATTAGAGAAGAGCGAGGTGGGAAGTACTC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CATACAAGAATACCTTGAAGACCGCAACAGGTATGAAGAGGAAGTGACCCTAGCCCAGGCCAACGAAGAG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">AATTTTACCGAAAATGACGCCGCCAAGATCAGGCAGAGAATTTTCCGGCCAACCCGCAGGCAGCGAAAGG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">AAGAACAGAGAAACCTCGGCCTCGTGACTGGATCGGAAATCAGAAAGCGTAAGGCGGATGACTTCAAACC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">ATCGGGAAAGCTCTGGGCGGATGACCAACGGGAGGTCGACTACGGGGAGAAGATCGATTTTGAGGCGCCA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CCTAGCATCTGGTCCCGTATTGTCCCTTTTGGCACGGGTTGGGGTTTCTGGGTATCACCCACACTCCTTA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TAACGGCCACCCACGTGGTCCCCAATTCCAAGGAGTTCTTTGGTGTGCCAGTGGAGCAGATTCACGTCCA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CCGCTCGGGCGAGTTCACGCGCATGAGGTTCTCGAAGCCAGTGCGCACTGACCTCTCTGGTATGGAACTG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GAGGAGGGAGCCCCTGAAGGCACCGTCTGCAGCGTCCTGGTCAAGCGCAACAGTGGGGAGATGCTGCCCC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TTGCCGTGAGAATGGGCTCCCACGCCACCATGAAAGTGCAGGGCAAGGTTATAGGCGGTCAATTGGGGAT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GCTGCTGACGGGGGCCAATGCTAAGAACATGGACCTGGGGACCACCCCCGGTGACTGTGGCTCCCCTTAT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">ATCTATAAGAGGGGCAATGAGTATGTTGTCATCGGAGTCCACGCCGCGGCAGCCCGTGGAGGGAACACGG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TCATCGCTGCAGTCCAGTCTGGGGAAGGGGAGGCTACCCTGGAGGGGGCCAATGATAAGGGGACCTACTG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CGGTGCGCCCATCGTTGCTCCGGGCGGGGCCCCCCAATTAAGCACCAAGACCAAATTCTGGAGATCTTCC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">ACGTGTGACCTACCTCCAGGAACATTTGAGCCCGCCTATCTGGGTGGTCGCGACCCCCGGGTGGAATCAG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GGCCAAGCCTCCAGCAGGTGTTGAGGGAACAGCTGAAACCCTTCACGGCCCCACGTGGCCGCCCCCCAAA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TCCATCCCTTCTCGAACAGGCGACAAAGACCATAGAGAATGTCCTCGACCAGACGTTGGACACGGTGAAG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GAGTGGACTTTCAACCAGGCGTGCGAGAGCCTTGACAAGACCACGTCGAGCGGCTGGCCTCACCACGTGC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">AAAAGAACCAGCATTGGAACGGACAGCACTTTACCGGGCCGCTAGCAGACCAGGCCAGTAAGGCAAACCT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CATGTACGAGCAAGGAAAGAACATGCTCCCAGTCTACACCGCCGCACTAAAAGATGAGCTAGTCAAACCC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TCCAAGGTCTATGGGGAGCCCAAGAAAAAGAGGCTGTTATGGGGTGCCGACTTGGGCACCATGGTGAGGT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GTGCGCGCGCCTGGGGTGGCCTCCTCGATGAGTTGAAGGCAAACTGCGTCAACCTGCCAGTGCGCGTCGG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GATCAACATCAACGAGGATGGCCCGATCATCTTCGAGCGACACGCACGGTACAAACACCACATTGACGCG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GACTACAGTGCCTGGGATTCGACACAGCAACGTGTCGTGATGGAGGCCGCCCTGAAAATCATGAACAAGT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TCTCACCAAGACCGGACCTGGCCGCGGTTGTTGCCCAAGACCTCCTGGCTCCCAGCCAACTGGACGTCGG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TGATTTCGTCGTCCGAGTCAGCGAGGGTCTGCCATCTGGCGTCCCTTGCACCTCTCAACTTAATTCTATC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">ATGCATTGGCTGCTGACCCTGGTGGCGCTTTCAGAAGCGACTGGATTGAACCCCGATGTTGTGCAGGCAA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">ACTCGTGCTTCTCCTTCTACGGCGACGATGAGATAGTCTCGACCGACCTCGACGTCGATGTGGAGGTTTT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CACTCTGAAGCTGAAGGCCATGGGCCTGAGACCCACTCCGCCCGACAAAAGTGATGGCCCGCTAAGGGTT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CACACCAAGCTTGAGGGGCTGTCTTTCCTGCGCAGAACCATCCGTCGCGATCAGGCTGGCTTCTTTGGAG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CCCTCGATGCGGCTTCAATCGAGAGGCAACTCTACTGGACGCGTGGGCCAAACCACCAAGACCCCCAGGA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">AACCATGGTCCCCCACAGTAATAGGTGCATCCAGTTGATGGAATTATTAGGTGAGGCTGCGCTCCACGGG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">AAGAAATTCTACACCAAGATATCCCGCATGGTCATCCAGGAGGCTAGGGAGGGGGGCATGGATTTCTATG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TGCCGCGCTTTGAGCCCATGTTCCGGTGGATGCGCTTTTCTGACCTAGATAGTTGGGAGGGCGATCGCAA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TCTGGCTCCCGAATTTGTAAATGATGATGGCGTCGAGTGACGCCACTCCCCCTTCTGAAGGGGCCACCAA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TCTGGTTCCAGAGGTCAACACTCAGGTGGTCCCGTTAGAGCCCGTTGCGGGTGCAGCTGCCGCCGCACCT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TTTACGGGCCAAAACAACGTTATTGACCCCTGGATATTTCAAAATTTTGTGCAAGCTCCCCAGGGAGAGT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TCACCGTTTCCCCCCGCAATACCCCCGGTGAGATTCTCCTGAGAATACCATTAGGCCCCAATCTCAATCC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TTTTCTTGCACATTTGTCCCGCATGTATAATGCCTGGGTGGGTGGCATGGAGGCCGAGATGATATTGGCT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GGGAATGCGTTTACAGCTGGAAAACTCTTGATTGTGGCCCTCCCCCCTGGTTTTGAAGCGACCCAGTTGA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CCCCGGCCCAAGCCACGGCCTTCCCTCATGTCATCGCCGATGTTAGGACCCTTGAGCCCATTCCAATTCC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">ATTGCCTGACATCAGAAATGTTCTGTTCCATTACAATGGTGATCCCACCCCAACCATACAGATTGTTGTC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">ATGCTGTACACCCCACTCAGGACCAATGGCAACGGGGATGATGTGTTCACAGTGTCTGGCCGTCTGCTCA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CCCGCCCGGCACCGGATTTCTCCTTCTCCTTCCTGGTTCCACCCACGGTGGAGCAGAAAACCCGATCATT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CACCTTGCCCAACCTTGCGGTTTCAGATCTGTCCAATTCCAGATTTCCAGCCCCTGTAAATATTCTGAGG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GCCGATCCCAACACCACTCTGGCCCTCGATTATCAGAATGGGAGGTGCACGCTGGATGGCGCGCTCCAGG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GCACGACCCCCACCAACTCCAGTTTCCTGGGGTACCTAAGGGGCACTGTGGACCGGGTGAATTCCGATCA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GGTCCACGTCCACTTGAGGGAGCCCAACGGTGACCCCTTCCAACTCGGGCTTCCTGGCCCCCAGGGAGTT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CCAGACTACCGGGCCACCCTTGACATCTACGTGGACTGGGAGAACAAGAATCATGGCAATCCATGTGAGG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GCACCCTCAACACAGGCTCGCAGACTGAGTACACCCCTGGTTTAGGCACCCTCACCTTCAATAAGACCTC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GGGTGACACCCCTGAGCAAGGGGACCCTGTCATAATGAGATTGGTCGCCTTCAGATCCAACCTGACAGAT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CAACTGCCTGCCTACAATGGGGCCTTTGGTCAGGGCGAAAATCTGGCCCCCCCGGTTTCTCCTCCAGTGC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CCGGTGAAGTCTTCTTGCAGTTTGGCTCGCGCTACACGAGGCTCGGTGAGCGCGAGCTTGCTGTGCAGTG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TCTCCTCCCAAGTGAGTGGATAACACACTTCTACTCAGAGGCAGCCCCAATCCAGGGCGAGGCCATGCTG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CTCAGGTATGTGCAACCCGATCTGGGCAGGATCCTCTTTGAGGCCAAACTCTACAAGGAGGGTTTTGTCA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CCGTTGCTGGTGGAACCAACCCAGTCACCTTTCCAATTGATGGCACATTCGTCGCCGTCTCCTGGGTTTC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CCGCAACTTTGTTCTCAGCCCCATGGGAAGCGGCCAAGGCCGTAGAAGGGCCGCCCTCGCGGAGTAATGG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CCTCTGCTATCTTGGGTGCAATTGGTGGCGCAGGCCTCGATGTGGTCACCAACTCACTTTCCTCCCTGGC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">ACAAGCTGGGGCCCAGTCCATCCTGCAGCACAATGAGTTCCAGTACAACCAGGCACTGCAACAGAATTCC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TTCCTGCATGATAAAGAGATGTTGGCAGCCCAAGTCCAAGCGACCAAAGACCTGCAGGGCGCTATGCTGG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GCATCAAACACCAAGCCCTGTTAGCTGGTGGATTCTCCAATACTGATGCCGCCAGAGGCTCCATTGGTGC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GCCGATGACGAAGCTCGTCGACTGGAATGGCACCCGGTATTGGGCACCCGGAGCAATGTCAACTACAACC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TTTTCAGGGACCCCCACGCCCATTCTCAGGGGCCCACCAGTCCCGCTGCCCTCCAGGCAGTCCGCCCCCT</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CATTGTATTCATCCTCATGGGGCGCTCCTCAGGCCTCCCGCACCACAGTGACATCACGGCTCACACCGAG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CTCACGCGGGTCGTTGAGTTCGACTGGCGATGGTGGGGGTACCATGACATCAGCGTCCTCTTTGGGCACG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TGGTCCTCCATCCGCACGCCTGAGCCACCTCGTGTGGTTGAGCCCTTTCTCCCTGGCAGTCTTAGGATTG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">CCCCCTCCCCTTCAGTTTCTTCTGTGGGTTCTGTTTCCACAGTCAATCAGTCCTTGGTTGATTCATGGAA</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GCCTCCCCCTAGGGCAAGGTCTTCTGTTTCTTCAGGATCTGTTTCGACGGTCGATCTGGCCGTTCTTGAC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TCCTGGAAGCCTTCTTCTAGGAGGATGCCTTTGTTCTTCAATCTGCGCCGCGGCCACGCCGAGTAGGATC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">GAGGGTACAGCGCACTTTCTTTCTTCATTTTCTTCTTTGTTGTCGAGGCCACGCCGAGTAGGATCGAGGG</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">TACAACAACGACTAATCATTGTTGAAGTGATTTTTGTAATAATTTGTGAAATGTTGATTATTCAATTGGC</font></p>
+<p style="margin-bottom: 0in"><font size="1" style="font-size: 8pt">ATTTAAA</font></p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<h2 style="margin-top: 0in; page-break-before: always"><a name="_Instructor_Sheet"></a>
+Instructor Sheet</h2>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-bottom: 0in">PART I 
+</p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<table width="612" cellpadding="7" cellspacing="0">
+	<col width="87"/>
+	<col width="207"/>
+	<col width="274"/>
+	<tr valign="top">
+		<td width="87" height="14" style="border: 1.00pt solid #000000; padding: 0.07in"><p align="center" style="widows: 0; orphans: 0">
+			<font color="#24292e"><b>Unknown Sequence ID</b></font></p>
+		</td>
+		<td width="207" style="border: 1.00pt solid #000000; padding: 0.07in"><p align="center" style="widows: 0; orphans: 0">
+			<font color="#24292e"><b>Organism</b></font></p>
+		</td>
+		<td width="274" style="border: 1.00pt solid #000000; padding: 0.07in"><p align="center" style="widows: 0; orphans: 0">
+			<font color="#24292e"><b>Notes</b></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="87" style="border: 1.00pt solid #000000; padding: 0.07in"><p align="center" style="widows: 0; orphans: 0">
+			<font color="#24292e">Query_1</font></p>
+		</td>
+		<td width="207" style="border: 1.00pt solid #000000; padding: 0.07in"><p align="center" style="widows: 0; orphans: 0">
+			<font color="#c00000">Taenia solium</font></p>
+		</td>
+		<td width="274" style="border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font color="#c00000"><i>Eukaryote – parasitic flatworm that can
+			cause intestinal infection (adult worms) or tissue cyst formation
+			(young form) in humans, under skin or in the brain. It would be
+			informative to know what sample type this came from (fecal, brain
+			biopsy, etc)</i></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="87" style="border: 1.00pt solid #000000; padding: 0.07in"><p align="center" style="widows: 0; orphans: 0">
+			<font color="#24292e">Query_2</font></p>
+		</td>
+		<td width="207" style="border: 1.00pt solid #000000; padding: 0.07in"><p align="center" style="widows: 0; orphans: 0">
+			<font color="#c00000">Aspergillus spp</font></p>
+		</td>
+		<td width="274" style="border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0; margin-bottom: 0in">
+			<font color="#c00000"><i>Bacteria – It’s impossible to call
+			species based on this segment; notice BLAST scores and metrics are
+			identical for many different species. Just because A. flavus is
+			listed first, doesn’t mean it’s the only strong hit!</i></font></p>
+			<p style="widows: 0; orphans: 0"><font color="#c00000"><i>One of
+			these species causes illness in humans and another of the species
+			(A. oryzae) is used to make soysauce!</i></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="87" style="border: 1.00pt solid #000000; padding: 0.07in"><p align="center" style="widows: 0; orphans: 0">
+			<font color="#24292e">Query_3</font></p>
+		</td>
+		<td width="207" style="border: 1.00pt solid #000000; padding: 0.07in"><p align="center" style="widows: 0; orphans: 0">
+			<font color="#c00000">Parvovirus 4</font></p>
+		</td>
+		<td width="274" style="border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font color="#c00000"><i>Virus – If you look at the graphics of
+			the alignment, we recovered almost the entire VP1 gene</i></font></p>
+		</td>
+	</tr>
+</table>
+<p style="margin-bottom: 0.17in; background: #ffffff"><br/>
+<br/>
+
+</p>
+</body>
+</html>

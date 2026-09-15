@@ -1,0 +1,2826 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 26.2.5.2 (MacOSX)"/>
+	<meta name="created" content="2026-08-31T16:12:00"/>
+	<meta name="changedby" content="Genay Pilarowski"/>
+	<meta name="changed" content="2026-09-08T18:37:00"/>
+	<meta name="AppVersion" content="16.0000"/>
+	<style type="text/css">
+		body, p, h1, h2, font, td, th, li { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !important; }
+
+		@page { size: 11.69in 8.27in; margin: 0.5in }
+		p { direction: ltr; widows: 2; orphans: 2; margin-bottom: 0.1in; text-align: left; line-height: 115%; background: transparent }
+		h1 { direction: ltr; widows: 2; page-break-inside: avoid; text-align: left; line-height: 115%; font-size: 20pt; margin-top: 0.28in; margin-bottom: 0.08in; orphans: 2; background: transparent; page-break-after: avoid }
+		h2 { direction: ltr; widows: 2; page-break-inside: avoid; text-align: left; line-height: 115%; font-size: 16pt; margin-top: 0.25in; margin-bottom: 0.08in; orphans: 2; background: transparent; page-break-after: avoid }
+		a:link { color: #000080; text-decoration: underline }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr">
+<div title="header"><p align="right" style="margin-bottom: 0in"><br/>
+
+	</p>
+</div><h1 style="margin-top: 0.33in; page-break-inside: auto; page-break-after: auto"><a name="_heading=h.gjdgxs"></a>
+<font face="Open Sans, sans-serif"><font size="6" style="font-size: 23pt"><b>CZ
+ID Training: ONT Reference Tables</b></font></font></h1>
+<h2><a name="_heading=h.1fob9te"></a><a name="bookmark=id.30j0zll"></a>
+<font face="Open Sans, sans-serif">QC Metrics Table - ONT</font></h2>
+<table width="945" cellpadding="7" cellspacing="0">
+	<col width="173"/>
+	<col width="742"/>
+	<tr valign="top">
+		<td width="173" height="28" style="border: 1px solid #666666; padding: 0.07in"><p align="center">
+			<font face="Open Sans, sans-serif"><b>QC Metric</b></font></p>
+		</td>
+		<td width="742" style="border: 1px solid #666666; padding: 0.07in"><p align="center">
+			<font face="Open Sans, sans-serif"><b>Definition</b></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="173" height="49" style="border: 1px solid #666666; padding: 0.07in"><p>
+			<font face="Open Sans, sans-serif"><b>Passed Filters</b></font></p>
+		</td>
+		<td width="742" style="border: 1px solid #666666; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif">The percentage of reads
+			remaining after host filtering, quality filtering and subsampling,
+			compared to the initial reads input. Tells you how many reads were
+			used for final analysis.</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="173" height="31" style="border: 1px solid #666666; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>Passed QC</b></font></p>
+		</td>
+		<td width="742" style="border: 1px solid #666666; padding: 0.07in"><p style="widows: 0; orphans: 0; margin-bottom: 0in">
+			<font face="Open Sans, sans-serif">Percentage of reads remaining
+			after QC filtering to remove low quality bases (phred score &lt;
+			9), </font>
+			</p>
+			<p style="widows: 0; orphans: 0"><font face="Open Sans, sans-serif">short
+			reads (&lt; 100 bp), and low complexity reads.</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="173" height="20" style="border: 1px solid #666666; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>Total Reads*</b></font></p>
+		</td>
+		<td width="742" style="border: 1px solid #666666; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif">The total number of reads
+			uploaded.</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="173" height="47" style="border: 1px solid #666666; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>Subsampled Fraction*</b></font></p>
+		</td>
+		<td width="742" style="border: 1px solid #666666; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif">After QC filtering and
+			host/human data removal, the remaining reads are subsampled to 1
+			million. This fraction specifies the ratio of subsampled reads to
+			total reads passing QC and host/human filtering.</font></p>
+		</td>
+	</tr>
+</table>
+<p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><i>*
+Fields are not default in the samples table and need to be added by
+clicking on the column selector</i></font></p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-bottom: 0in; margin-right: 0.25in"><font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><i>The
+</i></font></font><font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><i><u>Sample
+Table only provides stats at the read level</u></i></font></font><font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><i>
+for you to keep track of how many reads made it through data
+pre-processing steps (e.g., QC filtering and subsampling) and, thus,
+were used for microbe detection. If you are interested in information
+at the base pair level, please see the Sample Overview report
+available through </i></font></font><a href="https://chanzuckerberg.zendesk.com/hc/en-us/articles/13837869622036-Download-Nanopore-Data#bulk-download"><font color="#3867fa"><font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><i>bulk
+download</i></font></font></font></a><font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><i>
+or look at the pipeline details on the Sample Report page</i></font></font></p>
+<h2 style="margin-bottom: 0.06in; page-break-inside: auto; page-break-before: always; page-break-after: auto"><a name="_heading=h.2et92p0"></a><a name="bookmark=id.3znysh7"></a>
+<font face="Open Sans, sans-serif">Sample Metrics Table</font></h2>
+<table width="883" cellpadding="11" cellspacing="0">
+	<col width="177"/>
+	<col width="660"/>
+	<tr valign="top">
+		<td width="177" height="35" style="border-top: 1px solid #666666; border-bottom: 2.25pt solid #666666; border-left: 1px solid #666666; border-right: 1px solid #666666; padding: 0.11in 0.15in"><p style="border: none; padding: 0in; widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Report
+			Metric</b></font></font></p>
+		</td>
+		<td width="660" style="border-top: 1px solid #666666; border-bottom: 2.25pt solid #666666; border-left: 1px solid #666666; border-right: 1px solid #666666; padding: 0.11in 0.15in"><p style="margin-top: 0.15in">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Definition</b></font></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="177" height="151" style="border-top: 2.25pt solid #666666; border-bottom: 1px solid #666666; border-left: 1px solid #666666; border-right: 1px solid #666666; padding: 0.11in 0.15in"><p style="margin-top: 0.15in">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">Bases
+			per million (bPM)</font></font></p>
+		</td>
+		<td width="660" style="border-top: 2.25pt solid #666666; border-bottom: 1px solid #666666; border-left: 1px solid #666666; border-right: 1px solid #666666; padding: 0.11in 0.15in"><p style="margin-top: 0.15in">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">Number
+			of bases within all the reads aligning to a given taxon, including
+			those assembled into contigs that mapped to the taxon, per million
+			bases sequenced</font></font><img src="CZ%20ID%20Training%20Reference%20Tables%20&amp;%20Worksheets_ONT_html_8712ea0c.png" name="image1.png" align="left" hspace="12" vspace="12" width="377" height="69" border="0">
+  <br clear="left"/>
+</img>
+</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="177" height="47" style="border: 1px solid #666666; padding: 0.11in 0.15in"><p style="margin-top: 0.15in">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">Bases
+			(b)</font></font></p>
+		</td>
+		<td width="660" style="border: 1px solid #666666; padding: 0.11in 0.15in"><p style="margin-top: 0.15in">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">Number
+			of bases within all the reads aligning to a given taxon, including
+			those assembled into contigs that mapped to the taxon</font></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="177" height="31" style="border: 1px solid #666666; padding: 0.11in 0.15in"><p style="margin-top: 0.15in">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">Reads
+			(r)</font></font></p>
+		</td>
+		<td width="660" style="border: 1px solid #666666; padding: 0.11in 0.15in"><p style="margin-top: 0.15in">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">Number
+			of reads aligning to a given taxon </font></font><font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">in
+			the NCBI NT/NR database</font></font><font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">,
+			including those assembled into contigs that mapped to the taxon</font></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="177" height="15" style="border: 1px solid #666666; padding: 0.11in 0.15in"><p style="margin-top: 0.15in">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">Contigs
+			(contig)</font></font></p>
+		</td>
+		<td width="660" style="border: 1px solid #666666; padding: 0.11in 0.15in"><p style="margin-top: 0.15in">
+			<font face="Open Sans, sans-serif">Number of contigs aligning to
+			the taxon in the NCBI NT/NR database</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="177" height="31" style="border: 1px solid #666666; padding: 0.11in 0.15in"><p style="margin-top: 0.15in">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">Contig
+			bases (contig b)</font></font></p>
+		</td>
+		<td width="660" style="border: 1px solid #666666; padding: 0.11in 0.15in"><p style="margin-top: 0.15in">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">Number
+			of bases within all the reads that assembled into contigs aligning
+			to a given taxon</font></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="177" height="15" style="border: 1px solid #666666; padding: 0.11in 0.15in"><p style="margin-top: 0.15in">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">Percent
+			identity (%id)</font></font></p>
+		</td>
+		<td width="660" style="border: 1px solid #666666; padding: 0.11in 0.15in"><p style="margin-top: 0.15in">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">Average
+			percent identity between all the query sequences (contigs and
+			unassembled reads) and their matching taxon</font></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="177" height="15" style="border: 1px solid #666666; padding: 0.11in 0.15in"><p style="margin-top: 0.15in">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">Length
+			(L)</font></font></p>
+		</td>
+		<td width="660" style="border: 1px solid #666666; padding: 0.11in 0.15in"><p style="margin-top: 0.15in">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">Average
+			length of alignments between all the query sequences (contigs and
+			unassembled reads) and their matching taxon. Note that values
+			against NR are reported in base pairs</font></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="177" height="63" style="border: 1px solid #666666; padding: 0.11in 0.15in"><p style="margin-top: 0.15in">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">Expect
+			value (E value)</font></font></p>
+		</td>
+		<td width="660" style="border: 1px solid #666666; padding: 0.11in 0.15in"><p style="margin-top: 0.15in">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">Average
+			expect value (E-value) of alignments against the NT and NR
+			databases. The E-value represents the number of matches with
+			similar quality one would “expect” to see by random chance.
+			This parameter provides a measure of randomness. The lower the
+			E-value, the lower the probability of getting a match or alignment
+			by random chance (i.e., the closer the E-value is to 0, the
+			better)</font></font></p>
+		</td>
+	</tr>
+</table>
+<h1 style="margin-top: 0.33in; page-break-inside: auto; page-break-after: auto"><a name="_heading=h.ywk36h53nb4e"></a>
+<br/>
+<br/>
+
+</h1>
+<h1 style="margin-top: 0.33in; page-break-inside: auto; page-break-after: auto"><a name="_heading=h.yfavpoxu7ci"></a>
+<br/>
+<br/>
+
+</h1>
+<h1 style="margin-top: 0.33in; page-break-inside: auto; page-break-after: auto"><a name="_heading=h.8waaloczreck"></a>
+<br/>
+<br/>
+
+</h1>
+<h2 style="margin-top: 0.33in; page-break-inside: auto; page-break-after: auto"><a name="_heading=h.4d34og8"></a><a name="bookmark=id.1t3h5sf"></a>
+<font face="Open Sans, sans-serif">Pipeline Table</font></h2>
+<p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><i>Metrics
+are accessible through Sample Details -&gt; Pipelines -&gt; Bases
+remaining</i></font></p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<table width="912" cellpadding="7" cellspacing="0">
+	<col width="136"/>
+	<col width="232"/>
+	<col width="500"/>
+	<tr valign="bottom">
+		<td width="136" height="39" style="background: transparent; border: 1px solid #666666; padding: 0.07in"><p align="center" style="widows: 0; orphans: 0; margin-bottom: 0in">
+			<br/>
+
+			</p>
+			<p align="center" style="widows: 0; orphans: 0"><font face="Open Sans, sans-serif"><b>Pipeline
+			Step</b></font></p>
+		</td>
+		<td width="232" style="background: transparent; border: 1px solid #666666; padding: 0.07in"><p align="center" style="widows: 0; orphans: 0; margin-bottom: 0in">
+			<br/>
+
+			</p>
+			<p align="center" style="widows: 0; orphans: 0"><font face="Open Sans, sans-serif"><b>Function</b></font></p>
+		</td>
+		<td width="500" style="background: transparent; border: 1px solid #666666; padding: 0.07in"><p align="center" style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>If Many Reads Lost During
+			this Step...</b></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="136" height="55" style="background: transparent; border: 1px solid #666666; padding: 0.07in"><p style="margin-bottom: 0in">
+			<br/>
+
+			</p>
+			<p style="widows: 0; orphans: 0"><font face="Open Sans, sans-serif">fastp</font></p>
+		</td>
+		<td width="232" style="background: transparent; border: 1px solid #666666; padding: 0.07in"><p style="widows: 0; orphans: 0; margin-bottom: 0in">
+			<font face="Open Sans, sans-serif">Low quality read removal</font></p>
+			<p style="widows: 0; orphans: 0; margin-bottom: 0in"><br/>
+
+			</p>
+			<p style="widows: 0; orphans: 0; margin-bottom: 0in"><br/>
+
+			</p>
+			<p style="widows: 0; orphans: 0; margin-bottom: 0in"><font face="Open Sans, sans-serif">Low
+			complexity read removal</font></p>
+			<p style="widows: 0; orphans: 0; margin-bottom: 0in"><br/>
+
+			</p>
+			<p style="widows: 0; orphans: 0"><font face="Open Sans, sans-serif">Note:
+			adapter trimming is </font><font face="Open Sans, sans-serif"><i>not</i></font><font face="Open Sans, sans-serif">
+			completed in CZID. It must be done in ONT MinKNOW/Dorado, prior to
+			upload to CZID</font></p>
+		</td>
+		<td width="500" style="background: transparent; border: 1px solid #666666; padding: 0.07in"><p style="widows: 0; orphans: 0; margin-bottom: 0in">
+			<font face="Open Sans, sans-serif">Many reads of low-quality
+			(Phred scores, GC content); check sequencing run - suggest
+			reviewing sequencing run report</font></p>
+			<p style="widows: 0; orphans: 0; margin-bottom: 0in"><br/>
+
+			</p>
+			<p style="widows: 0; orphans: 0; margin-bottom: 0in"><font face="Open Sans, sans-serif">Reads
+			are relatively low-complexity, containing homopolymer nucleotides
+			or simple sequence repeats</font></p>
+			<p style="widows: 0; orphans: 0; margin-bottom: 0in"><br/>
+
+			</p>
+			<p style="widows: 0; orphans: 0"><font face="Open Sans, sans-serif">Many
+			short reads: possible degradation, low quality RNA.</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="136" height="43" style="background: transparent; border: 1px solid #666666; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif">minimap2</font></p>
+		</td>
+		<td width="232" style="background: transparent; border: 1px solid #666666; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif">Host and human filtering</font></p>
+		</td>
+		<td width="500" style="background: transparent; border: 1px solid #666666; padding: 0.07in"><p style="widows: 0; orphans: 0; margin-bottom: 0in">
+			<font face="Open Sans, sans-serif">Large proportion of reads
+			mapped to the host/human reference genome; this will vary by
+			sample type and sample pre-processing</font></p>
+			<p style="widows: 0; orphans: 0"><br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="136" height="34" style="background: transparent; border: 1px solid #666666; padding: 0.07in"><p style="margin-bottom: 0in">
+			<br/>
+
+			</p>
+			<p style="widows: 0; orphans: 0; margin-bottom: 0in"><font face="Open Sans, sans-serif">seqkt</font></p>
+			<p style="widows: 0; orphans: 0"><br/>
+
+			</p>
+		</td>
+		<td width="232" style="background: transparent; border: 1px solid #666666; padding: 0.07in"><p style="widows: 0; orphans: 0; margin-bottom: 0in">
+			<br/>
+
+			</p>
+			<p style="widows: 0; orphans: 0"><font face="Open Sans, sans-serif">Subsampling
+			to reduce computational burden</font></p>
+		</td>
+		<td width="500" style="background: transparent; border: 1px solid #666666; padding: 0.07in"><p style="widows: 0; orphans: 0; margin-bottom: 0in">
+			<br/>
+
+			</p>
+			<p style="widows: 0; orphans: 0"><font face="Open Sans, sans-serif">Sample
+			received a lot of reads during sequencing and/or has a high
+			proportion of reads that are microbial</font></p>
+		</td>
+	</tr>
+</table>
+<h1 style="margin-top: 0.33in; page-break-inside: auto; page-break-after: auto"><a name="_heading=h.bfrr1tkx9m2h"></a>
+<br/>
+<br/>
+
+</h1>
+<h1 style="margin-top: 0in; page-break-inside: auto; page-break-before: always; page-break-after: auto"><a name="_heading=h.2s8eyo1"></a>
+<font face="Open Sans, sans-serif"><font size="6" style="font-size: 23pt"><b>CZ
+ID Training: Worksheets </b></font></font>
+</h1>
+<h2><a name="_heading=h.3rdcrjn"></a><a name="bookmark=id.17dp8vu"></a>
+<font face="Open Sans, sans-serif">Goal For Your Project</font></h2>
+<p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><i>Why
+is your team using metagenomics and CZ ID? What problem(s) are you
+trying to solve with mNGS and how does it relate to your broader
+research?</i></font></p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<p style="line-height: 200%; margin-bottom: 0in"><font face="Open Sans, sans-serif">_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</font></p>
+<h2><a name="_heading=h.lnxbz9"></a><a name="bookmark=id.26in1rg"></a>
+<font face="Open Sans, sans-serif">QC Worksheet</font></h2>
+<p style="margin-bottom: 0in"><font size="4" style="font-size: 15pt"><b>QC
+Step 1: Identify samples with low total reads</b></font></p>
+<p style="widows: 0; orphans: 0; margin-bottom: 0in"><font face="Open Sans, sans-serif"><i>The
+total number of reads uploaded (after input validation).</i></font></p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<table width="961" cellpadding="7" cellspacing="0">
+	<col width="69"/>
+	<col width="66"/>
+	<col width="227"/>
+	<col width="260"/>
+	<col width="267"/>
+	<tr valign="top">
+		<td width="69" height="14" style="border: 1px solid #434343; padding: 0.07in"><p>
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Metric</b></font></font></p>
+		</td>
+		<td width="66" style="border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Criterion</b></font></font></p>
+		</td>
+		<td width="227" style="border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>How
+			to Interpret</b></font></font></p>
+		</td>
+		<td width="260" style="border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Sample
+			Name(s)</b></font></font></p>
+		</td>
+		<td width="267" style="border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Next
+			Steps/Notes</b></font></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="69" height="124" style="border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>Total Reads</b></font></p>
+		</td>
+		<td width="66" style="border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif">Outliers</font></p>
+		</td>
+		<td width="227" style="border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">You
+			should make note of outliers and high variability in Total Reads.
+			This can indicate uneven pooling in the library preparation steps.
+			You may choose to resequence low-output samples.</font></font></p>
+		</td>
+		<td width="260" style="border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="267" style="border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+</table>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-bottom: 0in; page-break-before: always"><font size="4" style="font-size: 15pt"><b>QC
+Step 2: Identify samples with low-quality reads (low passed QC)</b></font></p>
+<p style="widows: 0; orphans: 0; margin-bottom: 0in"><font face="Open Sans, sans-serif"><i>The
+percentage of reads that passed the quality filtering thresholds
+imposed by fastp. Gives you an idea of the sequencing quality.</i></font></p>
+<table width="961" cellpadding="7" cellspacing="0">
+	<col width="69"/>
+	<col width="66"/>
+	<col width="242"/>
+	<col width="245"/>
+	<col width="267"/>
+	<tr valign="top">
+		<td width="69" height="20" style="border: 1px solid #434343; padding: 0.07in"><p>
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Metric</b></font></font></p>
+		</td>
+		<td width="66" style="border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Criterion</b></font></font></p>
+		</td>
+		<td width="242" style="border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>How
+			to Interpret</b></font></font></p>
+		</td>
+		<td width="245" style="border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Sample
+			Name(s)</b></font></font></p>
+		</td>
+		<td width="267" style="border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Next
+			Steps/Notes</b></font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="3" width="69" height="138" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>Passed QC</b></font></p>
+		</td>
+		<td width="66" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif">&gt;50%</font></p>
+		</td>
+		<td width="242" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">You
+			can be relatively confident in the quality of the sequencing data.</font></font></p>
+		</td>
+		<td width="245" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="267" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="66" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif">&lt;10%</font></p>
+		</td>
+		<td width="242" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">Samples
+			with low % Passed QC likely contained many short sequences that
+			were associated with adapter dimers or sequences that obtained
+			low-quality scores during base-calling. If the Passed Filters
+			value is below 20%, you should work to understand why reads were
+			filtered out (see next section) and use this information to
+			improve library preparation steps. Interpret results from these
+			samples with caution.</font></font></p>
+		</td>
+		<td width="245" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="267" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="66" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif">*Outliers</font></p>
+		</td>
+		<td width="242" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">Take
+			note of any values above that stand apart from the others because
+			of very high or very low Passed QC values. These should be noted
+			for their unusually high or low sequencing quality and looked into
+			more closely. </font></font>
+			</p>
+		</td>
+		<td width="245" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="267" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+</table>
+<p style="margin-bottom: 0in"><font size="4" style="font-size: 15pt"><b>QC
+Step 3: Identify samples with low number of reads passing CZ ID
+filters</b></font></p>
+<p style="widows: 0; orphans: 0; margin-bottom: 0in"><font face="Open Sans, sans-serif"><i>The
+percentage of reads remaining after host filtering, quality filtering
+and subsampling, compared to the initial reads input. Tells you how
+many reads were used for final analysis. Expected reads passing CZ ID
+filters varies by sample type. </i></font>
+</p>
+<table width="961" cellpadding="7" cellspacing="0">
+	<col width="69"/>
+	<col width="66"/>
+	<col width="256"/>
+	<col width="244"/>
+	<col width="254"/>
+	<tr valign="top">
+		<td width="69" height="20" style="border: 1px solid #434343; padding: 0.07in"><p>
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Metric</b></font></font></p>
+		</td>
+		<td width="66" style="border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Criterion</b></font></font></p>
+		</td>
+		<td width="256" style="border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>How
+			to Interpret</b></font></font></p>
+		</td>
+		<td width="244" style="border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Sample
+			Name(s)</b></font></font></p>
+		</td>
+		<td width="254" style="border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Next
+			Steps/Notes</b></font></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td rowspan="3" width="69" height="160" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>Passed Filters</b></font></p>
+		</td>
+		<td width="66" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif">&gt;5%</font></p>
+		</td>
+		<td width="256" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">A
+			higher Passed Filters value is generally positive as it indicates
+			that you have a greater amount of reads to analyze for non-host
+			taxa.</font></font></p>
+		</td>
+		<td width="244" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td rowspan="2" width="254" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0; margin-bottom: 0in">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">What
+			is the Sample Type for each of the samples? </font></font>
+			</p>
+			<ul>
+				<li><p style="widows: 0; orphans: 0; margin-bottom: 0in"><font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">Samples
+				with a known microbiome (ie Stool, NP Swab, Environmental
+				Samples, Sputum) tend to have a higher number of non-host reads
+				due to greater microbial content in the samples.</font></font></p></li>
+				<li><p style="widows: 0; orphans: 0; margin-bottom: 0in"><font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">Sterile
+				site fluids (Serum, CSF, Plasma) tend to have fewer non-host
+				reads and greater numbers of host reads.</font></font></p></li>
+				<li><p style="widows: 0; orphans: 0"><font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">Whole
+				Blood tends to have a distribution of non-host reads in between
+				these two extremes due to the high abundance of host cells.</font></font></p></li>
+			</ul>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="66" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif">&lt;5%</font></p>
+		</td>
+		<td width="256" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">It
+			is not uncommon to see Passed Filters values below 1% for samples
+			with high abundance of host reads.</font></font></p>
+		</td>
+		<td width="244" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="66" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif">*Outliers </font>
+			</p>
+		</td>
+		<td width="256" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt">Take
+			note of any values that stand apart from the others because of
+			very high or very low Passed Filters values. These should be noted
+			for their unusually high or low amount of non-host data and looked
+			into more closely. </font></font>
+			</p>
+		</td>
+		<td width="244" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="254" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+</table>
+<p style="margin-top: 0.17in; margin-bottom: 0.17in"><font size="4" style="font-size: 15pt"><b>QC
+Step 4: Identify at which step most bases are lost during
+pre-processing</b></font></p>
+<p style="margin-top: 0.17in; margin-bottom: 0.17in"><font face="Open Sans, sans-serif"><i>Look
+at bases remaining for each sample, accessible through Sample Details
+-&gt; Pipelines -&gt; Bases remaining</i></font></p>
+<table width="971" cellpadding="7" cellspacing="0">
+	<col width="69"/>
+	<col width="131"/>
+	<col width="262"/>
+	<col width="120"/>
+	<col width="190"/>
+	<col width="113"/>
+	<tr valign="top">
+		<td width="69" height="20" style="border: 1px solid #434343; padding: 0.07in"><p>
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Sample</b></font></font></p>
+		</td>
+		<td width="131" style="border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Total
+			bases (Validate input)</b></font></font></p>
+		</td>
+		<td width="262" style="border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Which
+			step were most bases lost? What % of bases were lost at this step?</b></font></font></p>
+		</td>
+		<td width="120" style="border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Sample
+			type</b></font></font></p>
+		</td>
+		<td width="190" style="border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Notes
+			about Bases Remaining metrics</b></font></font></p>
+		</td>
+		<td width="113" style="border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Flag
+			because of QC?</b></font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="69" height="61" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="131" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="262" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="120" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="190" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="113" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in">
+			<ul><li><p align="center" style="orphans: 0; widows: 0"></p></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td width="69" height="61" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="131" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="262" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="120" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="190" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="113" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in">
+			<ul><li><p align="center" style="orphans: 0; widows: 0"></p></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td width="69" height="61" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="131" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="262" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="120" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="190" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="113" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in">
+			<ul><li><p align="center" style="orphans: 0; widows: 0"></p></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td width="69" height="60" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="131" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="262" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="120" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="190" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="113" valign="top" style="background: transparent; border: 1px solid #434343; padding: 0.07in">
+			<ul><li><p align="center" style="orphans: 0; widows: 0"></p></li>
+			</ul>
+		</td>
+	</tr>
+</table>
+<p style="margin-bottom: 0.17in; page-break-before: always"><a name="bookmark=id.1ksv4uv"></a>
+<font face="Open Sans, sans-serif">Sample QC Summary Table</font></p>
+<p style="margin-bottom: 0in"><font size="4" style="font-size: 15pt"><b>QC
+Step 5: Summarize samples with poor QC metric(s) to flag for analysis
+interpretation</b></font></p>
+<p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><i>Using
+the bases remaining and QC Steps 1-4 above, fill out the following
+for low quality samples:</i></font></p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<table width="934" cellpadding="7" cellspacing="0">
+	<col width="180"/>
+	<col width="74"/>
+	<col width="360"/>
+	<col width="262"/>
+	<tr valign="top">
+		<td width="180" height="73" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p>
+			<font face="Open Sans, sans-serif"><b>Sample Name</b></font></p>
+		</td>
+		<td width="74" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>QC Flag?</b></font></p>
+		</td>
+		<td width="360" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>Flagged because of which
+			step / metric?</b></font></p>
+		</td>
+		<td width="262" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>Conclusions</b></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="180" height="54" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="74" style="background: transparent; border: 1px solid #434343; padding: 0.07in">
+			<ul><li><p align="center" style="orphans: 0; widows: 0"></p></li>
+			</ul>
+		</td>
+		<td width="360" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="262" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="180" height="60" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="74" style="background: transparent; border: 1px solid #434343; padding: 0.07in">
+			<ul><li><p align="center" style="orphans: 0; widows: 0"></p></li>
+			</ul>
+		</td>
+		<td width="360" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; margin-left: 0.5in; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="262" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="180" height="60" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="74" style="background: transparent; border: 1px solid #434343; padding: 0.07in">
+			<ul><li><p align="center" style="orphans: 0; widows: 0"></p></li>
+			</ul>
+		</td>
+		<td width="360" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="262" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="180" height="71" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="74" style="background: transparent; border: 1px solid #434343; padding: 0.07in">
+			<ul><li><p align="center" style="orphans: 0; widows: 0"></p></li>
+			</ul>
+		</td>
+		<td width="360" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="262" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+</table>
+<h2 style="margin-top: 0.17in; margin-bottom: 0.17in; page-break-before: always"><a name="_heading=h.2jxsxqh"></a><a name="bookmark=id.z337ya"></a>
+Sample Report</h2>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-bottom: 0in"><font size="4" style="font-size: 15pt">Think
+about the following questions when looking at your sample report:</font></p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<ol>
+	<li><p style="margin-bottom: 0in"><font size="4" style="font-size: 15pt">What
+	is the goal of your study?</font></p></li>
+	<li><p style="margin-bottom: 0in"><font size="4" style="font-size: 15pt">Are
+	there any pathogens present that could be causing disease in your
+	set of samples?</font></p>
+	<ol type="a">
+		<li><p style="margin-bottom: 0in"><font size="4" style="font-size: 15pt">Is
+		it a real hit? Why do you think it is? </font>
+		</p></li>
+	</ol>
+	<li><p style="margin-bottom: 0in"><font size="4" style="font-size: 15pt">What
+	are some of the other microbes?</font></p>
+	<ol type="a">
+		<li><p style="margin-bottom: 0in"><font size="4" style="font-size: 15pt">Why
+		do you think they are there?</font></p></li>
+	</ol>
+	<li><p style="margin-bottom: 0in"><font size="4" style="font-size: 15pt">Did
+	you find any false positives? </font>
+	</p>
+	<ol type="a">
+		<li><p style="margin-bottom: 0in"><font size="4" style="font-size: 15pt">How
+		did you determine this? </font>
+		</p></li>
+	</ol>
+</ol>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<h2 style="margin-top: 0in; margin-bottom: 0.17in; page-break-before: always"><a name="_heading=h.y5oo72ub428v"></a>
+<font face="Open Sans, sans-serif"><b>Analysis Workflow - ONT RNA
+mNGS for respiratory viruses</b></font></h2>
+<p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><font size="3" style="font-size: 13pt">Navigate</font></font></p>
+<ol>
+	<li><p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><font size="3" style="font-size: 13pt">Go
+	to each sample report</font></font></p></li>
+	<li><p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><font size="3" style="font-size: 13pt">Filter
+	category for viruses + non-phage</font></font></p></li>
+</ol>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><font size="3" style="font-size: 13pt">Complete
+a first pass sample report view</font></font></p>
+<ol>
+	<li><p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><font size="3" style="font-size: 13pt">Look
+	at the list of detected taxa</font></font></p></li>
+	<li><p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><font size="3" style="font-size: 13pt">Record
+	NT bPM, NT r, and any other relevant metrics</font></font></p></li>
+	<li><p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><font size="3" style="font-size: 13pt">Look
+	at the coverage plot for each taxa and record your interpretation
+	(low, medium, high coverage)</font></font></p></li>
+	<li><p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><font size="3" style="font-size: 13pt">BLASTn
+	contigs from each candidate taxa and record what you find (specific,
+	non-specific, etc)</font></font></p></li>
+</ol>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><font size="3" style="font-size: 13pt">Check
+negative water controls</font></font></p>
+<ol>
+	<li><p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><font size="3" style="font-size: 13pt">Navigate
+	to the sample report for each negative water control included in the
+	run</font></font></p></li>
+	<li><p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><font size="3" style="font-size: 13pt">For
+	each taxa observed in the samples, record the NT bPM, NT r, and any
+	other metrics in each water control</font></font></p></li>
+	<li><p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><font size="3" style="font-size: 13pt">If
+	you have &gt;1 water control, calculate the average signal for each
+	taxa</font></font></p></li>
+</ol>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><font size="3" style="font-size: 13pt">Put
+it all together (background subtraction + interpretation)</font></font></p>
+<ol>
+	<li><p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><font size="3" style="font-size: 13pt">Subtract
+	the background/water control signal from the sample signal for each
+	taxa</font></font></p></li>
+	<li><p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><font size="3" style="font-size: 13pt">Interpret:
+	real signal should be higher in samples than in water controls</font></font></p></li>
+</ol>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<h2 style="margin-top: 0.17in; margin-bottom: 0.17in"><a name="_heading=h.vy7iniqymm4e"></a>
+<br/>
+<br/>
+
+</h2>
+<h2 style="margin-top: 0in; margin-bottom: 0in; page-break-before: always"><a name="_heading=h.1y810tw"></a><a name="bookmark=id.3j2qqm3"></a>
+<font face="Open Sans, sans-serif">Sample Summary Table (#1)</font></h2>
+<p style="margin-bottom: 0in"><font face="Open Sans, sans-serif">___________________________________</font></p>
+<p style="margin-bottom: 0.14in"><font color="#b7b7b7"><font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><i>
+                    </i></font></font></font><font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><i>
+Name of sample</i></font></font></p>
+<table width="1029" cellpadding="7" cellspacing="0">
+	<col width="104"/>
+	<col width="165"/>
+	<col width="89"/>
+	<col width="98"/>
+	<col width="107"/>
+	<col width="107"/>
+	<col width="123"/>
+	<col width="122"/>
+	<tr valign="top">
+		<td width="104" height="56" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Taxon
+			Name</b></font></font></p>
+		</td>
+		<td width="165" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Important
+			Metrics (i.e. high bPM, known pathogen, number of contigs, length)</b></font></font></p>
+		</td>
+		<td width="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Pathogenic?</b></font></font></p>
+		</td>
+		<td width="98" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Does
+			it answer your research question? </b></font></font>
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Coverage
+			Visualization Notes</b></font></font></p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>BLAST
+			Notes</b></font></font></p>
+		</td>
+		<td width="123" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Why
+			do you think this microbe is present?</b></font></font></p>
+		</td>
+		<td width="122" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Is
+			this a real hit? </b></font></font>
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="104" height="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="165" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in">
+			<ul><li><p align="center"></p></li>
+			</ul>
+		</td>
+		<td width="98" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p>
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="123" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="122" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="104" height="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="165" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in">
+			<ul><li><p align="center"></p></li>
+			</ul>
+		</td>
+		<td width="98" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p>
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="123" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="122" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="104" height="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="165" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in">
+			<ul><li><p align="center"></p></li>
+			</ul>
+		</td>
+		<td width="98" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p>
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="123" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="122" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="104" height="88" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="165" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in">
+			<ul><li><p align="center"></p></li>
+			</ul>
+		</td>
+		<td width="98" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p>
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="123" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="122" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+</table>
+<h2 style="margin-top: 0.17in; margin-bottom: 0in"><a name="_heading=h.xpos5e4dv1t3"></a>
+<font face="Open Sans, sans-serif">Sample Summary Table (#2)</font></h2>
+<p style="margin-bottom: 0in"><font face="Open Sans, sans-serif">___________________________________</font></p>
+<p style="margin-bottom: 0.14in"><font color="#b7b7b7"><font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><i>
+                    </i></font></font></font><font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><i>
+Name of sample</i></font></font></p>
+<table width="1029" cellpadding="7" cellspacing="0">
+	<col width="104"/>
+	<col width="165"/>
+	<col width="89"/>
+	<col width="98"/>
+	<col width="107"/>
+	<col width="107"/>
+	<col width="123"/>
+	<col width="122"/>
+	<tr valign="top">
+		<td width="104" height="56" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0"><a name="_heading=h.ggvjwxbprr21"></a>
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Taxon
+			Name</b></font></font></p>
+		</td>
+		<td width="165" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Important
+			Metrics (i.e. high bPM, known pathogen, number of contigs, length)</b></font></font></p>
+		</td>
+		<td width="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Pathogenic?</b></font></font></p>
+		</td>
+		<td width="98" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Does
+			it answer your research question? </b></font></font>
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Coverage
+			Visualization Notes</b></font></font></p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>BLAST
+			Notes</b></font></font></p>
+		</td>
+		<td width="123" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Why
+			do you think this microbe is present?</b></font></font></p>
+		</td>
+		<td width="122" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Is
+			this a real hit? </b></font></font>
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="104" height="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="165" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in">
+			<ul><li><p align="center"></p></li>
+			</ul>
+		</td>
+		<td width="98" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p>
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="123" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="122" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="104" height="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="165" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in">
+			<ul><li><p align="center"></p></li>
+			</ul>
+		</td>
+		<td width="98" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p>
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="123" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="122" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="104" height="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="165" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in">
+			<ul><li><p align="center"></p></li>
+			</ul>
+		</td>
+		<td width="98" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p>
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="123" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="122" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="104" height="88" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="165" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in">
+			<ul><li><p align="center"></p></li>
+			</ul>
+		</td>
+		<td width="98" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p>
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="123" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="122" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+</table>
+<h2 style="margin-top: 0.17in; margin-bottom: 0in"><font face="Open Sans, sans-serif">Sample
+Summary Table (#3)</font></h2>
+<p style="margin-bottom: 0in"><font face="Open Sans, sans-serif">___________________________________</font></p>
+<p style="margin-bottom: 0.14in"><font color="#b7b7b7"><font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><i>
+                    </i></font></font></font><font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><i>
+Name of sample</i></font></font></p>
+<table width="1029" cellpadding="7" cellspacing="0">
+	<col width="104"/>
+	<col width="165"/>
+	<col width="89"/>
+	<col width="98"/>
+	<col width="107"/>
+	<col width="107"/>
+	<col width="123"/>
+	<col width="122"/>
+	<tr valign="top">
+		<td width="104" height="56" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0"><a name="_heading=h.q0jn75rerdew"></a><a name="bookmark=kix.lzekpsx3wagf"></a>
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Taxon
+			Name</b></font></font></p>
+		</td>
+		<td width="165" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Important
+			Metrics (i.e. high bPM, known pathogen, number of contigs, length)</b></font></font></p>
+		</td>
+		<td width="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Pathogenic?</b></font></font></p>
+		</td>
+		<td width="98" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Does
+			it answer your research question? </b></font></font>
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Coverage
+			Visualization Notes</b></font></font></p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>BLAST
+			Notes</b></font></font></p>
+		</td>
+		<td width="123" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Why
+			do you think this microbe is present?</b></font></font></p>
+		</td>
+		<td width="122" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Is
+			this a real hit? </b></font></font>
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="104" height="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="165" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in">
+			<ul><li><p align="center"></p></li>
+			</ul>
+		</td>
+		<td width="98" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p>
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="123" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="122" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="104" height="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="165" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in">
+			<ul><li><p align="center"></p></li>
+			</ul>
+		</td>
+		<td width="98" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p>
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="123" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="122" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="104" height="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="165" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in">
+			<ul><li><p align="center"></p></li>
+			</ul>
+		</td>
+		<td width="98" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p>
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="123" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="122" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="104" height="88" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="165" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in">
+			<ul><li><p align="center"></p></li>
+			</ul>
+		</td>
+		<td width="98" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p>
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="123" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="122" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+</table>
+<h2 style="margin-top: 0.17in; margin-bottom: 0in"><font face="Open Sans, sans-serif">Sample
+Summary Table (#4)</font></h2>
+<p style="margin-bottom: 0in"><font face="Open Sans, sans-serif">___________________________________</font></p>
+<p style="margin-bottom: 0.14in"><font color="#b7b7b7"><font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><i>
+                    </i></font></font></font><font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><i>
+Name of sample</i></font></font></p>
+<table width="1029" cellpadding="7" cellspacing="0">
+	<col width="104"/>
+	<col width="165"/>
+	<col width="89"/>
+	<col width="98"/>
+	<col width="107"/>
+	<col width="107"/>
+	<col width="123"/>
+	<col width="122"/>
+	<tr valign="top">
+		<td width="104" height="56" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0"><a name="_heading=h.nvvz6dp106j0"></a>
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Taxon
+			Name</b></font></font></p>
+		</td>
+		<td width="165" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Important
+			Metrics (i.e. high bPM, known pathogen, number of contigs, length)</b></font></font></p>
+		</td>
+		<td width="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Pathogenic?</b></font></font></p>
+		</td>
+		<td width="98" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Does
+			it answer your research question? </b></font></font>
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Coverage
+			Visualization Notes</b></font></font></p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>BLAST
+			Notes</b></font></font></p>
+		</td>
+		<td width="123" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Why
+			do you think this microbe is present?</b></font></font></p>
+		</td>
+		<td width="122" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><font size="2" style="font-size: 10pt"><b>Is
+			this a real hit? </b></font></font>
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="104" height="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="165" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in">
+			<ul><li><p align="center"></p></li>
+			</ul>
+		</td>
+		<td width="98" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p>
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="123" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="122" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="104" height="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="165" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in">
+			<ul><li><p align="center"></p></li>
+			</ul>
+		</td>
+		<td width="98" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p>
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="123" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="122" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="104" height="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="165" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in">
+			<ul><li><p align="center"></p></li>
+			</ul>
+		</td>
+		<td width="98" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p>
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="123" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="122" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="104" height="88" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="165" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="89" style="background: transparent; border: 1px solid #434343; padding: 0.07in">
+			<ul><li><p align="center"></p></li>
+			</ul>
+		</td>
+		<td width="98" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p>
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="123" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="122" style="background: transparent; border: 1px solid #434343; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+</table>
+<h2><font face="Open Sans, sans-serif">Summary list of candidate taxa</font></h2>
+<p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><font size="3" style="font-size: 12pt"><i>Look
+at the Sample Summary Tables above and the sample report for each
+sample. Suggested starting threshold filters: </i></font></font>
+</p>
+<p style="margin-bottom: 0in"><font face="Arial Unicode MS, sans-serif"><font size="3" style="font-size: 12pt"><i><b>NT
+bPM ≥ 100; NR bPM ≥ 1 (only if there are contigs); NT L &gt; 75;
+NT E-value &lt; 0.001 (10^-3); NR E-value &lt; 0.001 (10^-3)</b></i></font></font></p>
+<table width="962" cellpadding="7" cellspacing="0">
+	<col width="143"/>
+	<col width="268"/>
+	<col width="245"/>
+	<col width="248"/>
+	<tr valign="top">
+		<td width="143" height="13" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="border: none; padding: 0in; widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td colspan="3" width="789" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p align="center" style="widows: 0; border: none; padding: 0in; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>CANDIDATE TAXA (what do you
+			think is in your sample?)</b></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="143" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; border: none; padding: 0in; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>Sample</b></font></p>
+		</td>
+		<td width="268" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; border: none; padding: 0in; orphans: 0; margin-bottom: 0in">
+			<font face="Open Sans, sans-serif"><b>Initial Sample Report review
+			</b></font>
+			</p>
+			<p style="widows: 0; border: none; padding: 0in; orphans: 0"><font face="Open Sans, sans-serif"><b>(no
+			filters)</b></font></p>
+		</td>
+		<td width="245" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; border: none; padding: 0in; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>With threshold filters</b></font></p>
+		</td>
+		<td width="248" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; border: none; padding: 0in; orphans: 0; margin-bottom: 0in">
+			<font face="Open Sans, sans-serif"><b>With threshold filters + </b></font>
+			</p>
+			<p style="widows: 0; border: none; padding: 0in; orphans: 0"><font face="Open Sans, sans-serif"><b>category
+			filter</b></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="143" height="59" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+			<br/>
+
+			</p>
+		</td>
+		<td width="268" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; border: none; padding: 0in; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="245" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; border: none; padding: 0in; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="248" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; border: none; padding: 0in; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="143" height="59" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+			<br/>
+
+			</p>
+		</td>
+		<td width="268" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; border: none; padding: 0in; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="245" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; border: none; padding: 0in; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="248" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; border: none; padding: 0in; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="143" height="59" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+			<br/>
+
+			</p>
+		</td>
+		<td width="268" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; border: none; padding: 0in; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="245" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; border: none; padding: 0in; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="248" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; border: none; padding: 0in; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="143" height="58" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+			<br/>
+
+			</p>
+		</td>
+		<td width="268" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; border: none; padding: 0in; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="245" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; border: none; padding: 0in; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="248" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; border: none; padding: 0in; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+</table>
+<ol>
+	<li><p style="margin-top: 0.17in; margin-bottom: 0in"><font face="Open Sans, sans-serif">Are
+	any of the candidate organisms present in the water samples? (more
+	on this on the next page)</font></p>
+	<ol type="a">
+		<li><p style="margin-bottom: 0in"><font face="Open Sans, sans-serif">If
+		so, are they present in any other samples?</font></p></li>
+	</ol>
+	<li><p style="margin-bottom: 0in"><font face="Open Sans, sans-serif">Which
+	organisms appear consistently across all samples, but not in water
+	control?</font></p></li>
+	<li><p style="margin-bottom: 0.17in"><font face="Open Sans, sans-serif">If
+	you have metadata, are there microbes present in one set of samples
+	that aren’t in another (i.e. cases vs controls)? </font>
+	</p></li>
+</ol>
+<h2><a name="_heading=h.q3hruaj4058q"></a><font face="Open Sans, sans-serif">Identification
+of Background Signal</font></h2>
+<p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><i>For
+each negative water or extraction or negative sample control, collect
+metrics about the candidate taxa identified in the previous step. </i></font>
+</p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<table width="1026" cellpadding="7" cellspacing="0">
+	<col width="142"/>
+	<col width="143"/>
+	<col width="162"/>
+	<col width="162"/>
+	<col width="176"/>
+	<col width="156"/>
+	<thead>
+		<tr valign="top">
+			<td width="142" height="13" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="orphans: 0; widows: 0">
+				<br/>
+
+				</p>
+			</td>
+			<td width="143" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="orphans: 0; widows: 0">
+				<br/>
+
+				</p>
+			</td>
+			<td colspan="4" width="698" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p align="center" style="widows: 0; orphans: 0">
+				<font face="Open Sans, sans-serif"><b>SIGNAL IN WATER CONTROLS
+				for CANDIDATE TAXA (account for background)</b></font></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="142" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0; margin-bottom: 0in">
+				<font face="Open Sans, sans-serif"><b>Candidate taxa</b></font></p>
+				<p style="widows: 0; orphans: 0"><font face="Open Sans, sans-serif"><i>From
+				previous step</i></font></p>
+			</td>
+			<td width="143" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+				<font face="Open Sans, sans-serif"><b>Neg Ctrl</b></font></p>
+			</td>
+			<td width="162" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0; margin-bottom: 0in">
+				<font face="Open Sans, sans-serif"><b>NT bPM</b></font></p>
+				<p style="widows: 0; orphans: 0"><font face="Open Sans, sans-serif"><i>for
+				each negative control</i></font></p>
+			</td>
+			<td width="162" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0; margin-bottom: 0in">
+				<font face="Open Sans, sans-serif"><b>NT r</b></font></p>
+				<p style="widows: 0; orphans: 0"><font face="Open Sans, sans-serif"><i>for
+				each negative control</i></font></p>
+			</td>
+			<td width="176" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+				<font face="Open Sans, sans-serif"><b>NT bPM average in neg ctrls</b></font></p>
+			</td>
+			<td width="156" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+				<font face="Open Sans, sans-serif"><b>NT r average in neg ctrls</b></font></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td rowspan="3" width="142" height="23" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+				<font color="#434343"><font face="Open Sans, sans-serif"><i>betacoronavirus</i></font></font></p>
+			</td>
+			<td width="143" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+				<font color="#434343"><font face="Open Sans, sans-serif"><i>Water
+				1</i></font></font></p>
+			</td>
+			<td width="162" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+				<font color="#434343"><font face="Open Sans, sans-serif"><i>241</i></font></font></p>
+			</td>
+			<td width="162" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+				<font color="#434343"><font face="Open Sans, sans-serif"><i>1</i></font></font></p>
+			</td>
+			<td rowspan="3" width="176" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+				<font color="#434343"><font face="Open Sans, sans-serif"><i>292.7</i></font></font></p>
+			</td>
+			<td rowspan="3" width="156" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+				<font color="#434343"><font face="Open Sans, sans-serif"><i>2.33</i></font></font></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="143" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+				<font color="#434343"><font face="Open Sans, sans-serif"><i>Water
+				2</i></font></font></p>
+			</td>
+			<td width="162" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+				<font color="#434343"><font face="Open Sans, sans-serif"><i>253</i></font></font></p>
+			</td>
+			<td width="162" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+				<font color="#434343"><font face="Open Sans, sans-serif"><i>1</i></font></font></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="143" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+				<font color="#434343"><font face="Open Sans, sans-serif"><i>Neg
+				Ctrl 3</i></font></font></p>
+			</td>
+			<td width="162" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+				<font color="#434343"><font face="Open Sans, sans-serif"><i>384</i></font></font></p>
+			</td>
+			<td width="162" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+				<font color="#434343"><font face="Open Sans, sans-serif"><i>5</i></font></font></p>
+			</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td rowspan="3" width="142" height="58" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+				<br/>
+
+				</p>
+			</td>
+			<td width="143" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+				<br/>
+
+				</p>
+			</td>
+			<td width="162" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+				<br/>
+
+				</p>
+			</td>
+			<td width="162" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+				<br/>
+
+				</p>
+			</td>
+			<td rowspan="3" width="176" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+				<br/>
+
+				</p>
+			</td>
+			<td rowspan="3" width="156" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+				<br/>
+
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="143" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+				<br/>
+
+				</p>
+			</td>
+			<td width="162" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+				<br/>
+
+				</p>
+			</td>
+			<td width="162" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+				<br/>
+
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="143" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+				<br/>
+
+				</p>
+			</td>
+			<td width="162" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+				<br/>
+
+				</p>
+			</td>
+			<td width="162" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+				<br/>
+
+				</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<table width="1026" cellpadding="7" cellspacing="0">
+	<col width="139"/>
+	<col width="160"/>
+	<col width="159"/>
+	<col width="174"/>
+	<col width="155"/>
+	<col width="154"/>
+	<tr valign="top">
+		<td width="139" height="13" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="160" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td colspan="4" width="683" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p align="center" style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>(continued) SIGNAL IN WATER
+			CONTROLS for CANDIDATE TAXA (account for background)</b></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="139" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0; margin-bottom: 0in">
+			<font face="Open Sans, sans-serif"><b>Candidate taxa</b></font></p>
+			<p style="widows: 0; orphans: 0"><font face="Open Sans, sans-serif"><i>From
+			previous step</i></font></p>
+		</td>
+		<td width="160" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>Neg Ctrl</b></font></p>
+		</td>
+		<td width="159" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0; margin-bottom: 0in">
+			<font face="Open Sans, sans-serif"><b>NT bPM</b></font></p>
+			<p style="widows: 0; orphans: 0"><font face="Open Sans, sans-serif"><i>for
+			each negative control</i></font></p>
+		</td>
+		<td width="174" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0; margin-bottom: 0in">
+			<font face="Open Sans, sans-serif"><b>NT r</b></font></p>
+			<p style="widows: 0; orphans: 0"><font face="Open Sans, sans-serif"><i>for
+			each negative control</i></font></p>
+		</td>
+		<td width="155" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>NT bPM average in neg ctrls</b></font></p>
+		</td>
+		<td width="154" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>NT r average in neg ctrls</b></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td rowspan="3" width="139" height="59" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+			<br/>
+
+			</p>
+		</td>
+		<td width="160" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+			<br/>
+
+			</p>
+		</td>
+		<td width="159" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="174" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td rowspan="3" width="155" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td rowspan="3" width="154" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="160" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+			<br/>
+
+			</p>
+		</td>
+		<td width="159" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="174" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="160" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+			<br/>
+
+			</p>
+		</td>
+		<td width="159" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="174" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td rowspan="3" width="139" height="58" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+			<br/>
+
+			</p>
+		</td>
+		<td width="160" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+			<br/>
+
+			</p>
+		</td>
+		<td width="159" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="174" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td rowspan="3" width="155" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td rowspan="3" width="154" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="160" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+			<br/>
+
+			</p>
+		</td>
+		<td width="159" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="174" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="160" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+			<br/>
+
+			</p>
+		</td>
+		<td width="159" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="174" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+</table>
+<h2><a name="_heading=h.aemkaio9n5f5"></a><a name="_heading=h.e3ujrwuio3g7"></a>
+<font face="Open Sans, sans-serif">Background Subtraction</font></h2>
+<p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><i>Put
+it all together! Subtract average background signal (previous step)
+from signal found in samples (two steps before this). </i></font>
+</p>
+<p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><i>A
+real hit will be found at higher levels in the sample than in the
+negative controls</i></font></p>
+<table width="961" cellpadding="7" cellspacing="0">
+	<col width="92"/>
+	<col width="93"/>
+	<col width="107"/>
+	<col width="106"/>
+	<col width="116"/>
+	<col width="116"/>
+	<col width="116"/>
+	<col width="102"/>
+	<tr valign="top">
+		<td colspan="2" width="199" height="13" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td colspan="4" width="486" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p align="center" style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>SIGNAL IN WATER CONTROLS and
+			SAMPLES for CANDIDATE TAXA</b></font></p>
+		</td>
+		<td colspan="2" width="232" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>BACKGROUND SUBTRACTED</b></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="92" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>Sample</b></font></p>
+		</td>
+		<td width="93" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0; margin-bottom: 0in">
+			<font face="Open Sans, sans-serif"><b>Candidate taxa</b></font></p>
+			<p style="orphans: 0; widows: 0"><br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0; margin-bottom: 0in">
+			<font face="Open Sans, sans-serif"><b>NT bPM: sample</b></font></p>
+			<p style="orphans: 0; widows: 0"><br/>
+
+			</p>
+		</td>
+		<td width="106" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0; margin-bottom: 0in">
+			<font face="Open Sans, sans-serif"><b>NT r: </b></font>
+			</p>
+			<p style="widows: 0; orphans: 0; margin-bottom: 0in"><font face="Open Sans, sans-serif"><b>sample</b></font></p>
+			<p style="orphans: 0; widows: 0"><br/>
+
+			</p>
+		</td>
+		<td width="116" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>NT bPM: average in neg ctrl</b></font></p>
+		</td>
+		<td width="116" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0; margin-bottom: 0in">
+			<font face="Open Sans, sans-serif"><b>NT r: </b></font>
+			</p>
+			<p style="widows: 0; orphans: 0"><font face="Open Sans, sans-serif"><b>average
+			in neg ctrl</b></font></p>
+		</td>
+		<td width="116" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>NT bPM (sample - neg ctrl
+			average)</b></font></p>
+		</td>
+		<td width="102" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0; margin-bottom: 0in">
+			<font face="Open Sans, sans-serif"><b>NT r </b></font>
+			</p>
+			<p style="widows: 0; orphans: 0"><font face="Open Sans, sans-serif"><b>(sample
+			- neg ctrl average)</b></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="92" height="59" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+			<br/>
+
+			</p>
+		</td>
+		<td width="93" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="106" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="116" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="116" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="116" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="102" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="92" height="59" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+			<br/>
+
+			</p>
+		</td>
+		<td width="93" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="106" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="116" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="116" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="116" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="102" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="92" height="59" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+			<br/>
+
+			</p>
+		</td>
+		<td width="93" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="106" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="116" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="116" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="116" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="102" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="92" height="59" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+			<br/>
+
+			</p>
+		</td>
+		<td width="93" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="106" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="116" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="116" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="116" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="102" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="92" height="58" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+			<br/>
+
+			</p>
+		</td>
+		<td width="93" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+			<br/>
+
+			</p>
+		</td>
+		<td width="107" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="106" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="116" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="116" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="116" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="102" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+</table>
+<h2><a name="_heading=h.bl8t6kuqzq9w"></a><font face="Open Sans, sans-serif">Potential
+Hit List</font></h2>
+<p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><i>Record
+the hits for each sample that pass all filter steps and have positive
+signal above the negative control background.</i></font></p>
+<p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><i>This
+is your potential hit list!</i></font></p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><i>Because
+mNGS sequencing is a research tool, we recommend completing some of
+the following steps to increase confidence in the hit.</i></font></p>
+<ol>
+	<li><p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><i>Reprep
+	and sequence sample starting from a fresh extraction </i></font>
+	</p></li>
+	<li><p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><i>Resequence
+	the completed library individually or in a pool without other
+	samples with high abundance of the taxon (reduce barcode bleeding)</i></font></p></li>
+	<li><p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><i>Perform
+	other confirmatory tests on the sample like qPCR</i></font></p></li>
+	<li><p style="margin-bottom: 0in"><font face="Open Sans, sans-serif"><i>Consider
+	more advanced bioinformatics analysis to compare SNP pattern across
+	samples</i></font></p></li>
+</ol>
+<table width="962" cellpadding="7" cellspacing="0">
+	<col width="143"/>
+	<col width="268"/>
+	<col width="245"/>
+	<col width="248"/>
+	<tr valign="top">
+		<td width="143" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td colspan="3" width="789" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p align="center" style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>POTENTIAL HIT LIST</b></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="143" height="19" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>Sample</b></font></p>
+		</td>
+		<td width="268" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>Taxa detected above
+			thresholds + background</b></font></p>
+		</td>
+		<td width="245" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>Notes</b></font></p>
+		</td>
+		<td width="248" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<font face="Open Sans, sans-serif"><b>Next steps</b></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="143" height="59" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+			<br/>
+
+			</p>
+		</td>
+		<td width="268" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="245" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="248" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="143" height="59" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+			<br/>
+
+			</p>
+		</td>
+		<td width="268" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="245" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="248" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="143" height="59" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+			<br/>
+
+			</p>
+		</td>
+		<td width="268" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="245" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="248" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="143" height="58" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="margin-top: 0.17in">
+			<br/>
+
+			</p>
+		</td>
+		<td width="268" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="245" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+		<td width="248" style="background: transparent; border: 1.00pt solid #000000; padding: 0.07in"><p style="widows: 0; orphans: 0">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+</table>
+<p style="margin-top: 0.17in; margin-bottom: 0in"><br/>
+
+</p>
+<div title="footer"><p align="right" style="margin-bottom: 0in"><span style="background: #c0c0c0"><sdfield type=PAGE subtype=RANDOM format=PAGE>1</sdfield></span></p>
+</div>
+</body>
+</html>

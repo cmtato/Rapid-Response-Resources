@@ -1,124 +1,282 @@
 #!/usr/bin/env python3
-"""Regenerates docs/ pages from resources/ source files.
+"""Regenerates the docs/ site from the original files in resources/.
 
 Usage:
-    tools/convert.py                                  # regenerate everything in resources.json
-    tools/convert.py "resources/protocols/Biohub ...docx"   # regenerate just the matching entry
+    tools/convert.py                          # rebuild every entry in resources.json
+    tools/convert.py "resources/slides/X.pptx"  # rebuild just the matching entry
+    tools/convert.py --index                  # only regenerate docs/index.html
 
 Requires `soffice` (LibreOffice) on PATH, and openpyxl for xlsx-interactive
-entries (pip install openpyxl).
+entries (pip install -r tools/requirements.txt).
+
+Everything under a resource's docsDir is generated: index.html, any
+interactive pages, content.html / slides.pdf / sheet-data*.json. The
+hand-maintained files are docs/assets/* and the README.
 """
 import json
-import re
 import shutil
 import subprocess
 import sys
 import tempfile
+import urllib.parse
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
-MANIFEST_PATH = Path(__file__).resolve().parent / "resources.json"
+TOOLS = Path(__file__).resolve().parent
+REPO_ROOT = TOOLS.parent
+MANIFEST_PATH = TOOLS / "resources.json"
 
 
 def load_manifest():
     with open(MANIFEST_PATH) as f:
-        return json.load(f)["entries"]
+        return json.load(f)
 
+
+def raw_url(manifest, source):
+    """Direct-download URL for an original file, served from the repo."""
+    encoded = "/".join(urllib.parse.quote(part) for part in source.split("/"))
+    return f"https://raw.githubusercontent.com/{manifest['repo']}/main/{encoded}"
+
+
+def esc(text):
+    return (text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
+
+
+# ---------------------------------------------------------------- conversions
 
 def soffice_convert(src, out_format, outdir):
     subprocess.run(
-        ["soffice", "--headless", "--convert-to", out_format, "--outdir", str(outdir), str(src)],
+        ["soffice", "--headless", "--convert-to", out_format,
+         "--outdir", str(outdir), str(src)],
         check=True, capture_output=True, text=True,
     )
-    converted = list(Path(outdir).glob(f"*.{out_format}"))
-    if not converted:
-        raise RuntimeError(f"soffice produced no .{out_format} file for {src}")
-    return converted[0]
+    produced = list(Path(outdir).glob(f"*.{out_format}"))
+    if not produced:
+        raise RuntimeError(f"soffice produced no .{out_format} for {src}")
+    return produced[0]
 
 
-def inject_css(html_path, extra_css):
-    if not extra_css:
-        return
+def inject_css(html_path, css):
     text = html_path.read_text(encoding="utf-8")
-    marker = "<style type=\"text/css\">"
+    marker = '<style type="text/css">'
     idx = text.find(marker)
     if idx == -1:
-        raise RuntimeError(f"could not find <style> tag to patch in {html_path}")
-    insert_at = idx + len(marker)
-    text = text[:insert_at] + "\n\t\t" + extra_css + "\n" + text[insert_at:]
-    html_path.write_text(text, encoding="utf-8")
+        raise RuntimeError(f"no <style> block to patch in {html_path}")
+    at = idx + len(marker)
+    html_path.write_text(text[:at] + "\n\t\t" + css + "\n" + text[at:], encoding="utf-8")
 
 
-def convert_docx_or_xlsx_static(src_path, docs_dir, extra_css):
+def build_content_html(src, docs_dir, css):
+    """docx/xlsx -> content.html (+ any extracted images) in docs_dir."""
+    for stale in list(docs_dir.glob("*_html_*")):
+        stale.unlink()
     with tempfile.TemporaryDirectory() as tmp:
-        html_file = soffice_convert(src_path, "html", tmp)
-        inject_css(html_file, extra_css)
-        shutil.copy(html_file, docs_dir / "content.html")
-        # copy any extracted images (e.g. "Name_html_xxxxx.png") alongside
+        html = soffice_convert(src, "html", tmp)
+        if css:
+            inject_css(html, css)
+        shutil.copy(html, docs_dir / "content.html")
         for asset in Path(tmp).glob("*_html_*"):
             shutil.copy(asset, docs_dir / asset.name)
-    print(f"  -> {docs_dir / 'content.html'}")
 
 
-def convert_pptx(src_path, docs_dir):
+def build_slides_pdf(src, docs_dir):
     with tempfile.TemporaryDirectory() as tmp:
-        pdf_file = soffice_convert(src_path, "pdf", tmp)
-        shutil.copy(pdf_file, docs_dir / "slides.pdf")
-    print(f"  -> {docs_dir / 'slides.pdf'}")
+        pdf = soffice_convert(src, "pdf", tmp)
+        shutil.copy(pdf, docs_dir / "slides.pdf")
 
 
-def convert_xlsx_interactive(src_path, docs_dir, entry):
-    sys.path.insert(0, str(Path(__file__).resolve().parent))
+def build_sheet_data(src, docs_dir, sheets):
+    sys.path.insert(0, str(TOOLS))
     import extract_sheet
-
-    sheets = entry.get("sheets") or [{"name": entry["sheet"], "output": "sheet-data.json"}]
-    for s in sheets:
-        data = extract_sheet.extract(str(src_path), s["name"])
-        out_path = docs_dir / s["output"]
-        with open(out_path, "w") as f:
+    for sheet in sheets:
+        data = extract_sheet.extract(str(src), sheet["name"])
+        with open(docs_dir / sheet["output"], "w") as f:
             json.dump(data, f, indent=0)
-        print(f"  -> {out_path} ({len(data['cells'])} cells, {len(data['merges'])} merges)")
-    # also refresh the flattened "static view" tab
-    convert_docx_or_xlsx_static(src_path, docs_dir, extra_css=None)
+        print(f"      {sheet['output']}: {len(data['cells'])} cells, "
+              f"{len(data['merges'])} merges")
 
 
-def run_entry(entry):
-    src_path = REPO_ROOT / entry["source"]
-    docs_dir = REPO_ROOT / entry["docsDir"]
-    if not src_path.exists():
-        raise FileNotFoundError(f"source not found: {src_path}")
-    if not docs_dir.exists():
-        raise FileNotFoundError(f"docs dir not found: {docs_dir}")
+# ------------------------------------------------------------- page scaffolds
 
-    print(f"Converting {entry['source']} ({entry['type']})")
-    if entry["type"] == "docx":
-        convert_docx_or_xlsx_static(src_path, docs_dir, entry.get("extraCss"))
-    elif entry["type"] == "pptx":
-        convert_pptx(src_path, docs_dir)
-    elif entry["type"] == "xlsx-static":
-        convert_docx_or_xlsx_static(src_path, docs_dir, entry.get("extraCss"))
-    elif entry["type"] == "xlsx-interactive":
-        convert_xlsx_interactive(src_path, docs_dir, entry)
+SHELL = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>{title}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="inner">
+    <a class="home" href="../../index.html">Rapid Response Resources</a>
+    <span class="crumb">/ {section} / {title}</span>
+  </div>
+</header>
+<main{main_class}>
+  <div class="resource-header">
+    <div>
+      <h1>{title}</h1>
+      <div class="meta">{meta}</div>
+    </div>
+    <a class="btn" href="{download}" download="{filename}">Download original {ext}</a>
+  </div>
+{tabs}{body}
+</main>
+{scripts}</body>
+</html>
+"""
+
+META = {
+    "pptx": "Slide deck · converted from PowerPoint (PPTX → PDF)",
+    "docx": "Document · converted from Word (DOCX → HTML)",
+    "xlsx-static": "Excel workbook · converted from XLSX → HTML (formulas are not interactive)",
+}
+
+
+def tab_bar(entry, active):
+    """Static view + one tab per interactive sheet."""
+    sheets = entry.get("sheets") or []
+    if not sheets:
+        return ""
+    links = [("index.html", "Static view")] + [(s["page"], s["label"]) for s in sheets]
+    out = ['  <div class="tabs">']
+    for href, label in links:
+        cls = ' class="active"' if href == active else ""
+        out.append(f'    <a href="{href}"{cls}>{esc(label)}</a>')
+    out.append("  </div>")
+    return "\n".join(out) + "\n"
+
+
+def write_pages(manifest, entry, docs_dir):
+    src = entry["source"]
+    filename = Path(src).name
+    ext = Path(src).suffix
+    title = esc(entry["title"])
+    download = raw_url(manifest, src)
+    etype = entry["type"]
+
+    if etype == "pptx":
+        body = '  <iframe class="viewer-frame" src="slides.pdf" title="{t} slides"></iframe>'.format(t=title)
+        main_class, scripts = ' class="wide"', ""
     else:
-        raise ValueError(f"unknown type: {entry['type']}")
+        body = '  <iframe class="viewer-frame" src="content.html" title="{t}"></iframe>'.format(t=title)
+        main_class, scripts = "", ""
+
+    (docs_dir / "index.html").write_text(SHELL.format(
+        title=title, section=esc(entry.get("section", "")),
+        meta=META.get(etype, META["xlsx-static"]),
+        download=download, filename=filename, ext=ext,
+        tabs=tab_bar(entry, "index.html"), body=body,
+        main_class=main_class, scripts=scripts,
+    ), encoding="utf-8")
+
+    for sheet in entry.get("sheets") or []:
+        body = '  <div id="sheet-container"></div>'
+        scripts = ('<script src="../../assets/vendor/hyperformula.full.min.js"></script>\n'
+                   '<script src="../../assets/calc-sheet.js"></script>\n'
+                   '<script>\n  renderCalcSheet("sheet-container", "%s");\n</script>\n'
+                   % sheet["output"])
+        (docs_dir / sheet["page"]).write_text(SHELL.format(
+            title=title, section=esc(entry.get("section", "")),
+            meta=f'Live calculator ({esc(sheet["name"])}) · edit "X =" to rescale reagent volumes',
+            download=download, filename=filename, ext=ext,
+            tabs=tab_bar(entry, sheet["page"]), body=body,
+            main_class="", scripts=scripts,
+        ), encoding="utf-8")
+
+
+# -------------------------------------------------------------- orchestration
+
+def run_entry(manifest, entry):
+    if entry["type"] == "download-only":
+        print(f"Skipping (download-only): {entry['source']}")
+        return
+    src = REPO_ROOT / entry["source"]
+    docs_dir = REPO_ROOT / entry["docsDir"]
+    if not src.exists():
+        raise FileNotFoundError(f"source missing: {src}")
+    docs_dir.mkdir(parents=True, exist_ok=True)
+
+    print(f"{entry['source']}  ({entry['type']})")
+    etype = entry["type"]
+    if etype == "pptx":
+        build_slides_pdf(src, docs_dir)
+    elif etype in ("docx", "xlsx-static"):
+        build_content_html(src, docs_dir, manifest.get("fontCss"))
+    elif etype == "xlsx-interactive":
+        build_sheet_data(src, docs_dir, entry["sheets"])
+        build_content_html(src, docs_dir, None)
+    else:
+        raise ValueError(f"unknown type: {etype}")
+    write_pages(manifest, entry, docs_dir)
+    print(f"      -> {entry['docsDir']}/")
+
+
+INDEX = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rapid Response Resources</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="inner">
+    <a class="home" href="index.html">Rapid Response Resources</a>
+    <span class="crumb">Metagenomics sequencing &amp; analysis training materials</span>
+  </div>
+</header>
+<main>
+  <p>All hosted resources, grouped by type. See the <a href="https://github.com/{repo}">README</a> for the Illumina/Nanopore workflow view.</p>
+{sections}</main>
+</body>
+</html>
+"""
+
+
+def write_index(manifest):
+    order = ["Protocols", "Slide Decks", "Worksheets"]
+    kinds = {"pptx": "PPTX → PDF", "docx": "DOCX → HTML",
+             "xlsx-static": "XLSX → HTML", "xlsx-interactive": "XLSX → HTML + calculator"}
+    blocks = []
+    for section in order:
+        items = [e for e in manifest["entries"]
+                 if e.get("section") == section and e["type"] != "download-only"]
+        if not items:
+            continue
+        rows = "\n".join(
+            f'      <li>\n'
+            f'        <a class="title" href="{e["docsDir"][len("docs/"):]}/index.html">{esc(e["title"])}</a>\n'
+            f'        <span class="kind">{kinds[e["type"]]}</span>\n'
+            f'      </li>' for e in items)
+        blocks.append(f'  <section class="group">\n    <h2>{section}</h2>\n'
+                      f'    <ul class="resource-list">\n{rows}\n    </ul>\n  </section>\n')
+    (REPO_ROOT / "docs" / "index.html").write_text(
+        INDEX.format(repo=manifest["repo"], sections="\n".join(blocks)), encoding="utf-8")
+    print("regenerated docs/index.html")
 
 
 def main():
-    entries = load_manifest()
-    target = sys.argv[1] if len(sys.argv) > 1 else None
+    manifest = load_manifest()
+    args = sys.argv[1:]
 
-    if target:
-        matches = [e for e in entries if e["source"] == target or str(REPO_ROOT / e["source"]) == target]
-        if not matches:
+    if args == ["--index"]:
+        write_index(manifest)
+        return
+
+    entries = manifest["entries"]
+    if args:
+        target = args[0]
+        entries = [e for e in entries if e["source"] in (target, str(REPO_ROOT / target))]
+        if not entries:
             print(f"No manifest entry for: {target}", file=sys.stderr)
-            print("Known sources:", file=sys.stderr)
-            for e in entries:
-                print(f"  {e['source']}", file=sys.stderr)
             sys.exit(1)
-        entries = matches
 
     for entry in entries:
-        run_entry(entry)
+        run_entry(manifest, entry)
+    if not args:
+        write_index(manifest)
 
 
 if __name__ == "__main__":

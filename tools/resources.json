@@ -1,101 +1,211 @@
 {
+  "repo": "cmtato/Rapid-Response-Resources",
+  "site": "https://cmtato.github.io/Rapid-Response-Resources",
+  "fontCss": "body, p, h1, h2, font, td, th, li { font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif !important; }",
   "entries": [
     {
-      "source": "resources/protocols/Biohub Rapid Response mNGS Protocols Shared.docx",
-      "docsDir": "docs/protocols/rapid-response-mngs-protocols",
+      "source": "resources/protocols/0-I Biohub Rapid Response mNGS Protocols Shared.docx",
+      "docsDir": "docs/protocols/0-i-biohub-rapid-response-mngs-protocols-shared",
       "type": "docx",
-      "extraCss": "body, p, h1, h2, font, td, th, li { font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif !important; }"
+      "title": "0. Biohub Protocols - Illumina mNGS",
+      "section": "Protocols"
     },
     {
-      "source": "resources/slides/DL2_Intro to CZ ID.pptx",
-      "docsDir": "docs/slides/dl2-intro-to-czid",
-      "type": "pptx"
-    },
-    {
-      "source": "resources/worksheets/3. Illumina RNA Library Prep Worksheet Template.xlsx",
-      "docsDir": "docs/worksheets/illumina-rna-library-prep-worksheet",
-      "type": "xlsx-interactive",
-      "sheet": "Protocol"
-    },
-    {
-      "source": "resources/worksheets/5. Library Pooling Calculations.xlsx",
-      "docsDir": "docs/worksheets/library-pooling-calculations",
-      "type": "xlsx-static"
-    },
-    {
-      "source": "resources/protocols/Biohub Protocols_ Nanopore mNGS.docx",
-      "docsDir": "docs/protocols/biohub-protocols-nanopore-mngs",
+      "source": "resources/protocols/0-O Biohub Protocols_ Nanopore mNGS.docx",
+      "docsDir": "docs/protocols/0-o-biohub-protocols-nanopore-mngs",
       "type": "docx",
-      "extraCss": "body, p, h1, h2, font, td, th, li { font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif !important; }"
+      "title": "0. Biohub Protocols - Nanopore mNGS",
+      "section": "Protocols"
     },
     {
-      "source": "resources/slides/1.Introduction to mNGS and lab.pptx",
-      "docsDir": "docs/slides/intro-to-mngs-and-lab",
-      "type": "pptx"
-    },
-    {
-      "source": "resources/slides/2. mNGS study design and sample preparation.pptx",
-      "docsDir": "docs/slides/mngs-study-design-and-sample-prep",
-      "type": "pptx"
-    },
-    {
-      "source": "resources/slides/3.mNGS Illumina sequencing and data analysis intro.pptx",
-      "docsDir": "docs/slides/illumina-sequencing-and-data-analysis-intro",
-      "type": "pptx"
-    },
-    {
-      "source": "resources/slides/Intro to Nanopore Sequencing.pptx",
-      "docsDir": "docs/slides/intro-to-nanopore-sequencing",
-      "type": "pptx"
-    },
-    {
-      "source": "resources/worksheets/2. DNase Treatment.xlsx",
-      "docsDir": "docs/worksheets/dnase-treatment",
+      "source": "resources/protocols/2. DNase Treatment.xlsx",
+      "docsDir": "docs/protocols/2-dnase-treatment",
       "type": "xlsx-interactive",
+      "title": "2. DNase Treatment",
+      "section": "Protocols",
       "sheets": [
-        { "name": "Zymo DNase I", "output": "sheet-data-zymo.json" },
-        { "name": "Qiagen DNase I", "output": "sheet-data-qiagen.json" }
+        { "name": "Zymo DNase I", "output": "sheet-data-zymo.json", "page": "interactive-zymo.html", "label": "Zymo DNase I calculator" },
+        { "name": "Qiagen DNase I", "output": "sheet-data-qiagen.json", "page": "interactive-qiagen.html", "label": "Qiagen DNase I calculator" }
       ]
     },
     {
-      "source": "resources/slides/4.RNA and DNA library preparation for mNGS-needs substantial updating.pptx",
-      "docsDir": "docs/slides/rna-dna-library-preparation-for-mngs",
-      "type": "pptx"
+      "source": "resources/protocols/3. Illumina RNA Library Prep Worksheet Template.xlsx",
+      "docsDir": "docs/protocols/3-illumina-rna-library-prep-worksheet-template",
+      "type": "xlsx-interactive",
+      "title": "3. Illumina RNA Library Prep Worksheet Template",
+      "section": "Protocols",
+      "sheets": [
+        { "name": "Protocol", "output": "sheet-data.json", "page": "interactive.html", "label": "Interactive calculator" }
+      ]
     },
     {
-      "source": "resources/slides/5. Library prep QC.pptx",
-      "docsDir": "docs/slides/library-prep-qc",
-      "type": "pptx"
+      "source": "resources/protocols/5. Library Pooling Calculations.xlsx",
+      "docsDir": "docs/protocols/5-library-pooling-calculations",
+      "type": "xlsx-static",
+      "title": "5. Library Pooling Calculations",
+      "section": "Protocols"
+    },
+
+    {
+      "source": "resources/slides/8-I. Sequencing Run QC for Illumina.pptx",
+      "docsDir": "docs/slides/8-i-sequencing-run-qc-for-illumina",
+      "type": "pptx",
+      "title": "8. Sequencing Run QC for Illumina",
+      "section": "Slide Decks"
     },
     {
-      "source": "resources/slides/6. Sequencing run QC.pptx",
-      "docsDir": "docs/slides/sequencing-run-qc",
-      "type": "pptx"
+      "source": "resources/slides/8-O. Sequencing Run QC for ONT.pptx",
+      "docsDir": "docs/slides/8-o-sequencing-run-qc-for-ont",
+      "type": "pptx",
+      "title": "8. Sequencing Run QC for ONT",
+      "section": "Slide Decks"
     },
     {
-      "source": "resources/slides/7a. iSeq 100 Loading_master.pptx",
-      "docsDir": "docs/slides/iseq-100-loading",
-      "type": "pptx"
+      "source": "resources/slides/DL1_Bioinformatics Basics and BLAST.pptx",
+      "docsDir": "docs/slides/dl1-bioinformatics-basics-and-blast",
+      "type": "pptx",
+      "title": "DL1. Bioinformatics Basics and BLAST",
+      "section": "Slide Decks"
     },
     {
-      "source": "resources/slides/7b. MiSeq Loading_master.pptx",
-      "docsDir": "docs/slides/miseq-loading",
-      "type": "pptx"
+      "source": "resources/slides/DL2_Intro to CZ ID.pptx",
+      "docsDir": "docs/slides/dl2-intro-to-cz-id",
+      "type": "pptx",
+      "title": "DL2. Intro to CZ ID",
+      "section": "Slide Decks"
     },
     {
-      "source": "resources/slides/Library Prep for ONT.pptx",
-      "docsDir": "docs/slides/library-prep-for-ont",
-      "type": "pptx"
+      "source": "resources/slides/DL3-O_Prepare ONT fastqs for upload to CZ ID.pptx",
+      "docsDir": "docs/slides/dl3-o-prepare-ont-fastqs-for-upload-to-cz-id",
+      "type": "pptx",
+      "title": "DL3. Prepare ONT fastqs for upload to CZ ID",
+      "section": "Slide Decks"
     },
     {
-      "source": "resources/slides/Library Prep QC for ONT.pptx",
-      "docsDir": "docs/slides/library-prep-qc-for-ont",
-      "type": "pptx"
+      "source": "resources/slides/DL4-I_CZ ID mNGS Pipeline for Illumina.pptx",
+      "docsDir": "docs/slides/dl4-i-cz-id-mngs-pipeline-for-illumina",
+      "type": "pptx",
+      "title": "DL4. CZ ID mNGS Pipeline for Illumina",
+      "section": "Slide Decks"
     },
     {
-      "source": "resources/slides/MinION Loading and Sequencing Run Setup.pptx",
-      "docsDir": "docs/slides/minion-loading-and-sequencing-run-setup",
-      "type": "pptx"
+      "source": "resources/slides/DL4-O_CZ ID mNGS Pipeline for ONT.pptx",
+      "docsDir": "docs/slides/dl4-o-cz-id-mngs-pipeline-for-ont",
+      "type": "pptx",
+      "title": "DL4. CZ ID mNGS Pipeline for ONT",
+      "section": "Slide Decks"
+    },
+    {
+      "source": "resources/slides/DL5-I_QC and interpretation slides for Illumina.pptx",
+      "docsDir": "docs/slides/dl5-i-qc-and-interpretation-slides-for-illumina",
+      "type": "pptx",
+      "title": "DL5. QC and interpretation slides for Illumina",
+      "section": "Slide Decks"
+    },
+    {
+      "source": "resources/slides/DL5-O_QC and interpretation slides for ONT.pptx",
+      "docsDir": "docs/slides/dl5-o-qc-and-interpretation-slides-for-ont",
+      "type": "pptx",
+      "title": "DL5. QC and interpretation slides for ONT",
+      "section": "Slide Decks"
+    },
+    {
+      "source": "resources/slides/DL6-I_Sample Report Metrics for Illumina.pptx",
+      "docsDir": "docs/slides/dl6-i-sample-report-metrics-for-illumina",
+      "type": "pptx",
+      "title": "DL6. Sample Report Metrics for Illumina",
+      "section": "Slide Decks"
+    },
+    {
+      "source": "resources/slides/DL6-O_Sample Report Metrics for ONT.pptx",
+      "docsDir": "docs/slides/dl6-o-sample-report-metrics-for-ont",
+      "type": "pptx",
+      "title": "DL6. Sample Report Metrics for ONT",
+      "section": "Slide Decks"
+    },
+    {
+      "source": "resources/slides/DL7-I_Background models.pptx",
+      "docsDir": "docs/slides/dl7-i-background-models",
+      "type": "pptx",
+      "title": "DL7. Background models",
+      "section": "Slide Decks"
+    },
+    {
+      "source": "resources/slides/DL7-O_Background models for ONT.pptx",
+      "docsDir": "docs/slides/dl7-o-background-models-for-ont",
+      "type": "pptx",
+      "title": "DL7. Background models for ONT",
+      "section": "Slide Decks"
+    },
+    {
+      "source": "resources/slides/DL8-I_CZ ID Heatmap for Illumina.pptx",
+      "docsDir": "docs/slides/dl8-i-cz-id-heatmap-for-illumina",
+      "type": "pptx",
+      "title": "DL8. CZ ID Heatmap for Illumina",
+      "section": "Slide Decks"
+    },
+    {
+      "source": "resources/slides/DL8-O_ONT Heatmap.pptx",
+      "docsDir": "docs/slides/dl8-o-ont-heatmap",
+      "type": "pptx",
+      "title": "DL8. ONT Heatmap",
+      "section": "Slide Decks"
+    },
+    {
+      "source": "resources/slides/DL9-I_CZ ID AMR Module.pptx",
+      "docsDir": "docs/slides/dl9-i-cz-id-amr-module",
+      "type": "pptx",
+      "title": "DL9. CZ ID AMR Module",
+      "section": "Slide Decks"
+    },
+    {
+      "source": "resources/slides/DL10-I_Building Viral Consensus Genomes.pptx",
+      "docsDir": "docs/slides/dl10-i-building-viral-consensus-genomes",
+      "type": "pptx",
+      "title": "DL10. Building Viral Consensus Genomes",
+      "section": "Slide Decks"
+    },
+
+    {
+      "source": "resources/worksheets/8-I. Sequencing Run QC for Illumina - Activity.docx",
+      "docsDir": "docs/worksheets/8-i-sequencing-run-qc-for-illumina-activity",
+      "type": "docx",
+      "title": "8. Sequencing Run QC for Illumina - Activity",
+      "section": "Worksheets"
+    },
+    {
+      "source": "resources/worksheets/8-O. Sequencing Run QC for ONT - Activity.docx",
+      "docsDir": "docs/worksheets/8-o-sequencing-run-qc-for-ont-activity",
+      "type": "docx",
+      "title": "8. Sequencing Run QC for ONT - Activity",
+      "section": "Worksheets"
+    },
+    {
+      "source": "resources/worksheets/CZ ID Training Reference Tables & Worksheets_Illumina.docx",
+      "docsDir": "docs/worksheets/cz-id-training-reference-tables-worksheets-illumina",
+      "type": "docx",
+      "title": "CZ ID Training Reference Tables & Worksheets (Illumina)",
+      "section": "Worksheets"
+    },
+    {
+      "source": "resources/worksheets/CZ ID Training Reference Tables & Worksheets_ONT.docx",
+      "docsDir": "docs/worksheets/cz-id-training-reference-tables-worksheets-ont",
+      "type": "docx",
+      "title": "CZ ID Training Reference Tables & Worksheets (ONT)",
+      "section": "Worksheets"
+    },
+    {
+      "source": "resources/worksheets/DL1_BLAST - Activity.docx",
+      "docsDir": "docs/worksheets/dl1-blast-activity",
+      "type": "docx",
+      "title": "DL1. BLAST - Activity",
+      "section": "Worksheets"
+    },
+    {
+      "source": "resources/worksheets/DL3-O_Concat fastq worksheet_openinexcelonly.xlsx",
+      "type": "download-only",
+      "title": "DL3. Concat fastq worksheet",
+      "note": "Excel-only workbook; linked directly from the DL3 slide deck, no HTML page."
     }
   ]
 }

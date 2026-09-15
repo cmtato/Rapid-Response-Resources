@@ -13,145 +13,179 @@ Resources for metagenomics sequencing, covering wet and dry lab methods for Illu
 <tr>
 <td>
 
-<br>
-
-**Start here:** [Biohub Protocols - Illumina mNGS](https://cmtato.github.io/Rapid-Response-Resources/protocols/rapid-response-mngs-protocols/index.html)
-
-<br>
+**Start here:** [0. Biohub Protocols - Illumina mNGS](https://cmtato.github.io/Rapid-Response-Resources/protocols/0-i-biohub-rapid-response-mngs-protocols-shared/index.html)
 
 </td>
 <td>
 
-<br>
-
-**Start here:** [Biohub Protocols - Nanopore mNGS](https://cmtato.github.io/Rapid-Response-Resources/protocols/biohub-protocols-nanopore-mngs/index.html)
-
-<br>
+**Start here:** [0. Biohub Protocols - Nanopore mNGS](https://cmtato.github.io/Rapid-Response-Resources/protocols/0-o-biohub-protocols-nanopore-mngs/index.html)
 
 </td>
 </tr>
+
+<tr><td colspan="2"><em>Wet lab modules 1-7 go here.</em></td></tr>
+
+<tr><td colspan="2"><strong>Evaluating sequencing run QC</strong></td></tr>
+
+<tr>
+<td>
+
+- [8. Sequencing Run QC for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides/8-i-sequencing-run-qc-for-illumina/index.html)
+- [Activity](https://cmtato.github.io/Rapid-Response-Resources/worksheets/8-i-sequencing-run-qc-for-illumina-activity/index.html)
+
+</td>
+<td>
+
+- [8. Sequencing Run QC for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/8-o-sequencing-run-qc-for-ont/index.html)
+- [Activity](https://cmtato.github.io/Rapid-Response-Resources/worksheets/8-o-sequencing-run-qc-for-ont-activity/index.html)
+
+</td>
+</tr>
+
+<tr><td colspan="2"><strong>Getting familiar with NCBI database and how to BLAST</strong></td></tr>
 
 <tr><td colspan="2">
 
-<br>
-
-[Introduction to mNGS and Lab](https://cmtato.github.io/Rapid-Response-Resources/slides/intro-to-mngs-and-lab/index.html)
-
-<br>
+- [DL1. Bioinformatics Basics and BLAST](https://cmtato.github.io/Rapid-Response-Resources/slides/dl1-bioinformatics-basics-and-blast/index.html)
+- [Activity](https://cmtato.github.io/Rapid-Response-Resources/worksheets/dl1-blast-activity/index.html)
 
 </td></tr>
+
+<tr><td colspan="2"><strong>Introduction to CZ ID</strong></td></tr>
 
 <tr><td colspan="2">
 
-<br>
-
-[mNGS Study Design and Sample Preparation](https://cmtato.github.io/Rapid-Response-Resources/slides/mngs-study-design-and-sample-prep/index.html)
-
-<br>
+[DL2. Intro to CZ ID](https://cmtato.github.io/Rapid-Response-Resources/slides/dl2-intro-to-cz-id/index.html)
 
 </td></tr>
 
+<tr><td colspan="2"><strong>Preparing data for upload to CZ ID</strong></td></tr>
+
 <tr>
 <td>
 
-<br>
-
-[mNGS Illumina Sequencing and Data Analysis Intro](https://cmtato.github.io/Rapid-Response-Resources/slides/illumina-sequencing-and-data-analysis-intro/index.html)
-
-<br>
+Not applicable
 
 </td>
 <td>
 
-<br>
-
-[Intro to Nanopore Sequencing](https://cmtato.github.io/Rapid-Response-Resources/slides/intro-to-nanopore-sequencing/index.html)
-
-<br>
+[DL3. Prepare ONT fastqs for upload to CZ ID](https://cmtato.github.io/Rapid-Response-Resources/slides/dl3-o-prepare-ont-fastqs-for-upload-to-cz-id/index.html)
 
 </td>
 </tr>
 
+<tr><td colspan="2"><strong>CZ ID mNGS analysis pipeline overview</strong></td></tr>
+
 <tr>
 <td>
 
-<br>
-
-[RNA and DNA Library Preparation for mNGS](https://cmtato.github.io/Rapid-Response-Resources/slides/rna-dna-library-preparation-for-mngs/index.html)
-
-<br>
+[DL4. CZ ID mNGS Pipeline for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides/dl4-i-cz-id-mngs-pipeline-for-illumina/index.html)
 
 </td>
 <td>
 
-<br>
-
-[Library Prep for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/library-prep-for-ont/index.html)
-
-<br>
+[DL4. CZ ID mNGS Pipeline for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/dl4-o-cz-id-mngs-pipeline-for-ont/index.html)
 
 </td>
 </tr>
 
+<tr><td colspan="2"><strong>QC checks of mNGS data in CZ ID</strong></td></tr>
+
 <tr>
 <td>
 
-<br>
-
-[Library Prep QC](https://cmtato.github.io/Rapid-Response-Resources/slides/library-prep-qc/index.html)
-
-<br>
+- [DL5. QC and interpretation slides for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides/dl5-i-qc-and-interpretation-slides-for-illumina/index.html)
+- [Activity (pg 5-10)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-illumina/index.html)
 
 </td>
 <td>
 
-<br>
-
-[Library Prep QC for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/library-prep-qc-for-ont/index.html)
-
-<br>
+- [DL5. QC and interpretation slides for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/dl5-o-qc-and-interpretation-slides-for-ont/index.html)
+- [Activity (pg 5-9)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-ont/index.html)
 
 </td>
 </tr>
 
-<tr><td colspan="2">
-
-<br>
-
-[Sequencing Run QC](https://cmtato.github.io/Rapid-Response-Resources/slides/sequencing-run-qc/index.html)
-
-<br>
-
-</td></tr>
+<tr><td colspan="2"><strong>Analysis and interpretation of single samples in CZ ID</strong></td></tr>
 
 <tr>
 <td>
 
-<br>
-
-- [iSeq 100 Loading](https://cmtato.github.io/Rapid-Response-Resources/slides/iseq-100-loading/index.html)
-- [MiSeq Loading](https://cmtato.github.io/Rapid-Response-Resources/slides/miseq-loading/index.html)
-
-<br>
+- [DL6. Sample Report Metrics for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides/dl6-i-sample-report-metrics-for-illumina/index.html)
+- [Activity (pg 12-13)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-illumina/index.html)
 
 </td>
 <td>
 
-<br>
+- [DL6. Sample Report Metrics for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/dl6-o-sample-report-metrics-for-ont/index.html)
+- [Activity (pg 10-16)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-ont/index.html)
 
-[MinION Loading and Sequencing Run Setup](https://cmtato.github.io/Rapid-Response-Resources/slides/minion-loading-and-sequencing-run-setup/index.html)
+</td>
+</tr>
 
-<br>
+<tr><td colspan="2"><strong>How and why we use background models in mNGS</strong></td></tr>
+
+<tr>
+<td>
+
+[DL7. Background models](https://cmtato.github.io/Rapid-Response-Resources/slides/dl7-i-background-models/index.html)
+
+</td>
+<td>
+
+- [DL7. Background models for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/dl7-o-background-models-for-ont/index.html)
+- [Activity (pg 17-20)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-ont/index.html)
+
+</td>
+</tr>
+
+<tr><td colspan="2"><strong>Generating and interpreting heatmaps for mNGS</strong></td></tr>
+
+<tr>
+<td>
+
+- [DL8. CZ ID Heatmap for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides/dl8-i-cz-id-heatmap-for-illumina/index.html)
+- [Activity (pg 14-15)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-illumina/index.html)
+
+</td>
+<td>
+
+[DL8. ONT Heatmap](https://cmtato.github.io/Rapid-Response-Resources/slides/dl8-o-ont-heatmap/index.html)
+
+</td>
+</tr>
+
+<tr><td colspan="2"><strong>Understanding the antimicrobial resistance (AMR) pipeline in CZ ID</strong></td></tr>
+
+<tr>
+<td>
+
+[DL9. CZ ID AMR Module](https://cmtato.github.io/Rapid-Response-Resources/slides/dl9-i-cz-id-amr-module/index.html)
+
+</td>
+<td>
+
+Not available
+
+</td>
+</tr>
+
+<tr><td colspan="2"><strong>Generating and interpreting viral consensus genomes in CZ ID (bacterial unavailable)</strong></td></tr>
+
+<tr>
+<td>
+
+[DL10. Building Viral Consensus Genomes](https://cmtato.github.io/Rapid-Response-Resources/slides/dl10-i-building-viral-consensus-genomes/index.html)
+
+</td>
+<td>
+
+Not available
 
 </td>
 </tr>
 
 </table>
-
-## Worksheets
-
-- [DNase Treatment](https://cmtato.github.io/Rapid-Response-Resources/worksheets/dnase-treatment/index.html)
-- [Illumina RNA Library Prep Worksheet Template](https://cmtato.github.io/Rapid-Response-Resources/worksheets/illumina-rna-library-prep-worksheet/index.html)
 
 ---
 
