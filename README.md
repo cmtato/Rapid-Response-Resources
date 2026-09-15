@@ -233,6 +233,16 @@ Not available
 
 ---
 
+## How this repo is organized
+
+- **[`resources/`](resources/)** holds the original PowerPoint, Word, and Excel files exactly as they were authored. This is the authoritative copy of every resource.
+- **`docs/`** holds browser-viewable versions generated from `resources/`: slide decks as PDFs, documents and worksheets as web pages. These are what the table above links to, and what the website serves.
+- **`tools/`** holds the script that regenerates `docs/` from `resources/`, so the two stay in step.
+
+The table above is for navigating the materials: every link opens in the browser, with no download and no need for PowerPoint, Word, or Excel. Each of those pages also has a **Download original** button if you want the editable file for just that resource.
+
+**To download everything at once:** use the green **Code** button at the top of this page, choose **Download ZIP** (about 130 MB), and open the `resources` folder inside. GitHub cannot download a single folder on its own, so the ZIP includes the browser versions as well.
+
 Browse everything at the [resources site](https://cmtato.github.io/Rapid-Response-Resources/).
 
 ## License
