@@ -184,7 +184,7 @@ Not applicable
 </td>
 <td>
 
-[CZ ID Heatmap for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/dl8-o-cz-id-heatmap-for-ont/index.html)
+[Heatmap App for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/dl8-o-heatmap-app-for-ont/index.html)
 
 <br>
 
