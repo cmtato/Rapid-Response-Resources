@@ -66,18 +66,37 @@ def inject_css(html_path, css):
     html_path.write_text(text[:at] + "\n\t\t" + css + "\n" + text[at:], encoding="utf-8")
 
 
-def external_links_new_tab(html_path):
-    """Open external links in a new tab, so they don't hijack the iframe.
+def rewrite_links(html_path):
+    """Fix up links in a converted document.
 
-    Only absolute http(s) links are touched; in-document anchors (e.g. a
-    document's own table of contents) must stay in the same frame.
+    Google Docs exports in-document cross-references as absolute Google
+    URLs with a #bookmark= fragment, so they look external even though they
+    point back into the same document. Where the fragment matches an anchor
+    in this converted page, rewrite the link to that local anchor and leave
+    it in the same frame. Everything else absolute is genuinely external and
+    opens in a new tab, so it doesn't hijack the iframe.
     """
     text = html_path.read_text(encoding="utf-8", errors="replace")
-    patched, n = re.subn(r'<a href="(https?://[^"]*)"',
-                         r'<a href="\1" target="_blank" rel="noopener"',
-                         text)
+    anchors = set(re.findall(r'<a[^>]+name="([^"]+)"', text))
+    anchors |= set(re.findall(r'\bid="([^"]+)"', text))
+    counts = {"internal": 0, "external": 0}
+
+    def repl(m):
+        url = m.group(1)
+        frag = re.search(r'#(?:bookmark=|heading=)?([^"&]+)$', url)
+        if "google.com" in url and frag:
+            raw = frag.group(1)
+            for cand in (raw, raw.replace("id.", "", 1), raw.replace("h.", "", 1),
+                         "id." + raw, "h." + raw):
+                if cand in anchors:
+                    counts["internal"] += 1
+                    return f'<a href="#{cand}"'
+        counts["external"] += 1
+        return f'<a href="{url}" target="_blank" rel="noopener"'
+
+    patched = re.sub(r'<a href="(https?://[^"]*)"', repl, text)
     html_path.write_text(patched, encoding="utf-8")
-    return n
+    return counts
 
 
 def build_content_html(src, docs_dir, css):
@@ -88,9 +107,11 @@ def build_content_html(src, docs_dir, css):
         html = soffice_convert(src, "html", tmp)
         if css:
             inject_css(html, css)
-        n = external_links_new_tab(html)
-        if n:
-            print(f"      {n} external link(s) set to open in a new tab")
+        c = rewrite_links(html)
+        if c["internal"]:
+            print(f"      {c['internal']} self-referential link(s) rewritten to local anchors")
+        if c["external"]:
+            print(f"      {c['external']} external link(s) set to open in a new tab")
         shutil.copy(html, docs_dir / "content.html")
         for asset in Path(tmp).glob("*_html_*"):
             shutil.copy(asset, docs_dir / asset.name)
