@@ -4,27 +4,18 @@ Collection of scientific protocols and instructional materials for metagenomic n
 
 Resources for metagenomics sequencing, covering wet and dry lab methods for Illumina and Nanopore (ONT).
 
+**For protocols, start here:**
+
+- [Biohub Protocols - Illumina mNGS](https://cmtato.github.io/Rapid-Response-Resources/protocols/0-i-biohub-rapid-response-mngs-protocols-shared/index.html)
+- [Biohub Protocols - Nanopore mNGS](https://cmtato.github.io/Rapid-Response-Resources/protocols/0-o-biohub-protocols-nanopore-mngs/index.html)
+
+
+**For slides and instructional material, see the table below:**
+
 <table>
 <tr>
 <th width="50%">Illumina</th>
 <th width="50%">Nanopore (ONT)</th>
-</tr>
-
-<tr>
-<td>
-
-**Start here:** [0. Biohub Protocols - Illumina mNGS](https://cmtato.github.io/Rapid-Response-Resources/protocols/0-i-biohub-rapid-response-mngs-protocols-shared/index.html)
-
-<br>
-
-</td>
-<td>
-
-**Start here:** [0. Biohub Protocols - Nanopore mNGS](https://cmtato.github.io/Rapid-Response-Resources/protocols/0-o-biohub-protocols-nanopore-mngs/index.html)
-
-<br>
-
-</td>
 </tr>
 
 <tr><td colspan="2"><em>Wet lab modules 1-7 go here.</em></td></tr>
