@@ -46,17 +46,17 @@
       "section": "Protocols"
     },
     {
-      "source": "resources/protocols/All Catalog Numbers.xlsx",
-      "docsDir": "docs/protocols/all-catalog-numbers",
+      "source": "resources/protocols/All Catalog Numbers for Illumina mNGS.xlsx",
+      "docsDir": "docs/protocols/all-catalog-numbers-for-illumina-mngs",
       "type": "xlsx-static",
-      "title": "All Catalog Numbers",
+      "title": "All Catalog Numbers for Illumina mNGS",
       "section": "Protocols"
     },
     {
-      "source": "resources/protocols/All Catalog Numbers for ONT RNA mNGS.xlsx",
-      "docsDir": "docs/protocols/all-catalog-numbers-for-ont-rna-mngs",
+      "source": "resources/protocols/All Catalog Numbers for ONT mNGS.xlsx",
+      "docsDir": "docs/protocols/all-catalog-numbers-for-ont-mngs",
       "type": "xlsx-static",
-      "title": "All Catalog Numbers for ONT RNA mNGS",
+      "title": "All Catalog Numbers for ONT mNGS",
       "section": "Protocols"
     },
 
