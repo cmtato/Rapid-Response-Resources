@@ -45,6 +45,20 @@
       "title": "5. Library Pooling Calculations",
       "section": "Protocols"
     },
+    {
+      "source": "resources/protocols/All Catalog Numbers.xlsx",
+      "docsDir": "docs/protocols/all-catalog-numbers",
+      "type": "xlsx-static",
+      "title": "All Catalog Numbers",
+      "section": "Protocols"
+    },
+    {
+      "source": "resources/protocols/All Catalog Numbers for ONT RNA mNGS.xlsx",
+      "docsDir": "docs/protocols/all-catalog-numbers-for-ont-rna-mngs",
+      "type": "xlsx-static",
+      "title": "All Catalog Numbers for ONT RNA mNGS",
+      "section": "Protocols"
+    },
 
     {
       "source": "resources/slides/8-I. Sequencing Run QC for Illumina.pptx",
