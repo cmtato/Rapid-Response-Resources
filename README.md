@@ -224,6 +224,10 @@ Not available
 
 ---
 
+## Playbook for mNGS training workshops
+
+We've created a resource to help you plan and execute workshops. Here's the document to get started: 
+
 ## How this repo is organized
 
 - **[`resources/`](resources/)** holds the original PowerPoint, Word, and Excel files.
