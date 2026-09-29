@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 26.2.5.2 (MacOSX)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	
+	<style type="text/css">
+		body, p, h1, h2, font, td, th, li { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !important; } body { margin: 0.6rem !important; } table { max-width: 100% !important; table-layout: auto !important; } col { width: auto !important; } td, th { overflow-wrap: anywhere; vertical-align: top; } img { max-width: 100% !important; height: auto !important; }
+
+		body,div,table,thead,tbody,tfoot,tr,th,td,p { font-family:"Arial"; font-size:x-small }
+		a.comment-indicator:hover + comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em;  } 
+		a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em;  } 
+		comment { display:none;  } 
+	</style>
+	
+</head>
+
+<body>
+<hr>
+	<p><center>
+		<h1>Overview</h1>
+		<A HREF="#table0">Library preparation</A><br>
+		<A HREF="#table1">Adapter ligation</A><br>
+		<A HREF="#table2">Secondary amplification</A><br>
+		
+	</center></p>
+<hr>
+<A NAME="table0"><h1>Sheet 1: <em>Library preparation</em></h1></A>
+<table cellspacing="0" border="0">
+	<colgroup width="168"></colgroup>
+	<colgroup span="4" width="93"></colgroup>
+	<tr>
+		<td style="border-top: 1px solid #ffffff; border-bottom: 1px solid #ffffff; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff" colspan=5 height="23" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Nanopore RNA Metagenomics Library Prep Worksheet&quot;}"><b><font size=4 color="#000000">Nanopore RNA Metagenomics Library Prep Worksheet</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #ffffff; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff" height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Date:&quot;}"><b><font color="#000000">Date:</font></b></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #ffffff; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff" colspan=5 height="103" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;\nWorkflow: 1. Annealing; 2. Reverse transcription; 3. PCR amplification; 4. Exonuclease treatment; 5. SPRI clean-up; 6. Pooling; 7. Adapter ligation \n\nThese protocols are an adaptation of the ONT Viral Metagenomics protocol (variation of SMART-9N)&quot;}"><font color="#000000"><br>Workflow: 1. Annealing; 2. Reverse transcription; 3. PCR amplification; 4. Exonuclease treatment; 5. SPRI clean-up; 6. Pooling; 7. Adapter ligation <br><br>These protocols are an adaptation of the ONT Viral Metagenomics protocol (variation of SMART-9N)</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff" colspan=5 height="23" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;1. Annealing&quot;}"><b><font size=4 color="#000000">1. Annealing</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 height="78" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Reagent&quot;}"><b><font color="#000000">Reagent</font></b></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;1 rxn&quot;}"><font color="#000000">1 rxn</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;0.5 rxn&quot;}"><font color="#000000">0.5 rxn</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;X full rxns&quot;}"><font color="#000000">X full rxns</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;X =&quot;}"><font color="#000000">X =</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="16" sdnum="1033;"><font color="#000000">16</font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;vol stock (µL)&quot;}"><b><font color="#000000">vol stock (µL)</font></b></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;vol stock (µL)&quot;}"><b><font color="#000000">vol stock (µL)</font></b></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;vol stock (µL)&quot;}"><b><font color="#000000">vol stock (µL)</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;RNA sample &quot;}"><font color="#000000">RNA sample </font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="10" sdnum="1033;"><font color="#000000">10</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="4.5" sdnum="1033;"><font color="#000000">4.5</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom sdnum="1033;0;0.00" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;10 each&quot;}"><font color="#000000">10 each</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="36" align="left" valign=bottom bgcolor="#F4CCCC" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;RLB RT primer mix (12 µM)&quot;}"><font color="#000000">RLB RT primer mix (12 µM)</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#F4CCCC" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#F4CCCC" sdval="0.5" sdnum="1033;"><font color="#000000">0.5</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom bgcolor="#F4CCCC" sdval="17.6" sdnum="1033;0;0.00" data-sheets-formula="=R6C5*RC[-2]*1.1" data-sheets-value="{ &quot;1&quot;: 3, &quot;3&quot;: 17}" data-sheets-numberformat="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;0.00&quot;, &quot;3&quot;: 1}"><font color="#000000">17.60</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom bgcolor="#F4CCCC" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;dNTP mix (10 mM)&quot;}"><font color="#000000">dNTP mix (10 mM)</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#F4CCCC" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#F4CCCC" sdval="0.5" sdnum="1033;"><font color="#000000">0.5</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom bgcolor="#F4CCCC" sdval="17.6" sdnum="1033;0;0.00" data-sheets-formula="=R6C5*RC[-2]*1.1" data-sheets-value="{ &quot;1&quot;: 3, &quot;3&quot;: 17}" data-sheets-numberformat="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;0.00&quot;, &quot;3&quot;: 1}"><font color="#000000">17.60</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom bgcolor="#EA9999" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Master Mix volume&quot;}"><font color="#000000">Master Mix volume</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="2" sdnum="1033;" data-sheets-formula="=SUM(R[-2]C:R[-1]C)"><font color="#000000">2</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="1" sdnum="1033;" data-sheets-formula="=SUM(R[-2]C:R[-1]C)"><font color="#000000">1</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom sdval="35.2" sdnum="1033;0;0.00" data-sheets-formula="=SUM(R[-2]C:R[-1]C[1])" data-sheets-value="{ &quot;1&quot;: 3, &quot;3&quot;: 35}" data-sheets-numberformat="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;0.00&quot;, &quot;3&quot;: 1}"><b><font color="#000000">35.20</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Total volume&quot;}"><b><font color="#000000">Total volume</font></b></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="12" sdnum="1033;" data-sheets-formula="=SUM(R[-4]C:R[-2]C)"><b><font color="#000000">12</font></b></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="5.5" sdnum="1033;" data-sheets-formula="=SUM(R[-4]C:R[-2]C)"><b><font color="#000000">5.5</font></b></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;12 each&quot;}"><b><font color="#000000">12 each</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="36" align="left" valign=bottom bgcolor="#F4CCCC" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Pink = Reagents to add to master mix&quot;}"><font color="#000000">Pink = Reagents to add to master mix</font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #000000" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="left" valign=top bgcolor="#F4CCCC" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Add 2 µL of MM to RNA sample&quot;}"><font color="#000000">Add 2 µL of MM to RNA sample</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #ffffff; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff" colspan=5 height="120" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;\nMix by gently pipeting up and down\n\nThermocycler (heated lid set to 80˚C):\n·       5 min at 65°C\n\nSnap cool on ice block for 2 min&quot;}"><font color="#000000"><br>Mix by gently pipeting up and down<br><br>Thermocycler (heated lid set to 80˚C):<br>·       5 min at 65°C<br><br>Snap cool on ice block for 2 min</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff" colspan=5 height="23" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;2. Reverse Transcription&quot;}"><b><font size=4 color="#000000">2. Reverse Transcription</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 height="78" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Reagent&quot;}"><b><font color="#000000">Reagent</font></b></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;1 rxn&quot;}"><font color="#000000">1 rxn</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;0.5 rxn&quot;}"><font color="#000000">0.5 rxn</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;X full rxns&quot;}"><font color="#000000">X full rxns</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;X =&quot;}"><font color="#000000">X =</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="16" sdnum="1033;"><font color="#000000">16</font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;vol stock (µL)&quot;}"><b><font color="#000000">vol stock (µL)</font></b></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;vol stock (µL)&quot;}"><b><font color="#000000">vol stock (µL)</font></b></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;vol stock (µL)&quot;}"><b><font color="#000000">vol stock (µL)</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Annealed RNA&quot;}"><font color="#000000">Annealed RNA</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="12" sdnum="1033;"><font color="#000000">12</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="6" sdnum="1033;"><font color="#000000">6</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom sdnum="1033;0;0.00" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;12 each&quot;}"><font color="#000000">12 each</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom bgcolor="#F4CCCC" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Maxima H(-) buffer (5X)&quot;}"><font color="#000000">Maxima H(-) buffer (5X)</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#F4CCCC" sdval="4" sdnum="1033;"><font color="#000000">4</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#F4CCCC" sdval="2" sdnum="1033;" data-sheets-formula="=RC[-1]/2"><font color="#000000">2</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom bgcolor="#F4CCCC" sdval="70.4" sdnum="1033;0;0.00" data-sheets-formula="=R17C5*RC[-2]*1.1" data-sheets-value="{ &quot;1&quot;: 3, &quot;3&quot;: 70}" data-sheets-numberformat="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;0.00&quot;, &quot;3&quot;: 1}"><font color="#000000">70.40</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom bgcolor="#F4CCCC" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;RNase OUT&quot;}"><font color="#000000">RNase OUT</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#F4CCCC" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#F4CCCC" sdval="0.5" sdnum="1033;" data-sheets-formula="=RC[-1]/2"><font color="#000000">0.5</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom bgcolor="#F4CCCC" sdval="17.6" sdnum="1033;0;0.00" data-sheets-formula="=R17C5*RC[-2]*1.1" data-sheets-value="{ &quot;1&quot;: 3, &quot;3&quot;: 17}" data-sheets-numberformat="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;0.00&quot;, &quot;3&quot;: 1}"><font color="#000000">17.60</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom bgcolor="#F4CCCC" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Maxima H(-) enzyme&quot;}"><font color="#000000">Maxima H(-) enzyme</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#F4CCCC" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#F4CCCC" sdval="0.5" sdnum="1033;"><font color="#000000">0.5</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom bgcolor="#F4CCCC" sdval="17.6" sdnum="1033;0;0.00" data-sheets-formula="=R17C5*RC[-2]*1.1" data-sheets-value="{ &quot;1&quot;: 3, &quot;3&quot;: 17}" data-sheets-numberformat="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;0.00&quot;, &quot;3&quot;: 1}"><font color="#000000">17.60</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom bgcolor="#F4CCCC" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;TSOmG (12 µM)&quot;}"><font color="#000000">TSOmG (12 µM)</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#F4CCCC" sdval="2" sdnum="1033;"><font color="#000000">2</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#F4CCCC" sdval="1" sdnum="1033;" data-sheets-formula="=RC[-1]/2"><font color="#000000">1</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom bgcolor="#F4CCCC" sdval="35.2" sdnum="1033;0;0.00" data-sheets-formula="=R17C5*RC[-2]*1.1" data-sheets-value="{ &quot;1&quot;: 3, &quot;3&quot;: 35}" data-sheets-numberformat="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;0.00&quot;, &quot;3&quot;: 1}"><font color="#000000">35.20</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom bgcolor="#EA9999" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Master Mix volume&quot;}"><font color="#000000">Master Mix volume</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#EA9999" sdval="8" sdnum="1033;" data-sheets-formula="=SUM(R[-4]C:R[-1]C)"><font color="#000000">8</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#EA9999" sdval="4" sdnum="1033;" data-sheets-formula="=SUM(R[-4]C:R[-1]C)"><font color="#000000">4</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom bgcolor="#EA9999" sdval="140.8" sdnum="1033;0;0.00" data-sheets-formula="=SUM(R[-4]C:R[-1]C[1])" data-sheets-value="{ &quot;1&quot;: 3, &quot;3&quot;: 140}" data-sheets-numberformat="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;0.00&quot;, &quot;3&quot;: 1}"><font color="#000000">140.80</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Total volume&quot;}"><b><font color="#000000">Total volume</font></b></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="20" sdnum="1033;" data-sheets-formula="=SUM(R[-6]C:R[-2]C)"><b><font color="#000000">20</font></b></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="10" sdnum="1033;" data-sheets-formula="=SUM(R[-6]C:R[-2]C)"><b><font color="#000000">10</font></b></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom sdnum="1033;0;0.00" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;20 each&quot;}"><b><font color="#000000">20 each</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="36" align="left" valign=bottom bgcolor="#F4CCCC" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Pink = Reagents to add to master mix&quot;}"><font color="#000000">Pink = Reagents to add to master mix</font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #000000" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="left" valign=top bgcolor="#F4CCCC" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Add 8 µL of MM to annealed RNA&quot;}"><font color="#000000">Add 8 µL of MM to annealed RNA</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff" colspan=5 height="149" align="left" valign=top bgcolor="#FFFFFF" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;\nMix by gently pipeting up and down\n\nIncubate reaction mix as follows:\n\n·       75 min at 42°C\n·       5 min at 80°C&quot;}"><font color="#000000"><br>Mix by gently pipeting up and down<br><br>Incubate reaction mix as follows:<br><br>·       75 min at 42°C<br>·       5 min at 80°C</font></td>
+		</tr>
+	<tr>
+		<td style="border-top: 1px solid #ffffff; border-bottom: 1px solid #000000; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff" colspan=5 height="23" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;3. PCR Amplification&quot;}"><b><font size=4 color="#000000">3. PCR Amplification</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 height="78" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Reagent&quot;}"><b><font color="#000000">Reagent</font></b></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;1 rxn&quot;}"><font color="#000000">1 rxn</font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #000000" rowspan=2 align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;0.5 rxn&quot;}"><font color="#000000">0.5 rxn</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;X full rxns&quot;}"><font color="#000000">X full rxns</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;X =&quot;}"><font color="#000000">X =</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="16" sdnum="1033;"><font color="#000000">16</font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;vol stock (µL)&quot;}"><b><font color="#000000">vol stock (µL)</font></b></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;vol stock (µL)&quot;}"><b><font color="#000000">vol stock (µL)</font></b></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;vol stock (µL)&quot;}"><b><font color="#000000">vol stock (µL)</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Tagmented cDNA&quot;}"><font color="#000000">Tagmented cDNA</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="5" sdnum="1033;"><font color="#000000">5</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="2.5" sdnum="1033;" data-sheets-formula="=RC[-1]/2"><font color="#000000">2.5</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom sdnum="1033;0;0.00" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;5 each&quot;}"><font color="#000000">5 each</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="24" align="left" valign=bottom bgcolor="#F4CCCC" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Nuclease-free water&quot;}"><font color="#000000">Nuclease-free water</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#F4CCCC" sdval="20" sdnum="1033;"><font color="#000000">20</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#F4CCCC" sdval="10" sdnum="1033;" data-sheets-formula="=RC[-1]/2"><font color="#000000">10</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom bgcolor="#F4CCCC" sdval="352" sdnum="1033;0;0.00" data-sheets-formula="=R30C5*RC[-2]*1.1" data-sheets-value="{ &quot;1&quot;: 3, &quot;3&quot;: 352}" data-sheets-numberformat="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;0.00&quot;, &quot;3&quot;: 1}"><font color="#000000">352.00</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="36" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;RLB (01-24, at 10 µM)*&quot;}"><font color="#000000">RLB (01-24, at 10 µM)*</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="0.5" sdnum="1033;" data-sheets-formula="=RC[-1]/2"><font color="#000000">0.5</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom sdnum="1033;0;0.00" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;1 µL unique to each sample&quot;}"><font color="#000000">1 µL unique to each sample</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom bgcolor="#F4CCCC" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;LongAmp Taq 2x MM&quot;}"><font color="#000000">LongAmp Taq 2x MM</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#F4CCCC" sdval="25" sdnum="1033;"><font color="#000000">25</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#F4CCCC" sdval="12.5" sdnum="1033;" data-sheets-formula="=RC[-1]/2"><font color="#000000">12.5</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom bgcolor="#F4CCCC" sdval="440" sdnum="1033;0;0.00" data-sheets-formula="=R30C5*RC[-2]*1.1" data-sheets-value="{ &quot;1&quot;: 3, &quot;3&quot;: 440}" data-sheets-numberformat="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;0.00&quot;, &quot;3&quot;: 1}"><font color="#000000">440.00</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom bgcolor="#EA9999" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Master Mix volume&quot;}"><font color="#000000">Master Mix volume</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#EA9999" sdval="45" sdnum="1033;" data-sheets-formula="=SUM(R[-3]C,R[-1]C)"><font color="#000000">45</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#EA9999" sdval="22.5" sdnum="1033;" data-sheets-formula="=SUM(R[-3]C,R[-1]C)"><font color="#000000">22.5</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom bgcolor="#EA9999" sdval="792" sdnum="1033;0;0.00" data-sheets-formula="=SUM(R[-3]C,R[-1]C)" data-sheets-value="{ &quot;1&quot;: 3, &quot;3&quot;: 792}" data-sheets-numberformat="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;0.00&quot;, &quot;3&quot;: 1}"><font color="#000000">792.00</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Total volume&quot;}"><b><font color="#000000">Total volume</font></b></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="51" sdnum="1033;" data-sheets-formula="=SUM(R[-5]C:R[-2]C)"><b><font color="#000000">51</font></b></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="25.5" sdnum="1033;" data-sheets-formula="=SUM(R[-5]C:R[-2]C)"><b><font color="#000000">25.5</font></b></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom sdnum="1033;0;0.00" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;51 each&quot;}"><b><font color="#000000">51 each</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="53" align="left" valign=bottom bgcolor="#F4CCCC" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Pink = Reagents to add to master mix&quot;}"><font color="#000000">Pink = Reagents to add to master mix</font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #000000" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="left" valign=top bgcolor="#F4CCCC" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Add 45 µL of MM and 1 µL RLB to 5 µL tagmented cDNA&quot;}"><font color="#000000">Add 45 µL of MM and 1 µL RLB to 5 µL tagmented cDNA</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff" colspan=5 height="70" align="left" valign=bottom bgcolor="#FFFFFF" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;* See here for adaptor barcode assignments\n\nMix MM and final rxn. by pipeting up and down\n&quot;}"><font color="#000000">* See here for adaptor barcode assignments<br><br>Mix MM and final rxn. by pipeting up and down<br></font></td>
+		</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="center" valign=bottom bgcolor="#FFFFFF" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Thermocycler (lid at 105˚C)&quot;}"><b><font color="#000000">Thermocycler (lid at 105˚C)</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Cycles&quot;}"><b><font color="#000000">Cycles</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;95 °C for 45s&quot;}"><font color="#000000">95 °C for 45s</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;95 ˚C for 15s&quot;}"><font color="#000000">95 ˚C for 15s</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="center" valign=bottom sdval="30" sdnum="1033;"><font color="#000000">30</font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;56 ˚C for 15s&quot;}"><font color="#000000">56 ˚C for 15s</font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;65 °C for 6 min&quot;}"><font color="#000000">65 °C for 6 min</font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;65˚C for 6 mins&quot;}"><font color="#000000">65˚C for 6 mins</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Hold at 4˚C&quot;}"><font color="#000000">Hold at 4˚C</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #ffffff; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff" colspan=5 height="36" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;\n&quot;}"><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" colspan=5 height="23" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;4. Exonuclease treatment (optional)&quot;}"><b><font size=4 color="#000000">4. Exonuclease treatment (optional)</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff" colspan=5 height="98" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;\nAdd 1 µL of Exonuclease I per reaction and incubate as follows:\n\n·       10 min at 37°C\n·       1 min at 80°C&quot;}"><font color="#000000"><br>Add 1 µL of Exonuclease I per reaction and incubate as follows:<br><br>·       10 min at 37°C<br>·       1 min at 80°C</font></td>
+		</tr>
+	<tr>
+		<td style="border-top: 1px solid #ffffff; border-bottom: 1px solid #000000; border-left: 1px solid #ffffff" colspan=4 height="32" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;5. SPRI Bead Clean-up&quot;}"><b><font size=4 color="#000000">5. SPRI Bead Clean-up</font></b></td>
+		<td align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;SPRI bead ratio:&quot;}"><font color="#000000">SPRI bead ratio:</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="0.6" sdnum="1033;"><font color="#000000">0.6</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Sample volume (full rxn):&quot;}"><font color="#000000">Sample volume (full rxn):</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="50" sdnum="1033;"><font color="#000000">50</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;SPRI to add (per full rxn):&quot;}"><font color="#000000">SPRI to add (per full rxn):</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="30" sdnum="1033;" data-sheets-formula="=R[-2]C*R[-1]C"><font color="#000000">30</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;µL&quot;}"><font color="#000000">µL</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Elution volume (per full rxn):&quot;}"><font color="#000000">Elution volume (per full rxn):</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="17" sdnum="1033;"><font color="#000000">17</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;µL&quot;}"><font color="#000000">µL</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Aspiration volume (per full rxn):&quot;}"><font color="#000000">Aspiration volume (per full rxn):</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="15" sdnum="1033;"><font color="#000000">15</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;µL&quot;}"><font color="#000000">µL</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #ffffff" colspan=4 height="426" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;\nSPRI clean-up protocol:\n\n*allow beads to sit in RT for 30 mins prior. Ensure you have enough 80% ethanol (500ul per sample).\n\n1. Add room temperature beads to rxn. Mix well by pipetting up and down 10 times.\n2. Incubate for 5 mins at room temperature.\n3. Place samples on magnetic rack, and incubate for 5 mins on the rack.\n4. Remove supernatant and add 200uL of 80% EtOH to samples while on the magnetic rack. \n5. Incubate at room temperature for 30s and remove the supernatant.\n6. Repeat EtOH wash step for a total of 2 times.\n7. Air dry the beads for up to 3-5 mins while on the magnetic rack. Watch beads carefully throughout this incubation to avoid overdrying; smaller bead pellets dry faster. Trust your eyes more than the timer.\n8. Remove tube from magnetic rack. Elute DNA from beads into nuclease free water (can also use 0.1x TE Buffer, 10mM Tris-HCl)\n9. Pipette mix and incubate for a minimum of 5 mins at room temperature off the magnetic rack.\n10. Place on magnetic rack until solution is clear, ~ 5 mins.\n11. Aspirate supernatant and transfer to a clean nuclease free PCR tube.                     \n\n**Checkpoint: Samples can be stored frozen at -20°C and library prep resumed the next day.\n&quot;}"><font color="#000000"><br>SPRI clean-up protocol:<br><br>*allow beads to sit in RT for 30 mins prior. Ensure you have enough 80% ethanol (500ul per sample).<br><br>1. Add room temperature beads to rxn. Mix well by pipetting up and down 10 times.<br>2. Incubate for 5 mins at room temperature.<br>3. Place samples on magnetic rack, and incubate for 5 mins on the rack.<br>4. Remove supernatant and add 200uL of 80% EtOH to samples while on the magnetic rack. <br>5. Incubate at room temperature for 30s and remove the supernatant.<br>6. Repeat EtOH wash step for a total of 2 times.<br>7. Air dry the beads for up to 3-5 mins while on the magnetic rack. Watch beads carefully throughout this incubation to avoid overdrying; smaller bead pellets dry faster. Trust your eyes more than the timer.<br>8. Remove tube from magnetic rack. Elute DNA from beads into nuclease free water (can also use 0.1x TE Buffer, 10mM Tris-HCl)<br>9. Pipette mix and incubate for a minimum of 5 mins at room temperature off the magnetic rack.<br>10. Place on magnetic rack until solution is clear, ~ 5 mins.<br>11. Aspirate supernatant and transfer to a clean nuclease free PCR tube.                     <br><br>**Checkpoint: Samples can be stored frozen at -20°C and library prep resumed the next day.<br></font></td>
+		<td align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #ffffff" colspan=4 height="25" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;6. QC of individual libraries&quot;}"><b><font size=4 color="#000000">6. QC of individual libraries</font></b></td>
+		<td align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #ffffff" colspan=4 height="178" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Qubit dsDNA HS: ng\/ul concentration* of each sample\n\nTapestation, Genomic DNA: nM concentration* and size distribution of each sample\n\nNanodrop dsDNA (optional): identify potential contaminants that may affect pore health\n\n* If individual libraries are too low concentration at this stage, consider moving to step 5.5. Secondary Amplification&quot;}"><font color="#000000">Qubit dsDNA HS: ng/ul concentration* of each sample<br><br>Tapestation, Genomic DNA: nM concentration* and size distribution of each sample<br><br>Nanodrop dsDNA (optional): identify potential contaminants that may affect pore health<br><br>* If individual libraries are too low concentration at this stage, consider moving to step 5.5. Secondary Amplification</font></td>
+		<td align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #ffffff" colspan=4 height="27" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;7. Pooling&quot;}"><b><font size=4 color="#000000">7. Pooling</font></b></td>
+		<td align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #ffffff" colspan=4 height="131" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;\nPool all barcoded libraries in the desired ratios to a total of 100-150 fmol in 11 µL of water (~10-15nM) or elution buffer (EB). See Pooling Calculation Worksheet and NEB calculator: https:\/\/nebiocalculator.neb.com\/#!\/dsdnaamt\n\nComplete QC (Qubit) of pooled libraries.\nPool can be stored at -20C at this stage.&quot;}"><u><font color="#1155CC"><a href="https://nebiocalculator.neb.com/#!/dsdnaamt." target="_blank" rel="noopener">
+Pool all barcoded libraries in the desired ratios to a total of 100-150 fmol in 11 µL of water (~10-15nM) or elution buffer (EB). See Pooling Calculation Worksheet and NEB calculator: https://nebiocalculator.neb.com/#!/dsdnaamt
+
+Complete QC (Qubit) of pooled libraries.
+Pool can be stored at -20C at this stage.</a></font></u></td>
+		<td align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #ffffff" colspan=4 height="30" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;8. Adapter Ligation + Sequencer Loading&quot;}"><b><font size=4 color="#000000">8. Adapter Ligation + Sequencer Loading</font></b></td>
+		<td align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #ffffff" colspan=4 height="23" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Proceed to this step when ready to load the sequencer; see next sheet&quot;}"><font color="#000000">Proceed to this step when ready to load the sequencer; see next sheet</font></td>
+		<td align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+</table>
+<!-- ************************************************************************** -->
+<hr>
+<A NAME="table1"><h1>Sheet 2: <em>Adapter ligation</em></h1></A>
+<table cellspacing="0" border="0">
+	<colgroup width="172"></colgroup>
+	<colgroup span="4" width="93"></colgroup>
+	<tr>
+		<td style="border-top: 1px solid #ffffff; border-bottom: 1px solid #ffffff; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff" colspan=5 height="23" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Nanopore RNA Metagenomics Sequencer Loading Worksheet&quot;}"><b><font size=4 color="#000000">Nanopore RNA Metagenomics Sequencer Loading Worksheet</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #ffffff; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff" height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Project:&quot;}"><b><font color="#000000">Project:</font></b></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #ffffff; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff" height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Date: &quot;}"><b><font color="#000000">Date: </font></b></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff" colspan=5 height="87" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;\nWorkflow: Complete library preparation, pooling, and QC. On the day of sequencer loading, complete the following: 7. Adapter ligation; 8. Loading the sequencer \n&quot;}"><font color="#000000"><br>Workflow: Complete library preparation, pooling, and QC. On the day of sequencer loading, complete the following: 7. Adapter ligation; 8. Loading the sequencer <br></font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" colspan=5 height="23" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;7. Adapter Ligation&quot;}"><b><font size=4 color="#000000">7. Adapter Ligation</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff" colspan=5 height="137" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;\nPerform this step immediately prior to loading the sequencer. \nEnsure the library pool is diluted to loading concentration.\n\nConsider performing a pore scan prior to adapter ligation to ensure the flow cell is okay to load.\n(It's okay to have adapter-ligated library sit on ice for ~30 min to an hour).\n&quot;}"><font color="#000000"><br>Perform this step immediately prior to loading the sequencer. <br>Ensure the library pool is diluted to loading concentration.<br><br>Consider performing a pore scan prior to adapter ligation to ensure the flow cell is okay to load.<br>(It's okay to have adapter-ligated library sit on ice for ~30 min to an hour).<br></font></td>
+		</tr>
+	<tr>
+		<td style="border-right: 1px solid #ffffff" colspan=5 height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Dilute Adapter (in a fresh 1.5ml Eppendorf DNA LoBind tube): &quot;}"><b><font color="#000000">Dilute Adapter (in a fresh 1.5ml Eppendorf DNA LoBind tube): </font></b></td>
+		</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="right" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Adapter Buffer (ADB)&quot;}"><font color="#000000">Adapter Buffer (ADB)</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="3.5" sdnum="1033;"><font color="#000000">3.5</font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="right" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Rapid Adapter (RA)&quot;}"><font color="#000000">Rapid Adapter (RA)</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="1.5" sdnum="1033;"><font color="#000000">1.5</font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="21" align="right" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Total diluted adapter&quot;}"><font color="#000000">Total diluted adapter</font></td>
+		<td align="center" valign=bottom sdval="5" sdnum="1033;" data-sheets-formula="=SUM(R[-3]C:R[-1]C)"><font color="#000000">5</font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-right: 1px solid #ffffff" colspan=5 height="36" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;\nAdd diluted adapter to the 11 µL barcoded DNA&quot;}"><b><font color="#000000"><br>Add diluted adapter to the 11 µL barcoded DNA</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="right" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Volume of pool&quot;}"><font color="#000000">Volume of pool</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="11" sdnum="1033;"><font color="#000000">11</font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="right" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Diluted adapter (ul)&quot;}"><font color="#000000">Diluted adapter (ul)</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff" colspan=5 height="120" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;\nMix gently by pipeting up and down. \n\nIncubate for 5 min at room temperature.\n\nThe prepared library is ready to be loaded into the MinION flow cell. Store the library on ice until ready to load. &quot;}"><font color="#000000"><br>Mix gently by pipeting up and down. <br><br>Incubate for 5 min at room temperature.<br><br>The prepared library is ready to be loaded into the MinION flow cell. Store the library on ice until ready to load. </font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" colspan=5 height="23" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;8. Load the Sequencer&quot;}"><b><font size=4 color="#000000">8. Load the Sequencer</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff" colspan=5 height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Load the sequencer according to the ONT protocol that can be found here: \nPriming and loading the MinION and GridION Flow Cell&quot;}"><u><font color="#1155CC"><a href="https://nanoporetech.com/document/rapid-sequencing-dna-v14-pcr-barcoding-sqk-rpb114-24#priming-and-loading-the-spoton-flow-cell" target="_blank" rel="noopener">Load the sequencer according to the ONT protocol that can be found here: 
+Priming and loading the MinION and GridION Flow Cell</a></font></u></td>
+		</tr>
+</table>
+<!-- ************************************************************************** -->
+<hr>
+<A NAME="table2"><h1>Sheet 3: <em>Secondary amplification</em></h1></A>
+<table cellspacing="0" border="0">
+	<colgroup width="174"></colgroup>
+	<colgroup span="2" width="93"></colgroup>
+	<colgroup width="148"></colgroup>
+	<tr>
+		<td style="border-top: 1px solid #ffffff; border-bottom: 1px solid #ffffff; border-left: 1px solid #ffffff" colspan=4 height="23" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Nanopore RNA Metagenomics Secondary Amplification&quot;}"><b><font size=4 color="#000000">Nanopore RNA Metagenomics Secondary Amplification</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #ffffff; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff" height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Project:&quot;}"><b><font color="#000000">Project:</font></b></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #ffffff; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff" height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Date: &quot;}"><b><font color="#000000">Date: </font></b></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #ffffff; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff" colspan=4 height="154" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Secondary amplification may be warranted if there is not enough material to sequence following initial PCR Amplification\n\nHow do I determine whether I have sufficient material?\n- Target concentration for each sample is 5-15nM. 5-15nM is not required for every sample, but you'll want most samples to be around this concentration\n- Tapestation trace may help you evaluate if you have enough library\n- Qubit is most reliable for concentration measurement&quot;}"><font color="#000000">Secondary amplification may be warranted if there is not enough material to sequence following initial PCR Amplification<br><br>How do I determine whether I have sufficient material?<br>- Target concentration for each sample is 5-15nM. 5-15nM is not required for every sample, but you'll want most samples to be around this concentration<br>- Tapestation trace may help you evaluate if you have enough library<br>- Qubit is most reliable for concentration measurement</font></td>
+		</tr>
+	<tr>
+		<td style="border-top: 1px solid #ffffff; border-bottom: 1px solid #000000; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff" colspan=4 height="23" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;5.5 Optional Secondary PCR Amplification&quot;}"><b><font size=4 color="#000000">5.5 Optional Secondary PCR Amplification</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 height="78" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Reagent&quot;}"><b><font color="#000000">Reagent</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;1 rxn&quot;}"><font color="#000000">1 rxn</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;X full rxns&quot;}"><font color="#000000">X full rxns</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;X =&quot;}"><font color="#000000">X =</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="7" sdnum="1033;"><font color="#000000">7</font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;vol stock (µL)&quot;}"><b><font color="#000000">vol stock (µL)</font></b></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;vol stock (µL)&quot;}"><b><font color="#000000">vol stock (µL)</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Clean barcoded DNA&quot;}"><font color="#000000">Clean barcoded DNA</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="9" sdnum="1033;"><font color="#000000">9</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom sdnum="1033;0;0.00" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;9 each&quot;}"><font color="#000000">9 each</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom bgcolor="#F4CCCC" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Nuclease-free water&quot;}"><font color="#000000">Nuclease-free water</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#F4CCCC" sdval="15.5" sdnum="1033;"><font color="#000000">15.5</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom bgcolor="#F4CCCC" sdval="108.5" sdnum="1033;0;0.00" data-sheets-formula="=R[-3]C[1]*RC[-1]" data-sheets-value="{ &quot;1&quot;: 3, &quot;3&quot;: 108}" data-sheets-numberformat="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;0.00&quot;, &quot;3&quot;: 1}"><font color="#000000">108.50</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom bgcolor="#F4CCCC" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;LongAmp Taq 2x MM&quot;}"><font color="#000000">LongAmp Taq 2x MM</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#F4CCCC" sdval="25" sdnum="1033;"><font color="#000000">25</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom bgcolor="#F4CCCC" sdval="175" sdnum="1033;0;0.00" data-sheets-formula="=R[-4]C[1]*RC[-1]" data-sheets-value="{ &quot;1&quot;: 3, &quot;3&quot;: 175}" data-sheets-numberformat="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;0.00&quot;, &quot;3&quot;: 1}"><font color="#000000">175.00</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;RLB (01-24, at 10 µM)*&quot;}"><font color="#000000">RLB (01-24, at 10 µM)*</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="0.5" sdnum="1033;"><font color="#000000">0.5</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom sdnum="1033;0;0.00" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;0.5 µL unique to each sample&quot;}"><font color="#000000">0.5 µL unique to each sample</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom bgcolor="#EA9999" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Master Mix volume&quot;}"><font color="#000000">Master Mix volume</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#EA9999" sdval="40.5" sdnum="1033;" data-sheets-formula="=SUM(R[-3]C,R[-2]C)"><font color="#000000">40.5</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom bgcolor="#EA9999" sdval="283.5" sdnum="1033;0;0.00" data-sheets-formula="=SUM(R[-3]C,R[-2]C)" data-sheets-value="{ &quot;1&quot;: 3, &quot;3&quot;: 283}" data-sheets-numberformat="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;0.00&quot;, &quot;3&quot;: 1}"><font color="#000000">283.50</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Total volume&quot;}"><b><font color="#000000">Total volume</font></b></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="50" sdnum="1033;" data-sheets-formula="=SUM(R[-5]C:R[-2]C)"><b><font color="#000000">50</font></b></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom sdnum="1033;0;0.00" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;50 each&quot;}"><b><font color="#000000">50 each</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="36" align="left" valign=bottom bgcolor="#F4CCCC" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Pink = Reagents to add to master mix&quot;}"><font color="#000000">Pink = Reagents to add to master mix</font></td>
+		<td style="border-bottom: 1px solid #ffffff" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="left" valign=top bgcolor="#F4CCCC" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Add 40.5 µL of MM and 0.5 µL RLB to tagmented cDNA&quot;}"><font color="#000000">Add 40.5 µL of MM and 0.5 µL RLB to tagmented cDNA</font></td>
+		</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff" colspan=4 height="70" align="left" valign=bottom bgcolor="#FFFFFF" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;*It is critical to use the same barcodes as initial PCR amplification step\n**Add barcodes last\n\nMix MM and final rxn. by pipeting up and down and start the following thermocycling program:&quot;}"><font color="#000000">*It is critical to use the same barcodes as initial PCR amplification step<br>**Add barcodes last<br><br>Mix MM and final rxn. by pipeting up and down and start the following thermocycling program:</font></td>
+		</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="center" valign=bottom bgcolor="#FFFFFF" data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Thermocycler (lid at 105˚C)&quot;}"><b><font color="#000000">Thermocycler (lid at 105˚C)</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Cycles&quot;}"><b><font color="#000000">Cycles</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;95 °C for 45s&quot;}"><font color="#000000">95 °C for 45s</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;95 ˚C for 15s&quot;}"><font color="#000000">95 ˚C for 15s</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="center" valign=bottom sdval="45422" sdnum="1033;0;M-D" data-sheets-value="{ &quot;1&quot;: 3, &quot;3&quot;: 45422}" data-sheets-numberformat="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;M-D&quot;, &quot;3&quot;: 1}"><font color="#000000">5-10</font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;59 ˚C for 15s&quot;}"><font color="#000000">59 ˚C for 15s</font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;65 °C for 5 min&quot;}"><font color="#000000">65 °C for 5 min</font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;65˚C for 10 mins&quot;}"><font color="#000000">65˚C for 10 mins</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;Hold at 10˚C&quot;}"><font color="#000000">Hold at 10˚C</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #ffffff; border-right: 1px solid #ffffff" align="left" valign=top data-sheets-value="{ &quot;1&quot;: 2, &quot;2&quot;: &quot;&quot;}"><font color="#000000"><br></font></td>
+	</tr>
+</table>
+<!-- ************************************************************************** -->
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+{
+"maxRow": 23,
+"maxCol": 4,
+"cells": {
+"0,0": {
+"v": "Nanopore RNA Metagenomics Secondary Amplification",
+"bold": true
+},
+"1,0": {
+"v": "Project:",
+"bold": true
+},
+"2,0": {
+"v": "Date: ",
+"bold": true
+},
+"3,0": {
+"v": "Secondary amplification may be warranted if there is not enough material to sequence following initial PCR Amplification\n\nHow do I determine whether I have sufficient material?\n- Target concentration for each sample is 5-15nM. 5-15nM is not required for every sample, but you'll want most samples to be around this concentration\n- Tapestation trace may help you evaluate if you have enough library\n- Qubit is most reliable for concentration measurement"
+},
+"4,0": {
+"v": "5.5 Optional Secondary PCR Amplification",
+"bold": true
+},
+"5,0": {
+"v": "Reagent",
+"bold": true
+},
+"5,1": {
+"v": "1 rxn"
+},
+"5,2": {
+"v": "X full rxns"
+},
+"6,2": {
+"v": "X ="
+},
+"6,3": {
+"v": 7.0
+},
+"7,1": {
+"v": "vol stock (\u00b5L)",
+"bold": true
+},
+"7,2": {
+"v": "vol stock (\u00b5L)",
+"bold": true
+},
+"8,0": {
+"v": "Clean barcoded DNA"
+},
+"8,1": {
+"v": 9.0
+},
+"8,2": {
+"v": "9 each"
+},
+"9,0": {
+"v": "Nuclease-free water",
+"fill": "#F4CCCC"
+},
+"9,1": {
+"v": 15.5,
+"fill": "#F4CCCC"
+},
+"9,2": {
+"f": "=D7*B10",
+"cached": 108.5,
+"fill": "#F4CCCC"
+},
+"10,0": {
+"v": "LongAmp Taq 2x MM",
+"fill": "#F4CCCC"
+},
+"10,1": {
+"v": 25.0,
+"fill": "#F4CCCC"
+},
+"10,2": {
+"f": "=D7*B11",
+"cached": 175,
+"fill": "#F4CCCC"
+},
+"11,0": {
+"v": "RLB (01-24, at 10 \u00b5M)*"
+},
+"11,1": {
+"v": 0.5
+},
+"11,2": {
+"v": "0.5 \u00b5L unique to each sample"
+},
+"12,0": {
+"v": "Master Mix volume",
+"fill": "#EA9999"
+},
+"12,1": {
+"f": "=SUM(B10,B11)",
+"cached": 40.5,
+"fill": "#EA9999"
+},
+"12,2": {
+"f": "=SUM(C10,C11)",
+"cached": 283.5,
+"fill": "#EA9999"
+},
+"13,0": {
+"v": "Total volume",
+"bold": true
+},
+"13,1": {
+"f": "=SUM(B9:B12)",
+"cached": 50,
+"bold": true
+},
+"13,2": {
+"v": "50 each",
+"bold": true
+},
+"14,0": {
+"v": "Pink = Reagents to add to master mix",
+"fill": "#F4CCCC"
+},
+"14,2": {
+"v": "Add 40.5 \u00b5L of MM and 0.5 \u00b5L RLB to tagmented cDNA",
+"fill": "#F4CCCC"
+},
+"15,0": {
+"v": "*It is critical to use the same barcodes as initial PCR amplification step\n**Add barcodes last\n\nMix MM and final rxn. by pipeting up and down and start the following thermocycling program:",
+"fill": "#FFFFFF"
+},
+"16,0": {
+"v": "Thermocycler (lid at 105\u02daC)",
+"bold": true,
+"fill": "#FFFFFF"
+},
+"16,1": {
+"v": "Cycles",
+"bold": true
+},
+"17,0": {
+"v": "95 \u00b0C for 45s"
+},
+"17,1": {
+"v": 1.0
+},
+"18,0": {
+"v": "95 \u02daC for 15s"
+},
+"18,1": {
+"v": "5-10"
+},
+"19,0": {
+"v": "59 \u02daC for 15s"
+},
+"20,0": {
+"v": "65 \u00b0C for 5 min"
+},
+"21,0": {
+"v": "65\u02daC for 10 mins"
+},
+"21,1": {
+"v": 1.0
+},
+"22,0": {
+"v": "Hold at 10\u02daC"
+}
+},
+"merges": [
+{
+"r1": 0,
+"c1": 0,
+"r2": 0,
+"c2": 3
+},
+{
+"r1": 11,
+"c1": 2,
+"r2": 11,
+"c2": 3
+},
+{
+"r1": 4,
+"c1": 0,
+"r2": 4,
+"c2": 3
+},
+{
+"r1": 5,
+"c1": 2,
+"r2": 5,
+"c2": 3
+},
+{
+"r1": 9,
+"c1": 2,
+"r2": 9,
+"c2": 3
+},
+{
+"r1": 5,
+"c1": 0,
+"r2": 7,
+"c2": 0
+},
+{
+"r1": 14,
+"c1": 2,
+"r2": 14,
+"c2": 3
+},
+{
+"r1": 3,
+"c1": 0,
+"r2": 3,
+"c2": 3
+},
+{
+"r1": 10,
+"c1": 2,
+"r2": 10,
+"c2": 3
+},
+{
+"r1": 18,
+"c1": 1,
+"r2": 20,
+"c2": 1
+},
+{
+"r1": 13,
+"c1": 2,
+"r2": 13,
+"c2": 3
+},
+{
+"r1": 12,
+"c1": 2,
+"r2": 12,
+"c2": 3
+},
+{
+"r1": 15,
+"c1": 0,
+"r2": 15,
+"c2": 3
+},
+{
+"r1": 8,
+"c1": 2,
+"r2": 8,
+"c2": 3
+},
+{
+"r1": 5,
+"c1": 1,
+"r2": 6,
+"c2": 1
+},
+{
+"r1": 7,
+"c1": 2,
+"r2": 7,
+"c2": 3
+}
+]
+}

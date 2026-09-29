@@ -286,7 +286,7 @@ INDEX = """<!DOCTYPE html>
 
 
 def write_index(manifest):
-    order = ["Playbook", "Protocols", "Slide Decks", "Worksheets"]
+    order = ["Playbook", "Protocols", "Slides and Worksheets"]
     kinds = {"pptx": "PPTX → PDF", "docx": "DOCX → HTML", "pdf": "PDF",
              "xlsx-static": "XLSX → HTML", "xlsx-interactive": "XLSX → HTML + calculator"}
     blocks = []

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>RNA Library Prep Worksheet Template - ONT SMART-9N</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="inner">
+    <a class="home" href="../../index.html">Rapid Response Resources</a>
+    <span class="crumb">/ Protocols / RNA Library Prep Worksheet Template - ONT SMART-9N</span>
+  </div>
+</header>
+<main class="wide">
+  <div class="resource-header">
+    <div>
+      <h1>RNA Library Prep Worksheet Template - ONT SMART-9N</h1>
+      <div class="meta">Live calculator (Secondary amplification) · edit "X =" to rescale reagent volumes</div>
+    </div>
+    <a class="btn" href="https://raw.githubusercontent.com/cmtato/Rapid-Response-Resources/main/resources/protocols/09-O_RNA%20Library%20Prep%20Worksheet%20Template%20-%20ONT%20SMART-9N.xlsx" download="09-O_RNA Library Prep Worksheet Template - ONT SMART-9N.xlsx">Download original .xlsx</a>
+  </div>
+  <div class="tabs">
+    <a href="index.html">Static view</a>
+    <a href="interactive-library-prep.html">Library preparation calculator</a>
+    <a href="interactive-secondary-amplification.html" class="active">Secondary amplification calculator</a>
+  </div>
+  <div id="sheet-container"></div>
+</main>
+<script src="../../assets/vendor/hyperformula.full.min.js"></script>
+<script src="../../assets/calc-sheet.js"></script>
+<script>
+  renderCalcSheet("sheet-container", "sheet-data-secondary-amplification.json");
+</script>
+</body>
+</html>

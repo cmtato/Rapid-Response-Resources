@@ -6,8 +6,8 @@ Resources for metagenomics sequencing, covering wet and dry lab methods for Illu
 
 **For protocols, start here:**
 
-- [Biohub Protocols - Illumina mNGS](https://cmtato.github.io/Rapid-Response-Resources/protocols/00-i-biohub-rapid-response-mngs-protocols-shared/index.html)
-- [Biohub Protocols - Nanopore mNGS](https://cmtato.github.io/Rapid-Response-Resources/protocols/00-o-biohub-protocols-nanopore-mngs/index.html)
+- [Biohub Protocols - Illumina mNGS](https://cmtato.github.io/Rapid-Response-Resources/protocols/biohub-protocols-illumina/index.html)
+- [Biohub Protocols - Nanopore mNGS](https://cmtato.github.io/Rapid-Response-Resources/protocols/biohub-protocols-ont/index.html)
 
 
 **For slides and instructional material, see the table below:**
@@ -25,16 +25,16 @@ Resources for metagenomics sequencing, covering wet and dry lab methods for Illu
 <tr>
 <td>
 
-- [Sequencing Run QC for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides/8-i-sequencing-run-qc-for-illumina/index.html)
-- [Activity](https://cmtato.github.io/Rapid-Response-Resources/worksheets/8-i-sequencing-run-qc-for-illumina-activity/index.html)
+- [Sequencing Run QC for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/sequencing-run-qc-illumina/index.html)
+- [Activity](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/sequencing-run-qc-illumina-activity/index.html)
 
 <br>
 
 </td>
 <td>
 
-- [Sequencing Run QC for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/8-o-sequencing-run-qc-for-ont/index.html)
-- [Activity](https://cmtato.github.io/Rapid-Response-Resources/worksheets/8-o-sequencing-run-qc-for-ont-activity/index.html)
+- [Sequencing Run QC for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/sequencing-run-qc-ont/index.html)
+- [Activity](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/sequencing-run-qc-ont-activity/index.html)
 
 <br>
 
@@ -45,8 +45,8 @@ Resources for metagenomics sequencing, covering wet and dry lab methods for Illu
 
 <tr><td colspan="2">
 
-- [Bioinformatics Basics and BLAST](https://cmtato.github.io/Rapid-Response-Resources/slides/dl1-bioinformatics-basics-and-blast/index.html)
-- [Activity](https://cmtato.github.io/Rapid-Response-Resources/worksheets/dl1-blast-activity/index.html)
+- [Bioinformatics Basics and BLAST](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/bioinformatic-basics-and-blast/index.html)
+- [Activity](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/blast-activity/index.html)
 
 <br>
 
@@ -56,7 +56,7 @@ Resources for metagenomics sequencing, covering wet and dry lab methods for Illu
 
 <tr><td colspan="2">
 
-[Intro to CZ ID](https://cmtato.github.io/Rapid-Response-Resources/slides/dl2-intro-to-cz-id/index.html)
+[Intro to CZ ID](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/intro-to-cz-id/index.html)
 
 <br>
 
@@ -74,7 +74,7 @@ Not applicable
 </td>
 <td>
 
-[Prepare ONT fastqs for upload to CZ ID](https://cmtato.github.io/Rapid-Response-Resources/slides/dl3-o-prepare-ont-fastqs-for-upload-to-cz-id/index.html)
+[Prepare ONT fastqs for upload to CZ ID](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/prepare-ont-fastqs/index.html)
 
 <br>
 
@@ -86,14 +86,14 @@ Not applicable
 <tr>
 <td>
 
-[CZ ID mNGS Pipeline for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides/dl4-i-cz-id-mngs-pipeline-for-illumina/index.html)
+[CZ ID mNGS Pipeline for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/czid-pipeline-illumina/index.html)
 
 <br>
 
 </td>
 <td>
 
-[CZ ID mNGS Pipeline for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/dl4-o-cz-id-mngs-pipeline-for-ont/index.html)
+[CZ ID mNGS Pipeline for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/czid-pipeline-ont/index.html)
 
 <br>
 
@@ -105,16 +105,16 @@ Not applicable
 <tr>
 <td>
 
-- [QC and interpretation slides for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides/dl5-i-qc-and-interpretation-slides-for-illumina/index.html)
-- [Activity (QC Worksheet, pg 5-10)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-illumina/index.html)
+- [QC and interpretation slides for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/qc-and-interpretation-illumina/index.html)
+- [Activity (QC Worksheet, pg 5-10)](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/reference-tables-illumina/index.html)
 
 <br>
 
 </td>
 <td>
 
-- [QC and interpretation slides for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/dl5-o-qc-and-interpretation-slides-for-ont/index.html)
-- [Activity (QC Worksheet, pg 5-9)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-ont/index.html)
+- [QC and interpretation slides for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/qc-and-interpretation-ont/index.html)
+- [Activity (QC Worksheet, pg 5-9)](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/reference-tables-ont/index.html)
 
 <br>
 
@@ -126,16 +126,16 @@ Not applicable
 <tr>
 <td>
 
-- [Sample Report Metrics for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides/dl6-i-sample-report-metrics-for-illumina/index.html)
-- [Activity (Sample Report, pg 12-13)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-illumina/index.html)
+- [Sample Report Metrics for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/sample-report-metrics-illumina/index.html)
+- [Activity (Sample Report, pg 12-13)](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/reference-tables-illumina/index.html)
 
 <br>
 
 </td>
 <td>
 
-- [Sample Report Metrics for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/dl6-o-sample-report-metrics-for-ont/index.html)
-- [Activity (Sample Report, pg 10-16)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-ont/index.html)
+- [Sample Report Metrics for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/sample-report-metrics-ont/index.html)
+- [Activity (Sample Report, pg 10-16)](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/reference-tables-ont/index.html)
 
 <br>
 
@@ -147,15 +147,15 @@ Not applicable
 <tr>
 <td>
 
-[Background models](https://cmtato.github.io/Rapid-Response-Resources/slides/dl7-i-background-models/index.html)
+[Background models](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/background-models-illumina/index.html)
 
 <br>
 
 </td>
 <td>
 
-- [Background models for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/dl7-o-background-models-for-ont/index.html)
-- [Activity (Identification of Background Signal, pg 17-20)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-ont/index.html)
+- [Background models for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/background-models-ont/index.html)
+- [Activity (Identification of Background Signal, pg 17-20)](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/reference-tables-ont/index.html)
 
 <br>
 
@@ -167,15 +167,15 @@ Not applicable
 <tr>
 <td>
 
-- [CZ ID Heatmap for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides/dl8-i-cz-id-heatmap-for-illumina/index.html)
-- [Activity (Heatmap Notes, pg 14-15)](https://cmtato.github.io/Rapid-Response-Resources/worksheets/cz-id-training-reference-tables-worksheets-illumina/index.html)
+- [CZ ID Heatmap for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/czid-heatmap-illumina/index.html)
+- [Activity (Heatmap Notes, pg 14-15)](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/reference-tables-illumina/index.html)
 
 <br>
 
 </td>
 <td>
 
-[Heatmap App for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides/dl8-o-heatmap-app-for-ont/index.html)
+[Heatmap App for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/heatmap-app-ont/index.html)
 
 <br>
 
@@ -187,7 +187,7 @@ Not applicable
 <tr>
 <td>
 
-[CZ ID AMR Module](https://cmtato.github.io/Rapid-Response-Resources/slides/dl9-i-cz-id-amr-module/index.html)
+[CZ ID AMR Module](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/czid-amr-module-illumina/index.html)
 
 <br>
 
@@ -206,7 +206,7 @@ Not available
 <tr>
 <td>
 
-[Building Viral Consensus Genomes](https://cmtato.github.io/Rapid-Response-Resources/slides/dl10-i-building-viral-consensus-genomes/index.html)
+[Building Viral Consensus Genomes](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/viral-consensus-genomes-illumina/index.html)
 
 <br>
 
@@ -226,7 +226,7 @@ Not available
 
 ## Playbook for mNGS training workshops
 
-We've created a resource to help you plan and execute workshops: [The Biohub Rapid Response mNGS Training Playbook](https://cmtato.github.io/Rapid-Response-Resources/playbook/pb00-biohub-rapid-response-mngs-training-playbook/index.html)
+We've created a resource to help you plan and execute workshops: [The Biohub Rapid Response mNGS Training Playbook](https://cmtato.github.io/Rapid-Response-Resources/playbook/training-playbook/index.html)
 
 This a guide, and it provides examples of templates, tracker guides, and other documents to support the planning, preparation, and execution of metagenomic next-generation sequencing (mNGS) training programs. It is intended as a starting point, and resources are customizable examples that you can adapt to fit your specific program, site, and audience.
 

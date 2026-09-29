@@ -2,9 +2,35 @@
 JSON format consumed by docs/assets/calc-sheet.js for live in-browser
 recalculation. Requires openpyxl (pip install openpyxl).
 """
+import datetime
 import json
+import re
 import sys
 import openpyxl
+
+
+def render(value, number_format):
+    """Excel stores some cells as datetimes that were never meant as dates.
+
+    A thermocycler cycle range typed as "5-10", for instance, is coerced by
+    Excel into a date with an "m-d" number format. Rendering by the cell's
+    format keeps what the author sees in the spreadsheet, and also makes the
+    value JSON-serializable.
+    """
+    if not isinstance(value, (datetime.datetime, datetime.date, datetime.time)):
+        return value
+    fmt = re.sub(r'[\\"\[\]]', '', (number_format or '').lower())
+    if isinstance(value, datetime.time):
+        return value.strftime('%H:%M')
+    has = lambda *cs: any(c in fmt for c in cs)
+    if has('h', 's') and not has('y'):
+        return value.strftime('%H:%M')
+    if 'y' in fmt:
+        return value.strftime('%Y-%m-%d')
+    if 'm' in fmt and 'd' in fmt:               # e.g. "m-d" -> 5-10
+        sep = '-' if '-' in fmt else '/'
+        return f"{value.month}{sep}{value.day}"
+    return value.isoformat()
 
 
 def extract(path, sheet_name):
@@ -27,9 +53,10 @@ def extract(path, sheet_name):
             entry = {}
             if isinstance(v, str) and v.startswith("="):
                 entry["f"] = v
-                entry["cached"] = wsv.cell(row=cell.row, column=cell.column).value
+                cached = wsv.cell(row=cell.row, column=cell.column).value
+                entry["cached"] = render(cached, cell.number_format)
             else:
-                entry["v"] = v
+                entry["v"] = render(v, cell.number_format)
             if cell.font and cell.font.bold:
                 entry["bold"] = True
             fill = cell.fill
