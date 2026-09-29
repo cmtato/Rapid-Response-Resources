@@ -226,7 +226,7 @@ Not available
 
 ## Playbook for mNGS training workshops
 
-We've created a resource to help you plan and execute workshops: The Biohub Rapid Response mNGS Training Playbook 
+We've created a resource to help you plan and execute workshops: [The Biohub Rapid Response mNGS Training Playbook](https://cmtato.github.io/Rapid-Response-Resources/playbook/pb00-biohub-rapid-response-mngs-training-playbook/index.html)
 
 This a guide, and it provides examples of templates, tracker guides, and other documents to support the planning, preparation, and execution of metagenomic next-generation sequencing (mNGS) training programs. It is intended as a starting point, and resources are customizable examples that you can adapt to fit your specific program, site, and audience.
 

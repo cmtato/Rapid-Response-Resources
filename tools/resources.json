@@ -4,6 +4,13 @@
   "fontCss": "body, p, h1, h2, font, td, th, li { font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif !important; } body { margin: 0.6rem !important; } table { max-width: 100% !important; table-layout: auto !important; } col { width: auto !important; } td, th { overflow-wrap: anywhere; vertical-align: top; } img { max-width: 100% !important; height: auto !important; }",
   "entries": [
     {
+      "source": "resources/playbook/PB00_Biohub Rapid Response mNGS Training Playbook.docx",
+      "docsDir": "docs/playbook/pb00-biohub-rapid-response-mngs-training-playbook",
+      "type": "docx",
+      "title": "Biohub Rapid Response mNGS Training Playbook",
+      "section": "Playbook"
+    },
+    {
       "source": "resources/protocols/0-I Biohub Rapid Response mNGS Protocols Shared.docx",
       "docsDir": "docs/protocols/0-i-biohub-rapid-response-mngs-protocols-shared",
       "type": "docx",
