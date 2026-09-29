@@ -6,8 +6,8 @@ Resources for metagenomics sequencing, covering wet and dry lab methods for Illu
 
 **For protocols, start here:**
 
-- [Biohub Protocols - Illumina mNGS](https://cmtato.github.io/Rapid-Response-Resources/protocols/0-i-biohub-rapid-response-mngs-protocols-shared/index.html)
-- [Biohub Protocols - Nanopore mNGS](https://cmtato.github.io/Rapid-Response-Resources/protocols/0-o-biohub-protocols-nanopore-mngs/index.html)
+- [Biohub Protocols - Illumina mNGS](https://cmtato.github.io/Rapid-Response-Resources/protocols/00-i-biohub-rapid-response-mngs-protocols-shared/index.html)
+- [Biohub Protocols - Nanopore mNGS](https://cmtato.github.io/Rapid-Response-Resources/protocols/00-o-biohub-protocols-nanopore-mngs/index.html)
 
 
 **For slides and instructional material, see the table below:**

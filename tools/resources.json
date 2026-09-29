@@ -11,22 +11,22 @@
       "section": "Playbook"
     },
     {
-      "source": "resources/protocols/0-I Biohub Rapid Response mNGS Protocols Shared.docx",
-      "docsDir": "docs/protocols/0-i-biohub-rapid-response-mngs-protocols-shared",
+      "source": "resources/protocols/00-I_Biohub Rapid Response mNGS Protocols Shared.docx",
+      "docsDir": "docs/protocols/00-i-biohub-rapid-response-mngs-protocols-shared",
       "type": "docx",
       "title": "0. Biohub Protocols - Illumina mNGS",
       "section": "Protocols"
     },
     {
-      "source": "resources/protocols/0-O Biohub Protocols_ Nanopore mNGS.docx",
-      "docsDir": "docs/protocols/0-o-biohub-protocols-nanopore-mngs",
+      "source": "resources/protocols/00-O_Biohub Protocols_ Nanopore mNGS.docx",
+      "docsDir": "docs/protocols/00-o-biohub-protocols-nanopore-mngs",
       "type": "docx",
       "title": "0. Biohub Protocols - Nanopore mNGS",
       "section": "Protocols"
     },
     {
-      "source": "resources/protocols/2. DNase Treatment.xlsx",
-      "docsDir": "docs/protocols/2-dnase-treatment",
+      "source": "resources/protocols/02_DNase Treatment.xlsx",
+      "docsDir": "docs/protocols/02-dnase-treatment",
       "type": "xlsx-interactive",
       "title": "2. DNase Treatment",
       "section": "Protocols",
@@ -36,8 +36,8 @@
       ]
     },
     {
-      "source": "resources/protocols/3. Illumina RNA Library Prep Worksheet Template.xlsx",
-      "docsDir": "docs/protocols/3-illumina-rna-library-prep-worksheet-template",
+      "source": "resources/protocols/03-I_RNA Library Prep Worksheet Template - NEB kit.xlsx",
+      "docsDir": "docs/protocols/03-i-rna-library-prep-worksheet-template-neb-kit",
       "type": "xlsx-interactive",
       "title": "3. Illumina RNA Library Prep Worksheet Template",
       "section": "Protocols",
@@ -46,22 +46,22 @@
       ]
     },
     {
-      "source": "resources/protocols/5. Library Pooling Calculations.xlsx",
-      "docsDir": "docs/protocols/5-library-pooling-calculations",
+      "source": "resources/protocols/05_Library Pooling Calculations.xlsx",
+      "docsDir": "docs/protocols/05-library-pooling-calculations",
       "type": "xlsx-static",
       "title": "5. Library Pooling Calculations",
       "section": "Protocols"
     },
     {
-      "source": "resources/protocols/All Catalog Numbers for Illumina mNGS.xlsx",
-      "docsDir": "docs/protocols/all-catalog-numbers-for-illumina-mngs",
+      "source": "resources/protocols/I_All Catalog Numbers - Illumina.xlsx",
+      "docsDir": "docs/protocols/i-all-catalog-numbers-illumina",
       "type": "xlsx-static",
       "title": "All Catalog Numbers for Illumina mNGS",
       "section": "Protocols"
     },
     {
-      "source": "resources/protocols/All Catalog Numbers for ONT mNGS.xlsx",
-      "docsDir": "docs/protocols/all-catalog-numbers-for-ont-mngs",
+      "source": "resources/protocols/O_All Catalog Numbers - ONT.xlsx",
+      "docsDir": "docs/protocols/o-all-catalog-numbers-ont",
       "type": "xlsx-static",
       "title": "All Catalog Numbers for ONT mNGS",
       "section": "Protocols"
