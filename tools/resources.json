@@ -4,9 +4,9 @@
   "fontCss": "body, p, h1, h2, font, td, th, li { font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif !important; } body { margin: 0.6rem !important; } table { max-width: 100% !important; table-layout: auto !important; } col { width: auto !important; } td, th { overflow-wrap: anywhere; vertical-align: top; } img { max-width: 100% !important; height: auto !important; }",
   "entries": [
     {
-      "source": "resources/playbook/PB00_Biohub Rapid Response mNGS Training Playbook.docx",
+      "source": "resources/playbook/PB00_Biohub Rapid Response mNGS Training Playbook.pdf",
       "docsDir": "docs/playbook/training-playbook",
-      "type": "docx",
+      "type": "pdf",
       "title": "Biohub Rapid Response mNGS Training Playbook",
       "section": "Playbook"
     },
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "source": "resources/protocols/04-I_RNA Library Prep Worksheet Template - NEB kit.xlsx",
+      "source": "resources/protocols/04-I-NEB_RNA Library Prep Worksheet Template - NEB kit.xlsx",
       "docsDir": "docs/protocols/rna-library-prep-neb",
       "type": "xlsx-interactive",
       "title": "RNA Library Prep Worksheet Template - NEB kit",
@@ -61,7 +61,7 @@
       ]
     },
     {
-      "source": "resources/protocols/04-I_RNA Library Prep Worksheet Template - Watchmaker kit.xlsx",
+      "source": "resources/protocols/04-I-WM_RNA Library Prep Worksheet Template - Watchmaker kit.xlsx",
       "docsDir": "docs/protocols/rna-library-prep-watchmaker",
       "type": "xlsx-interactive",
       "title": "RNA Library Prep Worksheet Template - Watchmaker kit",
