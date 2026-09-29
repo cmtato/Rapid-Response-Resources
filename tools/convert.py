@@ -123,6 +123,11 @@ def build_slides_pdf(src, docs_dir):
         shutil.copy(pdf, docs_dir / "slides.pdf")
 
 
+def copy_pdf(src, docs_dir):
+    """A PDF source is already web-viewable; serve it as-is."""
+    shutil.copy(src, docs_dir / "document.pdf")
+
+
 def build_sheet_data(src, docs_dir, sheets):
     sys.path.insert(0, str(TOOLS))
     import extract_sheet
@@ -169,6 +174,7 @@ META = {
     "pptx": "Slide deck · converted from PowerPoint (PPTX → PDF)",
     "docx": "Document · converted from Word (DOCX → HTML)",
     "xlsx-static": "Excel workbook · converted from XLSX → HTML (formulas are not interactive)",
+    "pdf": "PDF document",
 }
 
 
@@ -194,8 +200,9 @@ def write_pages(manifest, entry, docs_dir):
     download = raw_url(manifest, src)
     etype = entry["type"]
 
-    if etype == "pptx":
-        body = '  <iframe class="viewer-frame" src="slides.pdf" title="{t} slides"></iframe>'.format(t=title)
+    if etype in ("pptx", "pdf"):
+        srcfile = "slides.pdf" if etype == "pptx" else "document.pdf"
+        body = '  <iframe class="viewer-frame" src="{f}" title="{t}"></iframe>'.format(f=srcfile, t=title)
         main_class, scripts = ' class="wide"', ""
     else:
         # Word/Excel conversions keep their source page geometry; landscape
@@ -242,6 +249,8 @@ def run_entry(manifest, entry):
     etype = entry["type"]
     if etype == "pptx":
         build_slides_pdf(src, docs_dir)
+    elif etype == "pdf":
+        copy_pdf(src, docs_dir)
     elif etype in ("docx", "xlsx-static"):
         build_content_html(src, docs_dir, manifest.get("fontCss"))
     elif etype == "xlsx-interactive":
@@ -278,7 +287,7 @@ INDEX = """<!DOCTYPE html>
 
 def write_index(manifest):
     order = ["Protocols", "Slide Decks", "Worksheets"]
-    kinds = {"pptx": "PPTX → PDF", "docx": "DOCX → HTML",
+    kinds = {"pptx": "PPTX → PDF", "docx": "DOCX → HTML", "pdf": "PDF",
              "xlsx-static": "XLSX → HTML", "xlsx-interactive": "XLSX → HTML + calculator"}
     blocks = []
     for section in order:
