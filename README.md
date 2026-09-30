@@ -226,7 +226,7 @@ Not available
 
 ## Lab worksheets and calculators
 
-Fill-in worksheets that calculate reagent volumes from the number of reactions you enter. Each page shows the worksheet as it appears in Excel, with the live calculator on a separate tab, and a button to download the original file. Step numbers match the corresponding protocol.
+Fill-in worksheets that calculate reagent volumes from the number of reactions you enter. Each page shows the worksheet as it appears in Excel, with the live calculator on a separate tab, and a button to download the original file. Step numbers match the corresponding protocol in protocols.io.
 
 - Step 02: [DNase Treatment](https://cmtato.github.io/Rapid-Response-Resources/protocols/dnase-treatment/index.html) (Zymo and Qiagen calculators)
 - Step 04: [RNA Library Prep, NEB kit](https://cmtato.github.io/Rapid-Response-Resources/protocols/rna-library-prep-neb/index.html) (Illumina)
