@@ -224,6 +224,24 @@ Not available
 
 ---
 
+## Lab worksheets and calculators
+
+Fill-in worksheets that calculate reagent volumes from the number of reactions you enter. Each page shows the worksheet as it appears in Excel, with the live calculator on a separate tab, and a button to download the original file. Step numbers match the corresponding protocol.
+
+- Step 02: [DNase Treatment](https://cmtato.github.io/Rapid-Response-Resources/protocols/dnase-treatment/index.html) (Zymo and Qiagen calculators)
+- Step 04: [RNA Library Prep, NEB kit](https://cmtato.github.io/Rapid-Response-Resources/protocols/rna-library-prep-neb/index.html) (Illumina)
+- Step 04: [RNA Library Prep, Watchmaker kit](https://cmtato.github.io/Rapid-Response-Resources/protocols/rna-library-prep-watchmaker/index.html) (Illumina)
+- Step 06: [Library Pooling Calculations](https://cmtato.github.io/Rapid-Response-Resources/protocols/library-pooling-calculations/index.html)
+- Step 09: [RNA Library Prep, ONT SMART-9N](https://cmtato.github.io/Rapid-Response-Resources/protocols/rna-library-prep-ont-smart-9n/index.html) (Nanopore)
+
+## Reagent and catalog reference lists
+
+- [All Catalog Numbers, Illumina](https://cmtato.github.io/Rapid-Response-Resources/protocols/catalog-numbers-illumina/index.html)
+- [All Catalog Numbers, ONT](https://cmtato.github.io/Rapid-Response-Resources/protocols/catalog-numbers-ont/index.html)
+- [mNGS Starter Kit Reagent List](https://cmtato.github.io/Rapid-Response-Resources/protocols/starter-kit-reagent-list/index.html)
+
+---
+
 ## Playbook for mNGS training workshops
 
 We've created a resource to help you plan and execute workshops: [The Biohub Rapid Response mNGS Training Playbook](https://cmtato.github.io/Rapid-Response-Resources/playbook/training-playbook/index.html)
