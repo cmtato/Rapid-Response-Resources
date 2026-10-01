@@ -11,6 +11,7 @@ If you just want to read or use the materials, the [resources site](https://cmta
 | `protocols/` | Master protocol documents, bench worksheets with reagent calculations, and catalog/reagent reference lists |
 | `slides-and-worksheets/` | Training slide decks with their accompanying activity and reference worksheets |
 | `playbook/` | Templates and trackers for planning and running a training workshop |
+| `gen-epi/` | Genomic epidemiology materials (to be added) |
 
 ## How files are named
 
