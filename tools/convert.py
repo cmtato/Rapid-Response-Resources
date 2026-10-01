@@ -99,7 +99,59 @@ def rewrite_links(html_path):
     return counts
 
 
-def build_content_html(src, docs_dir, css):
+def shorten_bare_urls(html_path):
+    """Replace link text that is itself a raw URL with the word "Link".
+
+    Spreadsheet cells holding a product URL convert to a link whose visible
+    text is the whole URL, which can run to hundreds of characters and forces
+    its table column absurdly wide. A label is used rather than the domain,
+    because a bare domain reads as though it were the whole address when the
+    target is actually a deep product page.
+    """
+    text = html_path.read_text(encoding="utf-8", errors="replace")
+
+    def repl(m):
+        href, attrs, inner = m.group(1), m.group(2), m.group(3)
+        visible = re.sub(r"<[^>]+>", "", inner).strip()
+        if not re.fullmatch(r"https?://\S+", visible):
+            return m.group(0)                     # real link text, leave alone
+        return f'<a href="{href}"{attrs}>Link</a>'
+
+    patched, n = re.subn(r'<a href="(https?://[^"]+)"([^>]*)>(.*?)</a>',
+                         repl, text, flags=re.S)
+    html_path.write_text(patched, encoding="utf-8")
+    return sum(1 for _ in re.finditer(r'<a href="https?://[^"]+"[^>]*>Link</a>', patched))
+
+
+def sheets_as_prose(html_path, sheet_names):
+    """Render the named sheets as paragraphs instead of a table.
+
+    Some sheets are prose written into a spreadsheet: a few long sentences in
+    narrow columns. As a table they wrap badly; as paragraphs they read
+    normally. Cell markup is kept, so any links inside survive.
+    """
+    text = html_path.read_text(encoding="utf-8", errors="replace")
+    done = 0
+    for name in sheet_names:
+        m = re.search(r'(<A NAME="table\d+"><h1>Sheet \d+: <em>'
+                      + re.escape(name) + r'</em></h1></A>\s*)(<table.*?</table>)',
+                      text, re.S | re.I)
+        if not m:
+            continue
+        paras = []
+        for row in re.findall(r"<tr[^>]*>(.*?)</tr>", m.group(2), re.S):
+            cells = [re.sub(r"\s+", " ", c).strip()
+                     for c in re.findall(r"<td[^>]*>(.*?)</td>", row, re.S)]
+            joined = " ".join(c for c in cells if re.sub(r"<[^>]+>", "", c).strip())
+            if joined:
+                paras.append(f"<p>{joined}</p>")
+        text = text[:m.start(2)] + "\n".join(paras) + text[m.end(2):]
+        done += 1
+    html_path.write_text(text, encoding="utf-8")
+    return done
+
+
+def build_content_html(src, docs_dir, css, prose_sheets=()):
     """docx/xlsx -> content.html (+ any extracted images) in docs_dir."""
     for stale in list(docs_dir.glob("*_html_*")):
         stale.unlink()
@@ -107,7 +159,13 @@ def build_content_html(src, docs_dir, css):
         html = soffice_convert(src, "html", tmp)
         if css:
             inject_css(html, css)
+        if prose_sheets:
+            n = sheets_as_prose(html, prose_sheets)
+            print(f"      {n} sheet(s) rendered as prose instead of a table")
+        shortened = shorten_bare_urls(html)
         c = rewrite_links(html)
+        if shortened:
+            print(f"      {shortened} bare URL(s) replaced with a Link label")
         if c["internal"]:
             print(f"      {c['internal']} self-referential link(s) rewritten to local anchors")
         if c["external"]:
@@ -252,10 +310,10 @@ def run_entry(manifest, entry):
     elif etype == "pdf":
         copy_pdf(src, docs_dir)
     elif etype in ("docx", "xlsx-static"):
-        build_content_html(src, docs_dir, manifest.get("fontCss"))
+        build_content_html(src, docs_dir, manifest.get("fontCss"), entry.get("proseSheets", ()))
     elif etype == "xlsx-interactive":
         build_sheet_data(src, docs_dir, entry["sheets"])
-        build_content_html(src, docs_dir, manifest.get("fontCss"))
+        build_content_html(src, docs_dir, manifest.get("fontCss"), entry.get("proseSheets", ()))
     else:
         raise ValueError(f"unknown type: {etype}")
     write_pages(manifest, entry, docs_dir)

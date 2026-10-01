@@ -122,7 +122,8 @@
       "docsDir": "docs/protocols/starter-kit-reagent-list",
       "type": "xlsx-static",
       "title": "mNGS Starter Kit Reagent List",
-      "section": "Protocols"
+      "section": "Protocols",
+      "proseSheets": ["README"]
     },
     {
       "source": "resources/slides-and-worksheets/08-I_Sequencing Run QC for Illumina - Slides.pptx",
