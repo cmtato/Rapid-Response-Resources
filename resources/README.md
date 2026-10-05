@@ -11,13 +11,13 @@ If you just want to read or use the materials, the [resources site](https://cmta
 | `protocols/` | Master protocol documents, bench worksheets with reagent calculations, and catalog/reagent reference lists |
 | `slides-and-worksheets/` | Training slide decks with their accompanying activity and reference worksheets |
 | `playbook/` | Templates and trackers for planning and running a training workshop |
-| `gen-epi/` | Genomic epidemiology materials (to be added) |
+| `gen-epi/` | The genomic epidemiology train-the-trainer toolkit and its accompanying slide decks |
 
 ## How files are named
 
 Filenames carry their place in the training sequence and the platform they apply to:
 
-- A leading code gives the file's place in its sequence: `DL01` through `DL10` for the dry lab (data analysis) modules, `PB00` through `PB16` for the playbook, and a bare number for the wet lab protocol steps. Protocol numbers follow the corresponding protocols.io entry, so they are not consecutive. `AppendixA` marks reference material rather than a step.
+- A leading code gives the file's place in its sequence: `DL01` through `DL10` for the dry lab (data analysis) modules, `PB00` through `PB16` for the playbook, `GE00` onward for the genomic epidemiology materials, and a bare number for the wet lab protocol steps. Protocol numbers follow the corresponding protocols.io entry, so they are not consecutive. `AppendixA` marks reference material rather than a step.
 - `-I` means Illumina, `-O` means Nanopore (ONT), and no platform marker means the file applies to both.
 
 For example, `DL05-O_QC and interpretation slides for ONT.pptx` is dry lab module 5, for Nanopore, and `04-I_RNA Library Prep Worksheet Template - NEB kit.xlsx` is protocol step 4 for Illumina using the NEB kit.
