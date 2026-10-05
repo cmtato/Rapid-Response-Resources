@@ -236,9 +236,10 @@ Fill-in worksheets that calculate reagent volumes from the number of reactions y
 
 ## Reagent and catalog reference lists
 
+- [mNGS Starter Kit Reagent List](https://cmtato.github.io/Rapid-Response-Resources/protocols/starter-kit-reagent-list/index.html)
 - [All Catalog Numbers, Illumina](https://cmtato.github.io/Rapid-Response-Resources/protocols/catalog-numbers-illumina/index.html)
 - [All Catalog Numbers, ONT](https://cmtato.github.io/Rapid-Response-Resources/protocols/catalog-numbers-ont/index.html)
-- [mNGS Starter Kit Reagent List](https://cmtato.github.io/Rapid-Response-Resources/protocols/starter-kit-reagent-list/index.html)
+
 
 ---
 
@@ -246,7 +247,7 @@ Fill-in worksheets that calculate reagent volumes from the number of reactions y
 
 We've created a resource to help you plan and execute workshops: [The Biohub Rapid Response mNGS Training Playbook](https://cmtato.github.io/Rapid-Response-Resources/playbook/training-playbook/index.html)
 
-This a guide, and it provides examples of templates, tracker guides, and other documents to support the planning, preparation, and execution of metagenomic next-generation sequencing (mNGS) training programs. It is intended as a starting point, and resources are customizable examples that you can adapt to fit your specific program, site, and audience.
+This is a guide, and it provides examples of templates, tracker guides, and other documents to support the planning, preparation, and execution of metagenomic next-generation sequencing (mNGS) training programs. It is intended as a starting point, and resources are customizable examples that you can adapt to fit your specific program, site, and audience.
 
 
 ## How this repo is organized
