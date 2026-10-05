@@ -254,6 +254,8 @@ This is a guide, and it provides examples of templates, tracker guides, and othe
 
 The [Genomic Epidemiology Train-the-Trainer Toolkit](https://cmtato.github.io/Rapid-Response-Resources/gen-epi/train-the-trainer-toolkit/index.html) is designed to help local trainers adapt and deliver high-quality genomic epidemiology training across a range of audiences, infrastructure settings, and public health contexts. The toolkit includes modular Core and Extended curricula, facilitator guidance, assessments, technical setup instructions. In addition to the toolkit, we have also included a few [accompanying training slides](https://github.com/cmtato/Rapid-Response-Resources/tree/main/resources/gen-epi). Our goal in sharing these materials is to make the approaches, lessons, and resources developed through this work available for others to adapt, teach, and carry forward.
 
+For studying the subject itself, rather than teaching it, see [An applied genomic epidemiological handbook](https://alliblk.github.io/genepi-book/), a brief guide to the concepts and practice of viral genomic epidemiology in public health.
+
 
 ## How this repo is organized
 
