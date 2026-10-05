@@ -11,6 +11,13 @@
       "section": "Playbook"
     },
     {
+      "source": "resources/gen-epi/GE00_Genomic Epidemiology Train-the-Trainer Toolkit.pdf",
+      "docsDir": "docs/gen-epi/train-the-trainer-toolkit",
+      "type": "pdf",
+      "title": "Genomic Epidemiology Train-the-Trainer Toolkit",
+      "section": "Genomic Epidemiology"
+    },
+    {
       "source": "resources/protocols/00-I_Biohub Rapid Response mNGS Protocols Shared.docx",
       "docsDir": "docs/protocols/biohub-protocols-illumina",
       "type": "docx",

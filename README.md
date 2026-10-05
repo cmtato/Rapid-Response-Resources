@@ -250,6 +250,11 @@ We've created a resource to help you plan and execute workshops: [The Biohub Rap
 This is a guide, and it provides examples of templates, tracker guides, and other documents to support the planning, preparation, and execution of metagenomic next-generation sequencing (mNGS) training programs. It is intended as a starting point, and resources are customizable examples that you can adapt to fit your specific program, site, and audience.
 
 
+## Genomic Epidemiology Resources
+
+The [Genomic Epidemiology Train-the-Trainer Toolkit](https://cmtato.github.io/Rapid-Response-Resources/gen-epi/train-the-trainer-toolkit/index.html) is designed to help local trainers adapt and deliver high-quality genomic epidemiology training across a range of audiences, infrastructure settings, and public health contexts. The toolkit includes modular Core and Extended curricula, facilitator guidance, assessments, technical setup instructions. In addition to the toolkit, we have also included a few [accompanying training slides](https://github.com/cmtato/Rapid-Response-Resources/tree/main/resources/gen-epi). Our goal in sharing these materials is to make the approaches, lessons, and resources developed through this work available for others to adapt, teach, and carry forward.
+
+
 ## How this repo is organized
 
 - **[`resources/`](resources/)** holds the original PowerPoint, Word, and Excel files.
