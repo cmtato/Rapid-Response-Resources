@@ -40,12 +40,27 @@ function findMerge(merges, r, c) {
   return null;
 }
 
-async function renderCalcSheet(containerId, dataUrl) {
+// "B7" -> {row: 6, col: 1}, for input cells declared in the manifest
+function a1ToRowCol(ref) {
+  const m = /^([A-Z]+)(\d+)$/.exec(ref.trim().toUpperCase());
+  if (!m) return null;
+  let col = 0;
+  for (const ch of m[1]) col = col * 26 + (ch.charCodeAt(0) - 64);
+  return { row: parseInt(m[2], 10) - 1, col: col - 1 };
+}
+
+async function renderCalcSheet(containerId, dataUrl, declaredInputs) {
   const container = document.getElementById(containerId);
   const res = await fetch(dataUrl);
   const sheetData = await res.json();
 
   const inputCoords = new Set();
+  // some worksheets label their reaction-count cell differently, so the
+  // manifest can name the input cells outright
+  for (const ref of declaredInputs || []) {
+    const rc = a1ToRowCol(ref);
+    if (rc) inputCoords.add(`${rc.row},${rc.col}`);
+  }
   for (const [key, cell] of Object.entries(sheetData.cells)) {
     if (cell.v === "X =") {
       const [r, c] = key.split(",").map(Number);

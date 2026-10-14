@@ -83,6 +83,26 @@
       ]
     },
     {
+      "source": "resources/protocols/04-I-ILMN_RNA Library Prep Worksheet Template - Illumina Rapid RNA kit.xlsx",
+      "docsDir": "docs/protocols/rna-library-prep-illumina-rapid-rna",
+      "type": "xlsx-interactive",
+      "title": "RNA Library Prep Worksheet Template - Illumina Rapid RNA kit",
+      "section": "Protocols",
+      "sheets": [
+        {
+          "name": "Worksheet long",
+          "output": "sheet-data.json",
+          "page": "interactive.html",
+          "label": "Interactive calculator",
+          "inputs": [
+            "D7",
+            "D27",
+            "D50"
+          ]
+        }
+      ]
+    },
+    {
       "source": "resources/protocols/09-O_RNA Library Prep Worksheet Template - ONT SMART-9N.xlsx",
       "docsDir": "docs/protocols/rna-library-prep-ont-smart-9n",
       "type": "xlsx-interactive",

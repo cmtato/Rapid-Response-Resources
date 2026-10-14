@@ -280,8 +280,9 @@ def write_pages(manifest, entry, docs_dir):
         body = '  <div id="sheet-container"></div>'
         scripts = ('<script src="../../assets/vendor/hyperformula.full.min.js"></script>\n'
                    '<script src="../../assets/calc-sheet.js"></script>\n'
-                   '<script>\n  renderCalcSheet("sheet-container", "%s");\n</script>\n'
-                   % sheet["output"])
+                   '<script>\n  renderCalcSheet("sheet-container", "%s"%s);\n</script>\n'
+                   % (sheet["output"],
+                      ", " + json.dumps(sheet["inputs"]) if sheet.get("inputs") else ""))
         (docs_dir / sheet["page"]).write_text(SHELL.format(
             title=title, section=esc(entry.get("section", "")),
             meta=f'Live calculator ({esc(sheet["name"])}) · edit "X =" to rescale reagent volumes',

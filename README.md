@@ -336,6 +336,7 @@ Fill-in worksheets that calculate reagent volumes from the number of reactions y
 - Step 02: [DNase Treatment](https://cmtato.github.io/Rapid-Response-Resources/protocols/dnase-treatment/index.html) (Zymo and Qiagen calculators)
 - Step 04: [RNA Library Prep, NEB kit](https://cmtato.github.io/Rapid-Response-Resources/protocols/rna-library-prep-neb/index.html) (Illumina)
 - Step 04: [RNA Library Prep, Watchmaker kit](https://cmtato.github.io/Rapid-Response-Resources/protocols/rna-library-prep-watchmaker/index.html) (Illumina)
+- Step 04: [RNA Library Prep, Illumina Rapid RNA kit](https://cmtato.github.io/Rapid-Response-Resources/protocols/rna-library-prep-illumina-rapid-rna/index.html) (Illumina)
 - Step 06: [Library Pooling Calculations](https://cmtato.github.io/Rapid-Response-Resources/protocols/library-pooling-calculations/index.html)
 - Step 09: [RNA Library Prep, ONT SMART-9N](https://cmtato.github.io/Rapid-Response-Resources/protocols/rna-library-prep-ont-smart-9n/index.html) (Nanopore)
 

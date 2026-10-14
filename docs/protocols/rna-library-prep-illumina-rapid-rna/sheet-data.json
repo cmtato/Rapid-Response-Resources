@@ -1,0 +1,478 @@
+{
+"maxRow": 76,
+"maxCol": 5,
+"cells": {
+"0,0": {
+"v": "Illumina Rapid Total RNA Library Prep",
+"bold": true
+},
+"1,0": {
+"v": "Date:",
+"bold": true
+},
+"2,0": {
+"v": "Experiment:",
+"bold": true
+},
+"3,0": {
+"v": "Worksheet is to be used as a quick-guide supplement to the manufacturer's protocol",
+"bold": true
+},
+"5,1": {
+"v": "1. FastSelect and Priming",
+"bold": true
+},
+"6,3": {
+"v": 9,
+"fill": "#FFF2CC"
+},
+"6,4": {
+"v": "* enter 10% more than # of samples for pipetting variation"
+},
+"7,0": {
+"v": "Spin down, keep on ice"
+},
+"7,1": {
+"v": "RNA sample"
+},
+"7,2": {
+"v": 7
+},
+"7,3": {
+"v": "-"
+},
+"8,0": {
+"v": "Thaw on ice, pipette mix, spin"
+},
+"8,1": {
+"v": "25pg ERCC Spike-in (50pg/uL stock)"
+},
+"8,2": {
+"v": 0.5
+},
+"8,3": {
+"f": "=$D$7*C9",
+"cached": 4.5
+},
+"9,0": {
+"v": "Thaw at RT, vortex, spin"
+},
+"9,1": {
+"v": "EPH3"
+},
+"9,2": {
+"v": 8.5
+},
+"9,3": {
+"f": "=$D$7*C10",
+"cached": 76.5
+},
+"10,0": {
+"v": "Thaw on ice, pipette mix, spin"
+},
+"10,1": {
+"v": "*QIAseq FastSelect (1:10) rRNA"
+},
+"10,2": {
+"v": 1
+},
+"10,3": {
+"f": "=$D$7*C11",
+"cached": 9
+},
+"11,1": {
+"v": "Water (if RNA is <7ul)"
+},
+"11,2": {
+"v": 0
+},
+"11,3": {
+"f": "=$D$7*C12",
+"cached": 0
+},
+"12,2": {
+"f": "=SUM(C8:C12)",
+"cached": 17
+},
+"12,3": {
+"f": "=SUM(D9:D12)",
+"cached": 90
+},
+"13,3": {
+"f": "=D13/D7",
+"cached": 10,
+"fill": "#D9EAD3"
+},
+"13,4": {
+"v": "ul MM to add to sample after thorough mixing",
+"fill": "#D9EAD3"
+},
+"14,1": {
+"v": "1. RLP_DEN-FS",
+"bold": true
+},
+"15,1": {
+"v": "Pre-PCR thermocycler (lid at 105\u02daC):"
+},
+"16,1": {
+"v": "\u00b7       2 min 75C"
+},
+"17,1": {
+"v": "\u00b7       2 min 70C"
+},
+"18,1": {
+"v": "\u00b7       2 min 65C"
+},
+"19,1": {
+"v": "\u00b7       2 min 60C"
+},
+"20,1": {
+"v": "\u00b7       2 min 55C"
+},
+"21,1": {
+"v": "\u00b7       5 min 37C"
+},
+"22,1": {
+"v": "\u00b7       5 min 25C"
+},
+"23,1": {
+"v": "\u00b7       Hold 12\u00b0C"
+},
+"25,1": {
+"v": "2. cDNA synthesis + Tagmentation",
+"bold": true
+},
+"26,3": {
+"v": 8,
+"fill": "#FFF2CC"
+},
+"26,4": {
+"v": "* enter exact # of samples. Overage for pipetting variation is included"
+},
+"27,0": {
+"v": "Bring all reagents to RT",
+"bold": true
+},
+"27,1": {
+"v": "Fragmented & primed RNA"
+},
+"27,2": {
+"v": 17
+},
+"27,3": {
+"v": "-"
+},
+"28,0": {
+"v": "Vortex to mix, pulse spin"
+},
+"28,1": {
+"v": "CBM"
+},
+"28,2": {
+"v": 29.7
+},
+"28,3": {
+"f": "=D27*C29",
+"cached": 237.6
+},
+"29,0": {
+"v": "Flick to mix, pulse spin"
+},
+"29,1": {
+"v": "CEM"
+},
+"29,2": {
+"v": 2.9
+},
+"29,3": {
+"f": "=D27*C30",
+"cached": 23.2
+},
+"30,0": {
+"v": "Vortex and invert, pulse spin"
+},
+"30,1": {
+"v": "LRA"
+},
+"30,2": {
+"v": 3.7
+},
+"30,3": {
+"f": "=D27*C31",
+"cached": 29.6
+},
+"31,0": {
+"v": "Vortex 30s, or until beads are resuspended"
+},
+"31,1": {
+"v": "EBLTS"
+},
+"31,2": {
+"v": 11
+},
+"31,3": {
+"f": "=D27*C32",
+"cached": 88
+},
+"32,2": {
+"f": "=SUM(C28,D34)",
+"cached": 60
+},
+"32,3": {
+"f": "=SUM(D28:D32)",
+"cached": 378.40000000000003
+},
+"33,3": {
+"v": 43,
+"fill": "#CFE2F3"
+},
+"33,4": {
+"v": "ul MM to add to sample after thorough mixing",
+"fill": "#CFE2F3"
+},
+"34,1": {
+"v": "2. RLP_tag",
+"bold": true
+},
+"35,1": {
+"v": "Pre-PCR thermocycler (lid at 100\u02daC):"
+},
+"36,1": {
+"v": "\u00b7       15 mins at 37\u00b0C"
+},
+"37,1": {
+"v": "\u00b7       15 mins at 55\u00b0C"
+},
+"38,1": {
+"v": "\u00b7       Hold at 4\u02daC"
+},
+"39,1": {
+"v": "60ul"
+},
+"41,1": {
+"v": "Bead Tagmentation",
+"bold": true
+},
+"42,1": {
+"v": "Sample"
+},
+"42,2": {
+"v": 60
+},
+"43,0": {
+"v": "Vortex to mix"
+},
+"43,1": {
+"v": "ST2"
+},
+"43,2": {
+"v": 10
+},
+"44,0": {
+"v": "Vortex to mix"
+},
+"44,1": {
+"v": "TWB2"
+},
+"45,1": {
+"v": "* Follow bead tagmentation protocol in manufacturer's protocol (and briefly steps 1-7 below)"
+},
+"46,1": {
+"v": "1. Add 10ul ST2 to each well\n2. Seal and shake at 2200 rpm for 1 min\n3. Incubate 5 mins at RT\n4. Spin down\n5. Place on magnetic stand (~3min) and discard supernatant\n6. Wash beads\n    \u00b7 Remove from magnetic stand\n    \u00b7 Add 100ul TWB2 to each well\n    \u00b7 Seal and shake at 2000rpm for 1 min\n    \u00b7 Spin down\n    \u00b7 Place on magnetic stand (~3min)\n    \u00b7 Remove and discard all supernatant\n7. Repeat wash beads for a second time\n    \u00b7 Do not remove TWB2 until ready for PCR master mix addition"
+},
+"48,1": {
+"v": "3. Barcoding PCR",
+"bold": true
+},
+"49,3": {
+"v": 8,
+"fill": "#FFF2CC"
+},
+"49,4": {
+"v": "* enter exact # of samples. Overage for pipetting variation is included"
+},
+"50,1": {
+"v": "Tagmented cDNA and beads (remove TWB2 before adding MM)"
+},
+"50,2": {
+"v": "-"
+},
+"50,3": {
+"v": "-"
+},
+"51,0": {
+"v": "Thaw at RT. Invert then spin"
+},
+"51,1": {
+"v": "EPM (Enhanced PCR Mix)"
+},
+"51,2": {
+"v": 23
+},
+"51,3": {
+"f": "=D50*C52",
+"cached": 184
+},
+"52,1": {
+"v": "Water"
+},
+"52,2": {
+"v": 23
+},
+"52,3": {
+"f": "=D50*C53",
+"cached": 184
+},
+"53,0": {
+"v": "Thaw at RT. Vortex then spin"
+},
+"53,1": {
+"v": "Index adapter (UDP0XXX)"
+},
+"53,2": {
+"v": 10
+},
+"53,3": {
+"v": "-"
+},
+"54,2": {
+"f": "=SUM(C51:C54)",
+"cached": 56
+},
+"54,3": {
+"f": "=SUM(D51:D54)",
+"cached": 368
+},
+"55,3": {
+"v": 40,
+"fill": "#D9D2E9"
+},
+"55,4": {
+"v": "ul MM to add to sample after thorough mixing",
+"fill": "#D9D2E9"
+},
+"56,3": {
+"v": 10,
+"fill": "#D9D2E9"
+},
+"56,4": {
+"v": "ul Indexing primer to add",
+"fill": "#D9D2E9"
+},
+"57,1": {
+"v": "* Vortex master mix thoroughly\n1. Keep samples on the magnet\n2. Remove and discard all TWB2 supernatant\n3. With a 20ul pipette, remove any residual TWB2. Foam remaining on well walls is unconcerning.\n4. Remove samples from the magnetic stand\n5. Add 40ul PCR master mix (beads from previous step remain - that is okay)\n6. Add 10ul indexing adapter\n7. Seal and shake at 2000rpm for 1min\n8. Spin down\n9. Place in thermocycler"
+},
+"59,1": {
+"v": "3. RLP_PCR",
+"bold": true
+},
+"60,1": {
+"v": "Post-PCR Thermocycler \n(lid at 100\u02daC)",
+"bold": true,
+"fill": "#FFFFFF"
+},
+"60,2": {
+"v": "Cycles",
+"bold": true
+},
+"61,1": {
+"v": "72 \u00b0C for 3 min"
+},
+"61,2": {
+"v": 1
+},
+"62,1": {
+"v": "98 \u00b0C for 30s"
+},
+"62,2": {
+"v": 1
+},
+"63,1": {
+"v": "98 \u00b0C for 10s"
+},
+"63,2": {
+"v": "6-17**"
+},
+"64,1": {
+"v": "60 \u00b0C for 30s"
+},
+"65,1": {
+"v": "72\u00a0\u02daC for 30s"
+},
+"66,1": {
+"v": "72\u02daC for 3 min"
+},
+"66,2": {
+"v": 1
+},
+"67,1": {
+"v": "Hold at 4\u02daC"
+},
+"67,2": {
+"v": "<16 hours"
+},
+"68,1": {
+"v": "56ul"
+},
+"69,1": {
+"v": "** Refer to page manufacturer protocol for cycle # guide"
+},
+"70,1": {
+"v": "Safe to store completed PCR product at -20C for up to 7 days "
+},
+"72,1": {
+"v": "4. SPRI Clean after Barcoding PCR",
+"bold": true
+},
+"73,1": {
+"v": "* Follow bead clean protocol in manufacturer's protocol (and briefly 1-19. below)"
+},
+"74,1": {
+"v": "** Prepare 400ul fresh 80% EtOH per sample prior to beginning"
+},
+"75,1": {
+"v": "1. Place samples on the magnet\n2. Transfer 45ul of supernatant to a fresh tube\n3. Add 45ul IPB beads to each well\n4. Mix well\n5. Incubate at RT for 5 min\n6. Place on magnet for 5 min\n7. Remove and discard 90ul of supernatant\n8. Keep on magnet and add 175ul fresh 80% EtOH\n9. Wait 30s, then remove and discard EtOH\n10. Repeat steps 8-9 for a second ethanol wash"
+},
+"75,3": {
+"v": "\n11. With a 20ul pipette, remove all residual EtOH\n12. Air-dry on magnet for 2min - do not over-dry the beads\n13. Remove from the magnet\n14. Add 32ul RSB or water to each well\n15. Mix well by pipetting or seal and shake\n16. Incubate at RT for 2min\n17. Pulse spin\n18. Place on magnet for 2min\n19. Transfer 30ul supernatant to fresh tube"
+}
+},
+"merges": [
+{
+"r1": 6,
+"c1": 4,
+"r2": 8,
+"c2": 4
+},
+{
+"r1": 75,
+"c1": 3,
+"r2": 75,
+"c2": 4
+},
+{
+"r1": 63,
+"c1": 2,
+"r2": 65,
+"c2": 2
+},
+{
+"r1": 75,
+"c1": 1,
+"r2": 75,
+"c2": 2
+},
+{
+"r1": 57,
+"c1": 1,
+"r2": 57,
+"c2": 3
+},
+{
+"r1": 46,
+"c1": 1,
+"r2": 46,
+"c2": 3
+}
+]
+}
