@@ -18,7 +18,112 @@ Resources for metagenomics sequencing, covering wet and dry lab methods for Illu
 <th width="50%">Nanopore (ONT)</th>
 </tr>
 
-<tr><td colspan="2"><em>Wet lab modules 1-7 go here.</em></td></tr>
+<tr><td colspan="2"><strong>1. Introduction to genomics and mNGS</strong></td></tr>
+
+<tr><td colspan="2">
+
+[Introduction to genomics and mNGS](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/introduction-to-genomics-and-mngs/index.html)
+
+<br>
+
+</td></tr>
+
+<tr><td colspan="2"><strong>2. mNGS study design</strong></td></tr>
+
+<tr><td colspan="2">
+
+[mNGS study design](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/mngs-study-design/index.html)
+
+<br>
+
+</td></tr>
+
+<tr><td colspan="2"><strong>3. Lab setup and sample preparation</strong></td></tr>
+
+<tr><td colspan="2">
+
+[Lab Setup and sample prep](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/lab-setup-and-sample-prep/index.html)
+
+<br>
+
+</td></tr>
+
+<tr><td colspan="2"><strong>4. Library preparation</strong></td></tr>
+
+<tr>
+<td>
+
+[Library preparation for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/library-preparation-illumina/index.html)
+
+<br>
+
+</td>
+<td>
+
+[Library preparation for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/library-preparation-ont/index.html)
+
+<br>
+
+</td>
+</tr>
+
+<tr><td colspan="2"><strong>5. Library prep QC</strong></td></tr>
+
+<tr>
+<td>
+
+[Library prep QC for Illumina](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/library-prep-qc-illumina/index.html)
+
+<br>
+
+</td>
+<td>
+
+[Library Prep QC for ONT](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/library-prep-qc-ont/index.html)
+
+<br>
+
+</td>
+</tr>
+
+<tr><td colspan="2"><strong>6. Sequencing</strong></td></tr>
+
+<tr>
+<td>
+
+[Illumina sequencing](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/illumina-sequencing/index.html)
+
+<br>
+
+</td>
+<td>
+
+[Oxford Nanopore Sequencing](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/oxford-nanopore-sequencing/index.html)
+
+<br>
+
+</td>
+</tr>
+
+<tr><td colspan="2"><strong>7. Instrument loading and sequencing run</strong></td></tr>
+
+<tr>
+<td>
+
+- [iSeq 100 Loading and Sequencing](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/iseq-100-loading/index.html)
+- [MiSeq Loading and Sequencing](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/miseq-loading/index.html)
+
+<br>
+
+</td>
+<td>
+
+[MinION Loading and Sequencing](https://cmtato.github.io/Rapid-Response-Resources/slides-and-worksheets/minion-loading/index.html)
+
+<br>
+
+</td>
+</tr>
 
 <tr><td colspan="2"><strong>8. Evaluating sequencing run QC</strong></td></tr>
 

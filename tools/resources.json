@@ -130,7 +130,93 @@
       "type": "xlsx-static",
       "title": "mNGS Starter Kit Reagent List",
       "section": "Protocols",
-      "proseSheets": ["README"]
+      "proseSheets": [
+        "README"
+      ]
+    },
+    {
+      "source": "resources/slides-and-worksheets/01_Introduction to genomics and mNGS.pptx",
+      "docsDir": "docs/slides-and-worksheets/introduction-to-genomics-and-mngs",
+      "type": "pptx",
+      "title": "Introduction to genomics and mNGS",
+      "section": "Slides and Worksheets"
+    },
+    {
+      "source": "resources/slides-and-worksheets/02_mNGS study design.pptx",
+      "docsDir": "docs/slides-and-worksheets/mngs-study-design",
+      "type": "pptx",
+      "title": "mNGS study design",
+      "section": "Slides and Worksheets"
+    },
+    {
+      "source": "resources/slides-and-worksheets/03_Lab Setup and sample prep.pptx",
+      "docsDir": "docs/slides-and-worksheets/lab-setup-and-sample-prep",
+      "type": "pptx",
+      "title": "Lab Setup and sample prep",
+      "section": "Slides and Worksheets"
+    },
+    {
+      "source": "resources/slides-and-worksheets/04-I_Library preparation for Illumina.pptx",
+      "docsDir": "docs/slides-and-worksheets/library-preparation-illumina",
+      "type": "pptx",
+      "title": "Library preparation for Illumina",
+      "section": "Slides and Worksheets"
+    },
+    {
+      "source": "resources/slides-and-worksheets/04-O_Library preparation for ONT.pptx",
+      "docsDir": "docs/slides-and-worksheets/library-preparation-ont",
+      "type": "pptx",
+      "title": "Library preparation for ONT",
+      "section": "Slides and Worksheets"
+    },
+    {
+      "source": "resources/slides-and-worksheets/05-I_Library prep QC for Illumina.pptx",
+      "docsDir": "docs/slides-and-worksheets/library-prep-qc-illumina",
+      "type": "pptx",
+      "title": "Library prep QC for Illumina",
+      "section": "Slides and Worksheets"
+    },
+    {
+      "source": "resources/slides-and-worksheets/05-O_Library Prep QC for ONT.pptx",
+      "docsDir": "docs/slides-and-worksheets/library-prep-qc-ont",
+      "type": "pptx",
+      "title": "Library Prep QC for ONT",
+      "section": "Slides and Worksheets"
+    },
+    {
+      "source": "resources/slides-and-worksheets/06-I_Illumina sequencing.pptx",
+      "docsDir": "docs/slides-and-worksheets/illumina-sequencing",
+      "type": "pptx",
+      "title": "Illumina sequencing",
+      "section": "Slides and Worksheets"
+    },
+    {
+      "source": "resources/slides-and-worksheets/06-O_Oxford Nanopore Sequencing.pptx",
+      "docsDir": "docs/slides-and-worksheets/oxford-nanopore-sequencing",
+      "type": "pptx",
+      "title": "Oxford Nanopore Sequencing",
+      "section": "Slides and Worksheets"
+    },
+    {
+      "source": "resources/slides-and-worksheets/07-I_iSeq 100 Loading and Sequencing.pptx",
+      "docsDir": "docs/slides-and-worksheets/iseq-100-loading",
+      "type": "pptx",
+      "title": "iSeq 100 Loading and Sequencing",
+      "section": "Slides and Worksheets"
+    },
+    {
+      "source": "resources/slides-and-worksheets/07-I_MiSeq Loading and Sequencing.pptx",
+      "docsDir": "docs/slides-and-worksheets/miseq-loading",
+      "type": "pptx",
+      "title": "MiSeq Loading and Sequencing",
+      "section": "Slides and Worksheets"
+    },
+    {
+      "source": "resources/slides-and-worksheets/07-O_MinION Loading and Sequencing.pptx",
+      "docsDir": "docs/slides-and-worksheets/minion-loading",
+      "type": "pptx",
+      "title": "MinION Loading and Sequencing",
+      "section": "Slides and Worksheets"
     },
     {
       "source": "resources/slides-and-worksheets/08-I_Sequencing Run QC for Illumina - Slides.pptx",
