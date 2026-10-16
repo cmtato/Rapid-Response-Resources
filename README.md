@@ -363,6 +363,11 @@ The [Genomic Epidemiology Train-the-Trainer Toolkit](https://cmtato.github.io/Ra
 For studying the subject itself, rather than teaching it, see [An applied genomic epidemiological handbook](https://alliblk.github.io/genepi-book/), a brief guide to the concepts and practice of viral genomic epidemiology in public health.
 
 
+## Additional resources
+
+A few supporting documents that sit outside the training sequence: guidance on managing and storing sequencing data, a guide to microbiome analysis beyond CZ ID, and a cost comparison of commercial SPRI bead options. For these, see the [additional materials folder](https://github.com/cmtato/Rapid-Response-Resources/tree/main/resources/additional-materials).
+
+
 ## How this repo is organized
 
 - **[`resources/`](resources/)** holds the original PowerPoint, Word, and Excel files.

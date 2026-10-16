@@ -12,6 +12,7 @@ If you just want to read or use the materials, the [resources site](https://cmta
 | `slides-and-worksheets/` | Training slide decks with their accompanying activity and reference worksheets |
 | `playbook/` | Templates and trackers for planning and running a training workshop |
 | `gen-epi/` | The genomic epidemiology train-the-trainer toolkit and its accompanying slide decks |
+| `additional-materials/` | Supporting documents that sit outside the training sequence |
 
 ## How files are named
 
