@@ -381,6 +381,18 @@ The table above is for navigating the materials: every link opens in the browser
 
 Browse everything at the [resources site](https://cmtato.github.io/Rapid-Response-Resources/).
 
+## Acknowledgements
+
+These resources are the work of the contributors listed below.
+
+**mNGS lab materials:** Vida Ahyong, Manu Vanaerschot, Lusajo Mwakibete, Gowtham Thakku, Juliana Gil, Genay Pilarowski, Daniele Jones, Cristina Tato
+
+**mNGS dry lab materials:** Katrina Kalantar, Elizabeth Fahsbender, Karyna Rosario Cora, Vida Ahyong, Manu Vanaerschot, Lusajo Mwakibete, Gowtham Thakku, Juliana Gil, Genay Pilarowski, Daniele Jones, Cristina Tato
+
+**Genomic epidemiology materials:** Paul Oluniyi, Patrick Ayscue
+
+**Training workshop playbook:** Maira Phelps, Vida Ahyong, Manu Vanaerschot, Lusajo Mwakibete, Gowtham Thakku, Juliana Gil, Genay Pilarowski, Daniele Jones, Cristina Tato
+
 ## License
 
 This material is licensed under [CC BY 4.0](LICENSE): you are free to share and adapt it with attribution.
