@@ -18,20 +18,6 @@
       "section": "Genomic Epidemiology"
     },
     {
-      "source": "resources/protocols/00-I_Biohub Rapid Response mNGS Protocols Shared.docx",
-      "docsDir": "docs/protocols/biohub-protocols-illumina",
-      "type": "docx",
-      "title": "Biohub Protocols - Illumina mNGS",
-      "section": "Protocols"
-    },
-    {
-      "source": "resources/protocols/00-O_Biohub Protocols_ Nanopore mNGS.docx",
-      "docsDir": "docs/protocols/biohub-protocols-ont",
-      "type": "docx",
-      "title": "Biohub Protocols - Nanopore mNGS",
-      "section": "Protocols"
-    },
-    {
       "source": "resources/protocols/02_DNase Treatment.xlsx",
       "docsDir": "docs/protocols/dnase-treatment",
       "type": "xlsx-interactive",
