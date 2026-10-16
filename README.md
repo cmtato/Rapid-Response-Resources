@@ -1,13 +1,16 @@
 # Rapid Response Resources
 
-Collection of scientific protocols and instructional materials for metagenomics next generation sequencing and data analyses; tools that enable microbial detection and identification for pathogen surveillance and outbreak response; customizable instructional materials to use for training workshops in pathogen genomics and genomic epidemiology. Includes the Biohub Rapid Response mNGS Training Playbook, a guide with adaptable templates, checklists, and other resources for planning and delivering mNGS training workshops.
+Collection of scientific protocols and instructional materials for metagenomics next generation sequencing (mNGS) and data analyses; tools that enable microbial detection and identification for pathogen surveillance and outbreak response; customizable instructional materials to use for training workshops in pathogen genomics and genomic epidemiology. Includes the Biohub Rapid Response mNGS Training Playbook, a guide with adaptable templates, checklists, and other resources for planning and delivering mNGS training workshops.
 
 Resources for metagenomics sequencing, covering wet and dry lab methods for Illumina and Nanopore (ONT).
 
-**For protocols, see our [Rapid Response Metagenomics Protocols](https://doi.org/10.17504/protocols.io.8nlk5b4nwl5r/v1) collection on protocols.io**
+**For protocols:**
+
+See our [Rapid Response Metagenomics Protocols](https://doi.org/10.17504/protocols.io.8nlk5b4nwl5r/v1) collection on protocols.io**
 
 
-**For slides and instructional material, see the table below:**
+
+**For mNGS slides and instructional material, see the table below:**
 
 <table>
 <tr>
