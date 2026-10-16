@@ -99,6 +99,30 @@ def rewrite_links(html_path):
     return counts
 
 
+def linkify_plain_urls(html_path):
+    """Make clickable the URLs that were pasted into cells as plain text.
+
+    A product URL typed into a spreadsheet without Excel turning it into a
+    hyperlink converts to plain text: long, and not clickable. Where such a
+    URL is the whole content of a cell, wrap it in a link so it behaves like
+    the hyperlinked ones beside it; shorten_bare_urls then labels it.
+    """
+    text = html_path.read_text(encoding="utf-8", errors="replace")
+
+    def repl(m):
+        open_tag, inner, close = m.group(1), m.group(2), m.group(3)
+        if "<a " in inner.lower():
+            return m.group(0)                        # already a link
+        visible = re.sub(r"<[^>]+>", "", inner).strip()
+        if not re.fullmatch(r"https?://\S+", visible):
+            return m.group(0)                        # not a lone URL
+        return f'{open_tag}<a href="{visible}">{visible}</a>{close}'
+
+    patched, n = re.subn(r"(<td[^>]*>)((?:(?!</td>).)*?)(</td>)", repl, text, flags=re.S)
+    html_path.write_text(patched, encoding="utf-8")
+    return sum(1 for _ in re.finditer(r'<td[^>]*><a href="https?://[^"]+">https?://', patched))
+
+
 def shorten_bare_urls(html_path):
     """Replace link text that is itself a raw URL with the word "Link".
 
@@ -162,6 +186,9 @@ def build_content_html(src, docs_dir, css, prose_sheets=()):
         if prose_sheets:
             n = sheets_as_prose(html, prose_sheets)
             print(f"      {n} sheet(s) rendered as prose instead of a table")
+        linkified = linkify_plain_urls(html)
+        if linkified:
+            print(f"      {linkified} plain-text URL(s) made clickable")
         shortened = shorten_bare_urls(html)
         c = rewrite_links(html)
         if shortened:
