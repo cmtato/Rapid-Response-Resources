@@ -1,13 +1,10 @@
 # Rapid Response Resources
 
-Collection of scientific protocols and instructional materials for metagenomic next generation sequencing and data analyses; tools that enable microbial detection and identification for pathogen surveillance and outbreak response; customizable instructional materials to use for training workshops in pathogen genomics and genomic epidemiology. Includes the Biohub Rapid Response mNGS Training Playbook, a guide with adaptable templates, checklists, and other resources for planning and delivering mNGS training workshops.
+Collection of scientific protocols and instructional materials for metagenomics next generation sequencing and data analyses; tools that enable microbial detection and identification for pathogen surveillance and outbreak response; customizable instructional materials to use for training workshops in pathogen genomics and genomic epidemiology. Includes the Biohub Rapid Response mNGS Training Playbook, a guide with adaptable templates, checklists, and other resources for planning and delivering mNGS training workshops.
 
 Resources for metagenomics sequencing, covering wet and dry lab methods for Illumina and Nanopore (ONT).
 
-**For protocols, start here:**
-
-- [Biohub Protocols - Illumina mNGS](https://cmtato.github.io/Rapid-Response-Resources/protocols/biohub-protocols-illumina/index.html)
-- [Biohub Protocols - Nanopore mNGS](https://cmtato.github.io/Rapid-Response-Resources/protocols/biohub-protocols-ont/index.html)
+**For protocols, see our [Rapid Response Metagenomics Protocols](https://doi.org/10.17504/protocols.io.8nlk5b4nwl5r/v1) collection on protocols.io**
 
 
 **For slides and instructional material, see the table below:**
@@ -376,7 +373,7 @@ For additional documents beyond the training material, see the [additional mater
 
 The table above is for navigating the materials: every link opens in the browser. Each of those pages also has a "Download original" button if you want the editable file for just that resource.
 
-**To download everything at once:** use the green "Code" button at the top of this page, choose "Download ZIP" (about 130 MB), and open the `resources` folder inside. GitHub cannot download a single folder on its own, so the ZIP includes the browser versions as well.
+**To download everything at once:** use the green "Code" button at the top of this page, choose "Download ZIP" (about 300 MB), and open the `resources` folder inside. GitHub cannot download a single folder on its own, so the ZIP includes the browser versions as well.
 
 Browse everything at the [resources site](https://cmtato.github.io/Rapid-Response-Resources/).
 
