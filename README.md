@@ -365,7 +365,7 @@ For studying the subject itself, rather than teaching it, see [An applied genomi
 
 ## Additional resources
 
-A few supporting documents that sit outside the training sequence: guidance on managing and storing sequencing data, a guide to microbiome analysis beyond CZ ID, and a cost comparison of commercial SPRI bead options. For these, see the [additional materials folder](https://github.com/cmtato/Rapid-Response-Resources/tree/main/resources/additional-materials).
+For additional documents beyond the training material, see the [additional materials folder](https://github.com/cmtato/Rapid-Response-Resources/tree/main/resources/additional-materials). Examples of resources here include guidance on managing and storing sequencing data, a guide to microbiome analysis beyond CZ ID, and a cost comparison of commercial SPRI bead options.
 
 
 ## How this repo is organized
