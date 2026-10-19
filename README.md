@@ -5,7 +5,7 @@ Collection of scientific protocols and instructional materials for metagenomics 
 Resources for metagenomics sequencing, covering wet and dry lab methods for Illumina and Nanopore (ONT).
 
 ## Metagenomics protocols
-See our [Rapid Response Metagenomics Protocols](https://doi.org/10.17504/protocols.io.8nlk5b4nwl5r/v1) collection on protocols.io
+See our [Rapid Response Metagenomics Protocols](https://doi.org/10.17504/protocols.io.8nlk5b4nwl5r/v1) collection on protocols.io (*link will become active by 10/30/2026*)
 
 ---
 
