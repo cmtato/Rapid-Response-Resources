@@ -25,7 +25,7 @@ For example, `DL05-O_QC and interpretation slides for ONT.pptx` is dry lab modul
 
 ## Downloading
 
-GitHub cannot download a single folder, so to get everything use the green **Code** button on the [repository home page](https://github.com/cmtato/Rapid-Response-Resources) and choose **Download ZIP** (about 130 MB), then open the `resources` folder inside. To download one file, open it here on GitHub and use the download button, or use the **Download original** button on that resource's page on the site.
+GitHub cannot download a single folder, so to get everything use the green **Code** button on the [repository home page](https://github.com/cmtato/Rapid-Response-Resources) and choose **Download ZIP** (about 300 MB), then open the `resources` folder inside. To download one file, open it here on GitHub and use the download button, or use the **Download original** button on that resource's page on the site.
 
 ## If you edit a file here
 
