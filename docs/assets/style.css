@@ -183,3 +183,52 @@ section.group h2 {
   letter-spacing: 0.03em;
   margin: 1.5rem 0 0.6rem;
 }
+
+/* The landing page is rendered from README.md, so it needs plain document
+   styling: the Illumina/ONT table, headings and lists as the README has them. */
+main.readme {
+  max-width: 1100px;
+}
+
+main.readme h1 {
+  font-size: 1.8rem;
+  margin: 0 0 0.6rem;
+}
+
+main.readme h2 {
+  font-size: 1.15rem;
+  margin: 2rem 0 0.5rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--border);
+}
+
+main.readme table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0.5rem 0 1.5rem;
+  background: var(--panel);
+}
+
+main.readme th,
+main.readme td {
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.8rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+main.readme th {
+  background: #eef1f4;
+}
+
+main.readme td > p:first-child { margin-top: 0; }
+main.readme td > p:last-child  { margin-bottom: 0; }
+main.readme td ul { margin: 0; padding-left: 1.1rem; }
+
+main.readme hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+
+main.readme a { color: var(--accent); }

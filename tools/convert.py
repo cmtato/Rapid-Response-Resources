@@ -363,35 +363,73 @@ INDEX = """<!DOCTYPE html>
     <span class="crumb">Metagenomics sequencing &amp; analysis training materials</span>
   </div>
 </header>
-<main>
-  <p>All hosted resources, grouped by type. See the <a href="https://github.com/{repo}">README</a> for the Illumina/Nanopore workflow view.</p>
-{sections}</main>
+<main class="readme">
+{body}
+</main>
 </body>
 </html>
 """
 
 
-def write_index(manifest):
-    order = ["Playbook", "Genomic Epidemiology", "Protocols", "Slides and Worksheets"]
-    kinds = {"pptx": "PPTX → PDF", "docx": "DOCX → HTML", "pdf": "PDF",
-             "xlsx-static": "XLSX → HTML", "xlsx-interactive": "XLSX → HTML + calculator"}
-    blocks = []
-    for section in order:
-        items = [e for e in manifest["entries"]
-                 if e.get("section") == section and e["type"] != "download-only"]
-        if not items:
+def table_to_list(markdown_text):
+    """Turn the README's Illumina/ONT table into a plain nested list.
+
+    The table reads well on GitHub but a two column layout is awkward on a
+    narrow page, so the site lists the same entries in the same order, keeping
+    the module numbers and marking which platform each belongs to.
+    """
+    i, j = markdown_text.find("<table"), markdown_text.find("</table>")
+    if i == -1:
+        return markdown_text
+    block = markdown_text[i:j + len("</table>")]
+    out = []
+    for chunk in re.findall(r"<tr[^>]*>.*?</tr>", block, re.S):
+        topic = re.search(r"<strong>(.*?)</strong>", chunk)
+        if topic:
+            out.append(f"\n**{topic.group(1)}**\n")
             continue
-        rows = "\n".join(
-            f'      <li>\n'
-            f'        <a class="title" href="{e["docsDir"][len("docs/"):]}/index.html"'
-            f' target="_blank" rel="noopener">{esc(e["title"])}</a>\n'
-            f'        <span class="kind">{kinds[e["type"]]}</span>\n'
-            f'      </li>' for e in items)
-        blocks.append(f'  <section class="group">\n    <h2>{section}</h2>\n'
-                      f'    <ul class="resource-list">\n{rows}\n    </ul>\n  </section>\n')
+        cells = re.findall(r"<td[^>]*>(.*?)</td>", chunk, re.S)
+        for n, cell in enumerate(cells):
+            links = re.findall(r"\[([^\]]+)\]\(([^)]+)\)", cell)
+            plain = re.sub(r"<[^>]+>", "", re.sub(r"\[[^\]]+\]\([^)]+\)", "", cell)).strip()
+            label = "" if len(cells) == 1 else ("Illumina: " if n == 0 else "ONT: ")
+            for text, href in links:
+                out.append(f"- {label}[{text}]({href})")
+            if plain and not links:                   # e.g. "Not applicable"
+                out.append(f"- {label}{plain}")
+    return markdown_text[:i] + "\n".join(out) + markdown_text[j + len("</table>"):]
+
+
+def write_index(manifest):
+    """Render the landing page from README.md.
+
+    The README is the curated view of these materials, and every hosted page
+    is linked from it, so generating the landing page from it keeps the two
+    from drifting apart the way a separately maintained list would.
+    """
+    import markdown
+
+    text = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
+    # the site reaches its own pages relatively, so this also works from a
+    # local copy rather than only when published
+    text = text.replace(manifest["site"] + "/", "")
+    # the repo plumbing section is about the repository, not the materials
+    text = re.sub(r"\n## How this repo is organized.*?(?=\n## )", "\n", text, flags=re.S)
+    # links to files in the repository rather than to hosted pages, such as
+    # the licence, have to point at GitHub from here
+    def repo_link(m):
+        label, target = m.group(1), m.group(2)
+        if target.startswith(("http", "#")) or (REPO_ROOT / "docs" / target.split("#")[0]).exists():
+            return m.group(0)
+        return f"[{label}](https://github.com/{manifest['repo']}/blob/main/{target})"
+
+    text = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", repo_link, text)
+    text = table_to_list(text)
+
+    body = markdown.markdown(text, extensions=["sane_lists"], output_format="html5")
     (REPO_ROOT / "docs" / "index.html").write_text(
-        INDEX.format(repo=manifest["repo"], sections="\n".join(blocks)), encoding="utf-8")
-    print("regenerated docs/index.html")
+        INDEX.format(body=body), encoding="utf-8")
+    print("regenerated docs/index.html from README.md")
 
 
 def main():
