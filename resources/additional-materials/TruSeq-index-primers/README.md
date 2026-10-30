@@ -1,4 +1,4 @@
-Biohub-designed TruSeq-compatible primers with 12bp indices for high index diversity
+#Biohub-designed TruSeq-compatible primers with 12bp indices for high index diversity
 
 Overview information is available here:
 Biohub TruSeq Index Primer Info.pdf
